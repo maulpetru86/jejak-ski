@@ -1,15 +1,35 @@
 import React from 'react';
 import Content from '@theme-original/DocItem/Content';
+import Head from '@docusaurus/Head';
 import {useDoc} from '@docusaurus/plugin-content-docs/client';
 
 export default function DocItemContentWrapper(props) {
   const {frontMatter} = useDoc();
-  const {kelas, bab_nomor, sumber_buku, tokoh_terkait, ringkasan_singkat} = frontMatter || {};
+  const {kelas, bab_nomor, judul, sumber_buku, tokoh_terkait, istilah_kunci, ringkasan_singkat} = frontMatter || {};
 
   const isChapterPage = !!(kelas && bab_nomor);
+  const pageTitle = judul ? `${judul} (Kelas ${kelas} Bab ${bab_nomor}) | Jejak SKI` : null;
+  const keywords = [
+    `SKI Kelas ${kelas}`,
+    `Bab ${bab_nomor}`,
+    ...(Array.isArray(tokoh_terkait) ? tokoh_terkait : []),
+    ...(Array.isArray(istilah_kunci) ? istilah_kunci : []),
+  ].join(', ');
 
   return (
     <>
+      {isChapterPage && (
+        <Head>
+          {pageTitle && <title>{pageTitle}</title>}
+          {pageTitle && <meta property="og:title" content={pageTitle} />}
+          {pageTitle && <meta name="twitter:title" content={pageTitle} />}
+          {ringkasan_singkat && <meta name="description" content={ringkasan_singkat} />}
+          {ringkasan_singkat && <meta property="og:description" content={ringkasan_singkat} />}
+          {ringkasan_singkat && <meta name="twitter:description" content={ringkasan_singkat} />}
+          {keywords && <meta name="keywords" content={keywords} />}
+        </Head>
+      )}
+
       {isChapterPage && (
         <div className="chapter-meta-container">
           <div className="chapter-badge-row">
