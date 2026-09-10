@@ -35,6 +35,7 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           routeBasePath: 'docs',
+          breadcrumbs: true,
         },
         blog: false, // Blog dinonaktifkan sesuai PRD Phase 1 (fokus materi SKI)
         theme: {
@@ -61,6 +62,21 @@ const config = {
             label: 'Materi Pembelajaran',
           },
           {
+            to: '/docs/kelas-x/bab-1-makkah',
+            label: 'Kelas X',
+            position: 'left',
+          },
+          {
+            to: '/docs/kelas-xi/bab-1-usmani',
+            label: 'Kelas XI',
+            position: 'left',
+          },
+          {
+            to: '/docs/kelas-xii/bab-1-kerajaan-nusantara',
+            label: 'Kelas XII',
+            position: 'left',
+          },
+          {
             href: 'https://github.com/maulpetru86/jejak-ski',
             label: 'GitHub',
             position: 'right',
@@ -71,23 +87,31 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Materi Pembelajaran',
+            title: 'Materi SKI per Jenjang',
             items: [
               {
-                label: 'Panduan & Pengantar',
-                to: '/docs/intro',
+                label: 'Kelas X (6 Bab)',
+                to: '/docs/kelas-x/bab-1-makkah',
+              },
+              {
+                label: 'Kelas XI (5 Bab)',
+                to: '/docs/kelas-xi/bab-1-usmani',
+              },
+              {
+                label: 'Kelas XII (5 Bab)',
+                to: '/docs/kelas-xii/bab-1-kerajaan-nusantara',
               },
             ],
           },
           {
-            title: 'Tentang',
+            title: 'Tentang & Kontak',
             items: [
               {
                 label: 'MAN 2 Nganjuk',
                 href: 'https://man2nganjuk.sch.id',
               },
               {
-                label: 'Repositori Proyek',
+                label: 'Repositori GitHub',
                 href: 'https://github.com/maulpetru86/jejak-ski',
               },
             ],
