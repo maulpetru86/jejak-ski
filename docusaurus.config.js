@@ -41,6 +41,10 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        gtag: {
+          trackingID: 'G-GR5KG10DK7', // Firebase Analytics Measurement ID
+          anonymizeIP: true,           // NFR-05: Anonimkan IP pengunjung tanpa PII
+        },
       }),
     ],
   ],
