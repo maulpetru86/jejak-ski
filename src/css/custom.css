@@ -1,61 +1,154 @@
 /**
- * Jejak SKI — Custom Styling
+ * Jejak SKI — Sistem Desain "Kitab Digital"
+ * Sesuai PRD §8, NFR-01 (Ukuran min. 16px, responsif 360-768px), dan NFR-06 (Aksesibilitas WCAG AA)
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
 :root {
-  --ifm-color-primary: #1b4332;
-  --ifm-color-primary-dark: #163729;
-  --ifm-color-primary-darker: #133124;
-  --ifm-color-primary-darkest: #0d2119;
-  --ifm-color-primary-light: #22543f;
-  --ifm-color-primary-lighter: #265d46;
-  --ifm-color-primary-lightest: #317659;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --ski-gold: #b38600;
-  --ski-maroon: #801823;
-  --ski-parchment-bg: #fdfbf7;
-  --ski-border: #e6dfd5;
+  /* Palet Warna Teruji WCAG AA (Light Mode - Kertas Hangat & Tinta Tua) */
+  --ifm-color-primary: #163e2b;          /* Hijau tinta tua (Rasio 10.8:1 terhadap bg) */
+  --ifm-color-primary-dark: #123323;
+  --ifm-color-primary-darker: #0f2a1d;
+  --ifm-color-primary-darkest: #0a1c13;
+  --ifm-color-primary-light: #1b4d36;
+  --ifm-color-primary-lighter: #205b40;
+  --ifm-color-primary-lightest: #2b7754;
+
+  /* Warna Latar Kertas Hangat (Warm Parchment) */
+  --ifm-background-color: #fbf9f4;      /* Kertas hangat klasik naskah */
+  --ifm-background-surface-color: #f4efe4;
+  --ifm-font-color-base: #1e2522;       /* Tinta hitam arang tua (Rasio 13.79:1) */
+
+  /* Aksen Manuskrip */
+  --ski-gold: #7a5c00;                  /* Emas naskah tua (Rasio 6.03:1 > 4.5:1 WCAG AA) */
+  --ski-gold-bg: #f5eedb;
+  --ski-gold-border: #d4b668;
+  --ski-maroon: #7a1a22;                /* Merah marun istilah kunci (Rasio 10.8:1) */
+  --ski-maroon-bg: #faebec;
+  --ski-maroon-border: #db9ea3;
+  --ski-border: #e3dccf;
+  --ski-card-shadow: 0 4px 16px rgba(22, 62, 43, 0.07);
+
+  /* Tipografi */
+  --ifm-font-family-base: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --ifm-heading-font-family: 'Amiri', 'Georgia', serif;
+  --ifm-font-size-base: 16.5px;         /* NFR-01: Memenuhi batas minimal 16px */
+  --ifm-line-height-base: 1.75;
+  --ifm-heading-color: #163e2b;
+  --ifm-navbar-background-color: #163e2b;
+  --ifm-navbar-link-color: #fdfbf7;
+  --ifm-navbar-link-hover-color: #f0c968;
 }
 
 [data-theme='dark'] {
-  --ifm-color-primary: #48bb78;
-  --ifm-color-primary-dark: #38a169;
-  --ifm-color-primary-darker: #2f855a;
-  --ifm-color-primary-darkest: #276749;
-  --ifm-color-primary-light: #68d391;
-  --ifm-color-primary-lighter: #9ae6b4;
-  --ifm-color-primary-lightest: #c6f6d5;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  --ski-gold: #e2b02e;
-  --ski-maroon: #d0525d;
-  --ski-parchment-bg: #1a202c;
-  --ski-border: #2d3748;
+  --ifm-color-primary: #4ec48f;
+  --ifm-color-primary-dark: #3fb581;
+  --ifm-color-primary-darker: #38a575;
+  --ifm-color-primary-darkest: #277955;
+  --ifm-color-primary-light: #5fd39d;
+  --ifm-color-primary-lighter: #73d9aa;
+  --ifm-color-primary-lightest: #9ae4c3;
+
+  --ifm-background-color: #121815;
+  --ifm-background-surface-color: #1a221e;
+  --ifm-font-color-base: #eae6dd;       /* Rasio 13.0:1 terhadap latar gelap */
+
+  --ski-gold: #f0c968;
+  --ski-gold-bg: #2d2613;
+  --ski-gold-border: #6e581e;
+  --ski-maroon: #e57d86;
+  --ski-maroon-bg: #2d1618;
+  --ski-maroon-border: #6d2d33;
+  --ski-border: #2a352f;
+  --ski-card-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+
+  --ifm-heading-color: #f0fdf4;
+  --ifm-navbar-background-color: #0f1613;
+  --ifm-navbar-link-color: #eae6dd;
+  --ifm-navbar-link-hover-color: #f0c968;
+}
+
+/* Header & Navbar */
+.navbar {
+  border-bottom: 2px solid var(--ski-gold);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.navbar__title {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+/* Tipografi Judul */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ifm-heading-font-family);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+h1 {
+  font-size: 2.2rem;
+  line-height: 1.3;
+  border-bottom: 2px solid var(--ski-border);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  color: var(--ski-maroon);
+}
+
+/* Breadcrumbs (FR-04) */
+.breadcrumbs {
+  margin-bottom: 1.25rem;
+  font-size: 0.88rem;
+  padding: 0.4rem 0.6rem;
+  background-color: var(--ifm-background-surface-color);
+  border-radius: 6px;
+  border: 1px solid var(--ski-border);
+}
+
+.breadcrumbs__link {
+  color: var(--ifm-color-primary);
+  font-weight: 500;
 }
 
 /* Chapter Meta Container */
 .chapter-meta-container {
-  margin-bottom: 1.5rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--ski-border);
+  margin-bottom: 2rem;
+  padding: 1.25rem;
+  background-color: var(--ifm-background-surface-color);
+  border-radius: 8px;
+  border: 1px solid var(--ski-border);
+  box-shadow: var(--ski-card-shadow);
 }
 
 .chapter-badge-row {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.6rem;
   margin-bottom: 0.75rem;
 }
 
 .chapter-badge {
-  display: inline-block;
-  padding: 0.2rem 0.6rem;
-  font-size: 0.78rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
   font-weight: 700;
   border-radius: 9999px;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
 }
 
 .chapter-badge-class {
@@ -63,38 +156,45 @@
   color: #ffffff;
 }
 
+[data-theme='dark'] .chapter-badge-class {
+  color: #0d2119;
+}
+
 .chapter-badge-number {
-  background-color: var(--ski-gold);
-  color: #1a1a1a;
+  background-color: var(--ski-gold-bg);
+  color: var(--ski-gold);
+  border: 1px solid var(--ski-gold-border);
 }
 
 .chapter-source {
   font-size: 0.85rem;
   color: var(--ifm-color-emphasis-700);
+  font-style: italic;
 }
 
 /* Ringkasan Singkat Card */
 .chapter-summary-card {
   display: flex;
   align-items: flex-start;
-  gap: 0.75rem;
-  background-color: var(--ski-parchment-bg);
+  gap: 0.85rem;
+  background-color: var(--ski-gold-bg);
   border-left: 4px solid var(--ski-gold);
-  border-radius: 4px;
-  padding: 0.75rem 1rem;
-  margin: 0.75rem 0 1rem 0;
+  border-radius: 6px;
+  padding: 0.9rem 1.15rem;
+  margin: 1rem 0;
 }
 
 .chapter-summary-icon {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   line-height: 1;
 }
 
 .chapter-summary-text {
   margin: 0;
-  font-size: 0.95rem;
-  line-height: 1.5;
-  color: var(--ifm-color-emphasis-800);
+  font-size: 0.98rem;
+  line-height: 1.6;
+  font-weight: 500;
+  color: var(--ifm-font-color-base);
 }
 
 /* Chip Tokoh Terkait (FR-08) */
@@ -102,56 +202,63 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.75rem;
+  gap: 0.6rem;
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed var(--ski-border);
 }
 
 .tokoh-label {
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--ifm-color-emphasis-700);
-  margin-right: 0.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--ifm-color-emphasis-800);
 }
 
 .tokoh-chips-wrapper {
   display: inline-flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
+  gap: 0.45rem;
 }
 
 .tokoh-chip {
   display: inline-flex;
   align-items: center;
-  gap: 0.25rem;
-  background-color: var(--ifm-color-emphasis-100);
-  color: var(--ifm-color-emphasis-900);
-  border: 1px solid var(--ifm-color-emphasis-200);
-  border-radius: 12px;
-  padding: 0.2rem 0.55rem;
-  font-size: 0.82rem;
+  gap: 0.35rem;
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  border: 1px solid var(--ski-border);
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.83rem;
   font-weight: 500;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
   transition: all 0.2s ease;
 }
 
 .tokoh-chip:hover {
-  background-color: var(--ifm-color-emphasis-200);
   border-color: var(--ski-gold);
+  background-color: var(--ski-gold-bg);
   transform: translateY(-1px);
 }
 
 .tokoh-chip-icon {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
+}
+
+/* Istilah Kunci Highlight */
+article strong {
+  color: var(--ski-maroon);
 }
 
 /* Disclaimer Hak Cipta Box (FR-09) */
 .chapter-disclaimer-box {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   margin-bottom: 1.5rem;
-  padding: 1rem 1.25rem;
-  background-color: var(--ski-parchment-bg);
-  border: 1px solid var(--ski-border);
-  border-left: 4px solid var(--ski-maroon);
-  border-radius: 6px;
+  padding: 1.15rem 1.35rem;
+  background-color: var(--ski-maroon-bg);
+  border: 1px solid var(--ski-maroon-border);
+  border-left: 5px solid var(--ski-maroon);
+  border-radius: 8px;
 }
 
 .chapter-disclaimer-header {
@@ -160,17 +267,15 @@
   gap: 0.5rem;
   margin-bottom: 0.5rem;
   color: var(--ski-maroon);
-  font-size: 0.95rem;
-}
-
-.chapter-disclaimer-icon {
-  font-size: 1.1rem;
+  font-size: 0.98rem;
+  font-family: var(--ifm-heading-font-family);
+  font-weight: 700;
 }
 
 .chapter-disclaimer-text {
-  font-size: 0.85rem;
-  line-height: 1.5;
-  color: var(--ifm-color-emphasis-800);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--ifm-font-color-base);
   margin-bottom: 0.5rem;
 }
 
@@ -180,50 +285,209 @@
   text-align: right;
 }
 
-/* Custom 404 Styling (FR-10) */
-.not-found-container {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+/* Pagination Buttons (FR-05) */
+.pagination-nav__link {
+  border: 2px solid var(--ski-border);
+  border-radius: 8px;
+  background-color: var(--ifm-background-surface-color);
+  transition: all 0.2s ease;
+  min-height: 52px; /* Touch target aksesibel */
 }
 
-.not-found-illustration {
-  margin-bottom: 1.5rem;
+.pagination-nav__link:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: var(--ski-card-shadow);
+  transform: translateY(-2px);
 }
 
-.not-found-icon {
-  font-size: 4rem;
-  display: block;
-  margin-bottom: 1rem;
+.pagination-nav__sublabel {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--ski-gold);
 }
 
-.not-found-title {
-  font-size: 4.5rem;
-  line-height: 1;
-  color: var(--ifm-color-primary);
+.pagination-nav__label {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+/* =========================================================
+   HOMEPAGE CUSTOM HERO & CLASS CARDS (FR-01)
+   ========================================================= */
+.ski-hero {
+  padding: 3.5rem 1rem 3rem 1rem;
+  background: radial-gradient(circle at top, #1c4d37 0%, #163e2b 100%);
+  color: #fdfbf7;
+  text-align: center;
+  position: relative;
+  border-bottom: 3px solid var(--ski-gold);
+}
+
+.ski-hero-badge {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  background: rgba(240, 201, 104, 0.18);
+  border: 1px solid var(--ski-gold);
+  color: #f0c968;
+  border-radius: 9999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.ski-hero-title {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin-bottom: 0.85rem;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.ski-hero-subtitle {
+  font-size: 1.15rem;
+  max-width: 720px;
+  margin: 0 auto 1.5rem auto;
+  line-height: 1.6;
+  color: #e5e0d5;
+}
+
+.ski-features-pills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.25rem;
+}
+
+.ski-feature-pill {
+  font-size: 0.82rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.3rem 0.75rem;
+  border-radius: 9999px;
+  backdrop-filter: blur(4px);
+  color: #f5f2eb;
+}
+
+/* Kartu Jenjang Kelas (FR-01) */
+.ski-classes-section {
+  padding: 3.5rem 0;
+}
+
+.ski-section-heading {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.ski-section-heading h2 {
+  font-size: 2.1rem;
   margin-bottom: 0.5rem;
 }
 
-.not-found-subtitle {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--ifm-color-emphasis-800);
-}
-
-.not-found-desc {
+.ski-section-heading p {
   font-size: 1.05rem;
   color: var(--ifm-color-emphasis-700);
-  max-width: 600px;
-  margin: 0 auto 1.5rem auto;
 }
 
-.not-found-actions {
+.ski-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.ski-class-card {
+  background-color: var(--ifm-background-surface-color);
+  border: 1px solid var(--ski-border);
+  border-top: 5px solid var(--ifm-color-primary);
+  border-radius: 10px;
+  padding: 1.75rem 1.5rem;
   display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  box-shadow: var(--ski-card-shadow);
+  transition: all 0.25s ease;
+  position: relative;
 }
 
-.not-found-quicklinks {
-  border-top: 1px solid var(--ifm-color-emphasis-200);
-  padding-top: 1.5rem;
+.ski-class-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(22, 62, 43, 0.14);
+  border-top-color: var(--ski-gold);
+}
+
+.ski-class-badge {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: var(--ski-gold-bg);
+  color: var(--ski-gold);
+  border: 1px solid var(--ski-gold-border);
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  margin-bottom: 0.75rem;
+}
+
+.ski-class-title {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.ski-class-count {
+  font-size: 0.88rem;
+  color: var(--ifm-color-emphasis-700);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.ski-class-desc {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--ifm-font-color-base);
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.ski-class-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px; /* Touch target NFR-01 */
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  text-decoration: none;
+  background-color: var(--ifm-color-primary);
+  color: #ffffff !important;
+  transition: all 0.2s ease;
+}
+
+.ski-class-btn:hover {
+  background-color: var(--ifm-color-primary-light);
+  transform: translateY(-1px);
+}
+
+/* Aksesibilitas: Keyboard Focus Ring */
+a:focus-visible, button:focus-visible {
+  outline: 3px solid var(--ski-gold);
+  outline-offset: 2px;
+}
+
+/* Responsif Mobile (360-768px) */
+@media (max-width: 768px) {
+  .ski-hero-title {
+    font-size: 2.1rem;
+  }
+  .ski-hero {
+    padding: 2.5rem 1rem 2rem 1rem;
+  }
+  .ski-card-grid {
+    grid-template-columns: 1fr;
+  }
 }
