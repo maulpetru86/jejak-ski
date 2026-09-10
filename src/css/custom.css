@@ -1,30 +1,229 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Jejak SKI — Custom Styling
  */
 
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #1b4332;
+  --ifm-color-primary-dark: #163729;
+  --ifm-color-primary-darker: #133124;
+  --ifm-color-primary-darkest: #0d2119;
+  --ifm-color-primary-light: #22543f;
+  --ifm-color-primary-lighter: #265d46;
+  --ifm-color-primary-lightest: #317659;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ski-gold: #b38600;
+  --ski-maroon: #801823;
+  --ski-parchment-bg: #fdfbf7;
+  --ski-border: #e6dfd5;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #48bb78;
+  --ifm-color-primary-dark: #38a169;
+  --ifm-color-primary-darker: #2f855a;
+  --ifm-color-primary-darkest: #276749;
+  --ifm-color-primary-light: #68d391;
+  --ifm-color-primary-lighter: #9ae6b4;
+  --ifm-color-primary-lightest: #c6f6d5;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ski-gold: #e2b02e;
+  --ski-maroon: #d0525d;
+  --ski-parchment-bg: #1a202c;
+  --ski-border: #2d3748;
+}
+
+/* Chapter Meta Container */
+.chapter-meta-container {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--ski-border);
+}
+
+.chapter-badge-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.chapter-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.chapter-badge-class {
+  background-color: var(--ifm-color-primary);
+  color: #ffffff;
+}
+
+.chapter-badge-number {
+  background-color: var(--ski-gold);
+  color: #1a1a1a;
+}
+
+.chapter-source {
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* Ringkasan Singkat Card */
+.chapter-summary-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background-color: var(--ski-parchment-bg);
+  border-left: 4px solid var(--ski-gold);
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  margin: 0.75rem 0 1rem 0;
+}
+
+.chapter-summary-icon {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.chapter-summary-text {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--ifm-color-emphasis-800);
+}
+
+/* Chip Tokoh Terkait (FR-08) */
+.chapter-tokoh-section {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.tokoh-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-700);
+  margin-right: 0.25rem;
+}
+
+.tokoh-chips-wrapper {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tokoh-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-emphasis-900);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.tokoh-chip:hover {
+  background-color: var(--ifm-color-emphasis-200);
+  border-color: var(--ski-gold);
+  transform: translateY(-1px);
+}
+
+.tokoh-chip-icon {
+  font-size: 0.75rem;
+}
+
+/* Disclaimer Hak Cipta Box (FR-09) */
+.chapter-disclaimer-box {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.25rem;
+  background-color: var(--ski-parchment-bg);
+  border: 1px solid var(--ski-border);
+  border-left: 4px solid var(--ski-maroon);
+  border-radius: 6px;
+}
+
+.chapter-disclaimer-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--ski-maroon);
+  font-size: 0.95rem;
+}
+
+.chapter-disclaimer-icon {
+  font-size: 1.1rem;
+}
+
+.chapter-disclaimer-text {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--ifm-color-emphasis-800);
+  margin-bottom: 0.5rem;
+}
+
+.chapter-updated-date {
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-600);
+  text-align: right;
+}
+
+/* Custom 404 Styling (FR-10) */
+.not-found-container {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.not-found-illustration {
+  margin-bottom: 1.5rem;
+}
+
+.not-found-icon {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.not-found-title {
+  font-size: 4.5rem;
+  line-height: 1;
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.not-found-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.not-found-desc {
+  font-size: 1.05rem;
+  color: var(--ifm-color-emphasis-700);
+  max-width: 600px;
+  margin: 0 auto 1.5rem auto;
+}
+
+.not-found-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.not-found-quicklinks {
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  padding-top: 1.5rem;
 }
