@@ -29,7 +29,7 @@ export default function NotFound() {
                 🏠 Kembali ke Beranda
               </Link>
               <Link
-                className="button button--secondary button--lg not-found-btn margin-left--sm"
+                className="button button--secondary button--lg not-found-btn"
                 to="/docs/intro">
                 📖 Daftar Materi SKI
               </Link>
@@ -37,15 +37,15 @@ export default function NotFound() {
 
             <div className="not-found-quicklinks margin-top--xl">
               <h3>Tautan Cepat Jenjang Kelas:</h3>
-              <div className="button-group button-group--block">
-                <Link className="button button--outline button--primary" to="/docs/kelas-x/bab-1-makkah">
-                  Kelas X
+              <div className="button-group button-group--block not-found-class-group">
+                <Link className="button button--outline button--primary" to="/docs/kelas-x/">
+                  Kelas X (6 Bab)
                 </Link>
-                <Link className="button button--outline button--primary" to="/docs/kelas-xi/bab-1-usmani">
-                  Kelas XI
+                <Link className="button button--outline button--primary" to="/docs/kelas-xi/">
+                  Kelas XI (5 Bab)
                 </Link>
-                <Link className="button button--outline button--primary" to="/docs/kelas-xii/bab-1-kerajaan-nusantara">
-                  Kelas XII
+                <Link className="button button--outline button--primary" to="/docs/kelas-xii/">
+                  Kelas XII (5 Bab)
                 </Link>
               </div>
             </div>

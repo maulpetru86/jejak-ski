@@ -6,7 +6,7 @@ sidebar_label: Pengantar
 
 # Jejak SKI — Portal Referensi Sejarah Kebudayaan Islam
 
-Selamat datang di **Jejak SKI**, portal referensi materi Sejarah Kebudayaan Islam (SKI) yang disusun khusus untuk siswa Madrasah Aliyah (MAN 2 Nganjuk).
+Selamat datang di **Jejak SKI**, portal referensi materi Sejarah Kebudayaan Islam (SKI) yang disusun sebagai media belajar terbuka bagi seluruh siswa Madrasah Aliyah di Indonesia, selaras dengan buku teks resmi Kementerian Agama Republik Indonesia.
 
 Portal ini merangkum poin-poin penting dari buku teks resmi Kementerian Agama Republik Indonesia untuk mempermudah belajar mandiri dan persiapan ujian.
 
@@ -21,3 +21,5 @@ Pilih jenjang kelas di bawah ini untuk langsung menuju bab pertama:
 * **[Kelas XII — Mulai Belajar](/docs/kelas-xii/bab-1-kerajaan-nusantara)** (5 Bab: Kerajaan Islam Nusantara, Peran Ulama Awal, Organisasi Islam, Kemerdekaan, Tokoh Paling Berpengaruh)
 
 > **Catatan:** Urutan materi dan judul bab pada portal ini mengikuti secara persis urutan buku teks siswa resmi Kementerian Agama RI.
+
+> **Inisiatif Terbuka:** Portal Jejak SKI diinisiasi oleh civitas akademika MAN 2 Nganjuk sebagai dedikasi dan kontribusi terbuka bagi kemajuan literasi sejarah Islam siswa madrasah di seluruh Indonesia.

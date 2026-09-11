@@ -12,6 +12,10 @@ const sidebars = {
     {
       type: 'category',
       label: 'Kelas X',
+      link: {
+        type: 'doc',
+        id: 'kelas-x/index',
+      },
       collapsed: false,
       items: [
         'kelas-x/bab-1-makkah',
@@ -25,6 +29,10 @@ const sidebars = {
     {
       type: 'category',
       label: 'Kelas XI',
+      link: {
+        type: 'doc',
+        id: 'kelas-xi/index',
+      },
       collapsed: false,
       items: [
         'kelas-xi/bab-1-usmani',
@@ -37,6 +45,10 @@ const sidebars = {
     {
       type: 'category',
       label: 'Kelas XII',
+      link: {
+        type: 'doc',
+        id: 'kelas-xii/index',
+      },
       collapsed: false,
       items: [
         'kelas-xii/bab-1-kerajaan-nusantara',

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Background circle -->
+  <circle cx="16" cy="16" r="16" fill="#163E2B"/>
+  
+  <!-- Gold arch border -->
+  <path d="M16 3 C16 3, 27 10, 27 18 C27 24, 22 28, 16 28 C10 28, 5 24, 5 18 C5 10, 16 3, 16 3Z"
+        fill="none" stroke="#E5B869" stroke-width="1.5"/>
+  
+  <!-- Inner arch -->
+  <path d="M16 5 C16 5, 25 11, 25 17.5 C25 23, 21 26.5, 16 26.5 C11 26.5, 7 23, 7 17.5 C7 11, 16 5, 16 5Z"
+        fill="#0E291C"/>
+  
+  <!-- Crescent moon -->
+  <circle cx="16" cy="9" r="2.5" fill="#E5B869"/>
+  <circle cx="17" cy="8.2" r="2" fill="#0E291C"/>
+  
+  <!-- Main dome -->
+  <path d="M11 19 C11 14, 21 14, 21 19" fill="#E8E2D0"/>
+  
+  <!-- Mosque body -->
+  <rect x="10" y="19" width="12" height="5" fill="#E8E2D0"/>
+  
+  <!-- Doorway -->
+  <path d="M14.5 24 L14.5 21 C14.5 19.5, 17.5 19.5, 17.5 21 L17.5 24 Z" fill="#163E2B"/>
+  
+  <!-- Left minaret -->
+  <rect x="8" y="16" width="2" height="8" fill="#E8E2D0"/>
+  <polygon points="9,14 7.5,16 10.5,16" fill="#E5B869"/>
+  
+  <!-- Right minaret -->
+  <rect x="22" y="16" width="2" height="8" fill="#E8E2D0"/>
+  <polygon points="23,14 21.5,16 24.5,16" fill="#E5B869"/>
+  
+  <!-- Dome finial -->
+  <circle cx="16" cy="13.5" r="1" fill="#E5B869"/>
+  
+  <!-- Book at bottom -->
+  <path d="M12 25.5 L16 24.5 L20 25.5 L16 26.5 Z" fill="#E5B869" opacity="0.8"/>
+</svg>

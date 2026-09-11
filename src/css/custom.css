@@ -6,39 +6,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
 :root {
-  /* Palet Warna Teruji WCAG AA (Light Mode - Kertas Hangat & Tinta Tua) */
-  --ifm-color-primary: #163e2b;          /* Hijau tinta tua (Rasio 10.8:1 terhadap bg) */
-  --ifm-color-primary-dark: #123323;
-  --ifm-color-primary-darker: #0f2a1d;
-  --ifm-color-primary-darkest: #0a1c13;
+  /* Palet Warna Teruji Sesuai Board UI Jejak SKI Klasik */
+  --ifm-color-primary: #163E2B;          /* Hijau Peradaban Islam Board UI */
+  --ifm-color-primary-dark: #123324;
+  --ifm-color-primary-darker: #0e291c;
+  --ifm-color-primary-darkest: #091a12;
   --ifm-color-primary-light: #1b4d36;
-  --ifm-color-primary-lighter: #205b40;
-  --ifm-color-primary-lightest: #2b7754;
+  --ifm-color-primary-lighter: #236043;
+  --ifm-color-primary-lightest: #31825c;
 
-  /* Warna Latar Kertas Hangat (Warm Parchment) */
-  --ifm-background-color: #fbf9f4;      /* Kertas hangat klasik naskah */
-  --ifm-background-surface-color: #f4efe4;
-  --ifm-font-color-base: #1e2522;       /* Tinta hitam arang tua (Rasio 13.79:1) */
+  /* Warna Latar Kertas Hangat (Warm Paper & Deep Charcoal) */
+  --ifm-background-color: #FBF9F4;      /* Paper #FBF9F4 */
+  --ifm-background-surface-color: #F4EFE6;
+  --ifm-font-color-base: #1E2522;       /* Teks #1E2522 */
 
-  /* Aksen Manuskrip */
-  --ski-gold: #7a5c00;                  /* Emas naskah tua (Rasio 6.03:1 > 4.5:1 WCAG AA) */
-  --ski-gold-bg: #f5eedb;
-  --ski-gold-border: #d4b668;
-  --ski-maroon: #7a1a22;                /* Merah marun istilah kunci (Rasio 10.8:1) */
-  --ski-maroon-bg: #faebec;
-  --ski-maroon-border: #db9ea3;
-  --ski-border: #e3dccf;
-  --ski-card-shadow: 0 4px 16px rgba(22, 62, 43, 0.07);
+  /* Aksen Identitas Manuskrip */
+  --ski-green: #163E2B;                 /* Primary Green */
+  --ski-gold: #7A5C00;                  /* Gold */
+  --ski-gold-accent: #E5B869;           /* Gold terang untuk teks & sorotan di atas latar gelap */
+  --ski-gold-bg: #FBF5E5;
+  --ski-gold-border: #D8BD7E;
+  --ski-maroon: #7A1A22;                /* Maroon */
+  --ski-maroon-bg: #F9ECEC;
+  --ski-maroon-border: #D39498;
+  --ski-paper: #FBF9F4;
+  --ski-border: #E5DEC9;
+  --ski-card-shadow: 0 4px 16px rgba(22, 62, 43, 0.06);
 
   /* Tipografi */
   --ifm-font-family-base: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --ifm-heading-font-family: 'Amiri', 'Georgia', serif;
-  --ifm-font-size-base: 16.5px;         /* NFR-01: Memenuhi batas minimal 16px */
+  --ifm-font-size-base: 16px;           /* Standar keterbacaan modern */
   --ifm-line-height-base: 1.75;
-  --ifm-heading-color: #163e2b;
-  --ifm-navbar-background-color: #163e2b;
-  --ifm-navbar-link-color: #fdfbf7;
-  --ifm-navbar-link-hover-color: #f0c968;
+  --ifm-heading-color: #163E2B;
+  --ifm-navbar-background-color: #163E2B;
+  --ifm-navbar-height: 68px;
+  --ifm-navbar-link-color: #FBF9F4;
+  --ifm-navbar-link-hover-color: #E5B869;
+  --doc-sidebar-width: 330px;
+  --ifm-footer-background-color: #163E2B;
 }
 
 [data-theme='dark'] {
@@ -69,17 +75,64 @@
   --ifm-navbar-link-hover-color: #f0c968;
 }
 
-/* Header & Navbar */
+/* Header & Navbar Sesuai Board UI (Tinggi 68px, Bersih, Tipis, Elegan) */
 .navbar {
-  border-bottom: 2px solid var(--ski-gold);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  height: 68px;
+  background-color: #163E2B;
+  border-bottom: 1px solid rgba(229, 184, 105, 0.25);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+  padding: 0 1.5rem;
+}
+
+.navbar__brand {
+  margin-right: 2rem;
+}
+
+.navbar__logo {
+  height: 38px;
+  width: auto;
+  margin-right: 0.5rem;
 }
 
 .navbar__title {
   font-family: var(--ifm-heading-font-family);
-  font-size: 1.35rem;
+  font-size: 1.45rem;
   font-weight: 700;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
+  color: #FBF9F4;
+}
+
+.navbar__item {
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.4rem 0.85rem;
+  transition: color 0.2s ease;
+}
+
+.navbar__link {
+  color: #E8E3D8;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  color: #E5B869 !important;
+}
+
+/* Search input di navbar */
+.navbar__search-input {
+  background-color: rgba(255, 255, 255, 0.12) !important;
+  color: #FBF9F4 !important;
+  border: 1px solid rgba(229, 184, 105, 0.3) !important;
+  border-radius: 8px !important;
+  font-size: 0.88rem !important;
+  transition: all 0.2s ease !important;
+}
+
+.navbar__search-input:focus {
+  background-color: #FFFFFF !important;
+  color: #1E2522 !important;
+  border-color: #E5B869 !important;
+  box-shadow: 0 0 0 2px rgba(229, 184, 105, 0.25) !important;
 }
 
 /* Tipografi Judul */
@@ -314,163 +367,972 @@ article strong {
 }
 
 /* =========================================================
-   HOMEPAGE CUSTOM HERO & CLASS CARDS (FR-01)
+   SIDEBAR & TATA LETAK BACA (MENIADAKAN TEKS TERPOTONG ...)
    ========================================================= */
-.ski-hero {
-  padding: 3.5rem 1rem 3rem 1rem;
-  background: radial-gradient(circle at top, #1c4d37 0%, #163e2b 100%);
-  color: #fdfbf7;
-  text-align: center;
+/* Container Panel Sidebar */
+.theme-doc-sidebar-container {
+  background-color: #F3ECE0 !important; /* Panel naskah yang lembut dan terpisah jelas dari konten */
+  border-right: 1.5px solid var(--ski-border) !important;
+  box-shadow: 2px 0 10px rgba(22, 51, 47, 0.04);
+}
+
+[data-theme='dark'] .theme-doc-sidebar-container {
+  background-color: #141b17 !important;
+  border-right: 1.5px solid var(--ski-border) !important;
+}
+
+/* Menu Sidebar - Beri padding bawah leluasa agar tidak menempel/terpotong footer */
+.theme-doc-sidebar-menu {
+  padding: 1.25rem 0.85rem 6rem 0.85rem !important;
+}
+
+/* Teks Judul Bab di Sidebar: BUNGKUS KE BARIS BARU (JANGAN POTONG DENGAN ...) */
+.theme-doc-sidebar-item-link .menu__link {
+  white-space: normal !important;
+  word-break: normal !important;
+  line-height: 1.45 !important;
+  padding: 0.6rem 0.85rem !important;
+  font-size: 0.9rem !important;
+  border-radius: 6px !important;
+  margin: 0.2rem 0 !important;
+  color: var(--ifm-font-color-base) !important;
+  transition: all 0.2s ease !important;
+  display: block !important;
+}
+
+.theme-doc-sidebar-item-link .menu__link:hover {
+  background-color: var(--ski-gold-bg) !important;
+  color: var(--ifm-color-primary) !important;
+}
+
+/* Indikator Bab yang Sedang Aktif Dibaca */
+.theme-doc-sidebar-item-link .menu__link--active {
+  background-color: var(--ski-gold-bg) !important;
+  color: var(--ifm-color-primary) !important;
+  font-weight: 700 !important;
+  border-left: 4px solid var(--ski-gold) !important;
+  box-shadow: 0 1px 4px rgba(180, 130, 58, 0.18) !important;
+}
+
+/* Judul Kategori Kelas di Sidebar */
+.theme-doc-sidebar-item-category > .menu__list-item-collapsible > .menu__link {
+  font-family: var(--ifm-heading-font-family) !important;
+  font-weight: 700 !important;
+  font-size: 1.08rem !important;
+  color: var(--ifm-color-primary) !important;
+  border-bottom: 1.5px solid var(--ski-border) !important;
+  padding-bottom: 0.45rem !important;
+  margin-top: 1rem !important;
+  margin-bottom: 0.45rem !important;
+}
+
+[data-theme='dark'] .theme-doc-sidebar-item-category > .menu__list-item-collapsible > .menu__link {
+  color: #f0c968 !important;
+}
+
+/* Tombol Navigasi Bawah (Sebelum & Berikut) */
+.pagination-nav {
+  margin-top: 2.5rem !important;
+  margin-bottom: 4.5rem !important; /* Ruang bernapas luas sebelum footer */
+}
+
+/* =========================================================
+   FOOTER (HIJAU TUA #163E2B DENGAN SILUET ARSITEKTUR ISLAM)
+   ========================================================= */
+.footer {
+  background-color: #163E2B !important;
+  border-top: 2px solid rgba(229, 184, 105, 0.35) !important;
+  color: #E8E2D5 !important;
   position: relative;
-  border-bottom: 3px solid var(--ski-gold);
+  overflow: hidden;
+  padding: 3.5rem 0 2.5rem 0;
 }
 
-.ski-hero-badge {
-  display: inline-block;
-  padding: 0.35rem 1rem;
-  background: rgba(240, 201, 104, 0.18);
-  border: 1px solid var(--ski-gold);
-  color: #f0c968;
-  border-radius: 9999px;
-  font-size: 0.82rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin-bottom: 1.25rem;
+.footer--dark {
+  background-color: #163E2B !important;
 }
 
-.ski-hero-title {
-  font-family: var(--ifm-heading-font-family);
-  font-size: 2.75rem;
-  font-weight: 700;
-  margin-bottom: 0.85rem;
-  color: #ffffff;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+/* Siluet Arsitektur Islam Subtle di Bagian Bawah Footer */
+.footer::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px;
+  background-image: url('/img/footer-bg.png');
+  background-repeat: repeat-x;
+  background-position: bottom center;
+  background-size: auto 100px;
+  opacity: 0.14;
+  pointer-events: none;
+  z-index: 1;
 }
 
-.ski-hero-subtitle {
-  font-size: 1.15rem;
-  max-width: 720px;
-  margin: 0 auto 1.5rem auto;
-  line-height: 1.6;
-  color: #e5e0d5;
+.footer .container {
+  position: relative;
+  z-index: 2;
 }
 
-.ski-features-pills {
+/* Footer logo */
+.footer__logo {
+  display: none !important; /* Hide default centered logo */
+}
+
+/* Hide empty column titles (we use ' ' as workaround) */
+.footer__title {
+  display: none !important;
+}
+
+/* Footer brand area: logo + title inline */
+.footer-brand {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
   gap: 0.6rem;
-  margin-top: 1.25rem;
-}
-
-.ski-feature-pill {
-  font-size: 0.82rem;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 0.3rem 0.75rem;
-  border-radius: 9999px;
-  backdrop-filter: blur(4px);
-  color: #f5f2eb;
-}
-
-/* Kartu Jenjang Kelas (FR-01) */
-.ski-classes-section {
-  padding: 3.5rem 0;
-}
-
-.ski-section-heading {
-  text-align: center;
-  margin-bottom: 2.5rem;
-}
-
-.ski-section-heading h2 {
-  font-size: 2.1rem;
   margin-bottom: 0.5rem;
 }
 
-.ski-section-heading p {
+.footer-brand-logo {
+  height: 36px;
+  width: auto;
+}
+
+.footer-brand-title {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #FBF9F4;
+  letter-spacing: 0.02em;
+}
+
+.footer-brand-accent {
+  color: #E5B869;
+}
+
+.footer-tagline {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: #B5C0BA;
+  margin: 0;
+}
+
+/* Footer 2-column layout */
+.footer__links {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.footer__col:first-child {
+  flex: 1 1 70% !important;
+  max-width: 75% !important;
+}
+
+.footer__col:last-child {
+  flex: 0 0 25% !important;
+  max-width: 25% !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+}
+
+.footer-left-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+}
+
+/* Footer nav links: horizontal row below tagline */
+.footer-nav-row {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+}
+
+.footer-nav-row .footer__link-item {
+  color: #D8D4CC !important;
+  font-size: 0.92rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.footer-nav-row .footer__link-item:hover {
+  color: #E5B869 !important;
+}
+
+/* Right block: GitHub link */
+.footer-right-block {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-top: 0.35rem;
+}
+
+.footer-github-link {
+  color: #D8D4CC !important;
+  font-size: 0.92rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.footer-github-link:hover {
+  color: #E5B869 !important;
+}
+
+/* Remove default list styling from HTML items */
+.footer__items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__copyright {
+  color: #A9B5AF !important;
+  font-size: 0.85rem !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+  padding-top: 1.25rem !important;
+  margin-top: 1.5rem !important;
+  line-height: 1.6 !important;
+  text-align: left !important;
+}
+
+/* =========================================================
+   BOARD UI HOMEPAGE (SESUAI ACUAN VISUAL PANEL 1)
+   ========================================================= */
+
+/* --- 1. HERO SECTION (Atmospheric Mosque Background - Board UI Reference) --- */
+.board-hero {
+  position: relative;
+  padding: 5rem 1.5rem 5.5rem 1.5rem;
+  background-color: #163E2B;
+  overflow: hidden;
+  color: #FBF9F4;
+  border-bottom: 3px solid #7A5C00;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+}
+
+/* Background container: mosque sebagai gambar atmosferik besar di kanan */
+.board-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.board-hero-bg-img {
+  position: absolute;
+  right: -5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 65%;
+  height: 120%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 1;
+}
+
+/* Gradient overlay: gelap di kiri (teks terbaca) → transparan di kanan (mosque terlihat) */
+.board-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(13, 33, 23, 0.97) 0%,
+    rgba(16, 42, 29, 0.95) 25%,
+    rgba(18, 48, 33, 0.88) 40%,
+    rgba(20, 54, 37, 0.72) 55%,
+    rgba(22, 62, 43, 0.45) 70%,
+    rgba(22, 62, 43, 0.18) 85%,
+    rgba(22, 62, 43, 0.08) 100%
+  );
+  z-index: 2;
+}
+
+/* Tambahkan vignette gelap dari bawah untuk depth */
+.board-hero-overlay::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50%;
+  background: linear-gradient(to top, rgba(10, 28, 19, 0.6) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.board-hero-container {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.board-hero-content {
+  flex: 1;
+  max-width: 620px;
+}
+
+/* Eyebrow: teks gold biasa TANPA pill/badge background */
+.board-hero-eyebrow {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: #E5B869;
+  margin-bottom: 0.85rem;
+  /* Tidak ada background, border, padding, border-radius */
+}
+
+/* Judul BESAR sesuai referensi — focal point */
+.board-hero-title {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 5.5rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #FBF9F4;
+  margin-bottom: 1.35rem;
+  border-bottom: none;
+  padding-bottom: 0;
+  letter-spacing: 0.01em;
+}
+
+.board-hero-title-accent {
+  color: #E5B869;
+}
+
+/* Subheadline: BOLD, tidak italic, lebih besar sesuai referensi */
+.board-hero-subheadline {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 1.55rem;
+  line-height: 1.45;
+  font-weight: 700;
+  color: #F4EFE6;
+  margin-bottom: 1.35rem;
+  white-space: pre-line;
+}
+
+.board-hero-description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #C7C1B5;
+  margin-bottom: 2.25rem;
+  max-width: 520px;
+}
+
+.board-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Button Universal Board */
+.board-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--ifm-font-family-base);
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.75rem 1.6rem;
+  border-radius: 8px;
+  text-decoration: none !important;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: none;
+}
+
+.board-btn-primary {
+  background: #E5B869;
+  color: #163E2B !important;
+  box-shadow: 0 4px 14px rgba(229, 184, 105, 0.35);
+}
+
+.board-btn-primary:hover {
+  background: #F2CA7B;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(229, 184, 105, 0.45);
+}
+
+.board-btn-secondary {
+  background: rgba(255, 255, 255, 0.06);
+  color: #FBF9F4;
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
+  gap: 0.6rem;
+}
+
+.board-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.8);
+  transform: translateY(-2px);
+}
+
+.btn-arrow {
+  font-weight: 700;
+  transition: transform 0.2s ease;
+}
+
+.board-btn:hover .btn-arrow {
+  transform: translateX(3px);
+}
+
+.board-btn-secondary svg {
+  flex-shrink: 0;
+}
+
+.board-hero-artwork {
+  flex: 0 0 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board-hero-mosque-frame {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(229, 184, 105, 0.35);
+  background: rgba(14, 38, 26, 0.6);
+  max-width: 280px;
+}
+
+.board-hero-mosque-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* --- UMUM: SECTION HEADINGS --- */
+.board-section {
+  padding: 3.5rem 1.5rem;
+}
+
+.board-section-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 2.5rem auto;
+}
+
+.board-section-title {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 2.2rem;
+  color: #163E2B;
+  margin-bottom: 0.5rem;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.board-section-subtitle {
   font-size: 1.05rem;
-  color: var(--ifm-color-emphasis-700);
+  color: #55625B;
+  line-height: 1.6;
 }
 
-.ski-card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+/* --- 2. CONTINUE LEARNING SECTION --- */
+.board-continue-section {
+  padding-top: 3.25rem;
+  padding-bottom: 2rem;
+}
+
+.board-continue-card {
+  background: #FFFFFF;
+  border: 1px solid #E5DEC9;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(22, 62, 43, 0.06);
+  padding: 1.75rem 2rem;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.board-continue-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #EFE8DA;
+  margin-bottom: 1.5rem;
+}
+
+.board-continue-heading {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 1.45rem;
+  color: #163E2B;
+  margin: 0 0 0.2rem 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.board-continue-subtext {
+  font-size: 0.9rem;
+  color: #6C7771;
+  margin: 0;
+}
+
+.board-continue-progress-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.board-continue-progress-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #7A5C00;
+}
+
+.board-progress-track {
+  width: 160px;
+  height: 8px;
+  background: #EDE6D6;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.board-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #7A5C00 0%, #D4A24E 100%);
+  border-radius: 9999px;
+  transition: width 0.4s ease;
+}
+
+.board-continue-body {
+  display: flex;
+  align-items: center;
   gap: 1.75rem;
-  margin-bottom: 2.5rem;
 }
 
-.ski-class-card {
-  background-color: var(--ifm-background-surface-color);
-  border: 1px solid var(--ski-border);
-  border-top: 5px solid var(--ifm-color-primary);
+.board-continue-thumb-col {
+  flex: 0 0 110px;
+}
+
+.board-continue-thumb {
+  width: 110px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #D8CEBC;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.board-continue-info-col {
+  flex: 1;
+}
+
+.board-continue-badge {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #163E2B;
+  background: #E8F0EB;
+  border: 1px solid #C4D9CD;
+  padding: 0.15rem 0.65rem;
+  border-radius: 9999px;
+  margin-bottom: 0.35rem;
+}
+
+.board-continue-chapter-title {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 1.35rem;
+  color: #163E2B;
+  margin: 0 0 0.35rem 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.board-continue-chapter-desc {
+  font-size: 0.92rem;
+  color: #4F5A54;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.board-continue-action-col {
+  flex-shrink: 0;
+}
+
+.board-btn-continue {
+  background: #163E2B;
+  color: #FBF9F4 !important;
+}
+
+.board-btn-continue:hover {
+  background: #0E291C;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(22, 62, 43, 0.25);
+}
+
+/* --- 3. PILIH JENJANG PEMBELAJARAN (3 HORIZONTAL CARDS) --- */
+.board-jenjang-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.board-jenjang-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  min-height: 380px;
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease;
+}
+
+.board-jenjang-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.18);
+}
+
+.board-jenjang-card-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  transition: transform 0.5s ease;
+}
+
+.board-jenjang-card:hover .board-jenjang-card-bg {
+  transform: scale(1.04);
+}
+
+.board-jenjang-card-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border-radius: 20px;
+}
+
+/* 3 Brand Colors Sesuai Acuan Board */
+.jenjang-theme-green .board-jenjang-card-overlay {
+  background: linear-gradient(180deg, rgba(22, 62, 43, 0.88) 0%, rgba(12, 36, 25, 0.97) 100%);
+  border: 1px solid rgba(229, 184, 105, 0.35);
+}
+
+.jenjang-theme-gold .board-jenjang-card-overlay {
+  background: linear-gradient(180deg, rgba(122, 92, 0, 0.88) 0%, rgba(76, 57, 0, 0.97) 100%);
+  border: 1px solid rgba(240, 201, 104, 0.4);
+}
+
+.jenjang-theme-maroon .board-jenjang-card-overlay {
+  background: linear-gradient(180deg, rgba(122, 26, 34, 0.88) 0%, rgba(78, 14, 20, 0.97) 100%);
+  border: 1px solid rgba(240, 160, 168, 0.35);
+}
+
+.board-jenjang-card-content {
+  position: relative;
+  z-index: 3;
+  padding: 1.8rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  color: #FBF9F4;
+}
+
+/* Top area: ornament icon + Kelas title + Fase badge (vertical stack) */
+.board-jenjang-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Ornament icon wrapper */
+.board-jenjang-ornament {
+  color: #E5B869;
+  opacity: 0.85;
+  margin-bottom: 0.25rem;
+}
+
+.board-jenjang-class-title {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0;
+  letter-spacing: 0.02em;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.board-jenjang-fase {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  color: #FFFFFF;
+}
+
+/* Center area: topic subtitle + meta */
+.board-jenjang-center {
+  flex: 1;
+  margin-bottom: 1.5rem;
+}
+
+.board-jenjang-topic-subtitle {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 1.12rem;
+  font-weight: 600;
+  color: #F6E2B3;
+  line-height: 1.4;
+  margin: 0 0 0.65rem 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.board-jenjang-meta {
+  font-size: 0.85rem;
+  color: #EAE5D9;
+  font-weight: 500;
+}
+
+.board-btn-paper {
+  width: 100%;
+  background: #FBF9F4;
+  color: #163E2B !important;
+  font-weight: 700;
+  font-size: 0.92rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.board-btn-paper:hover {
+  background: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.jenjang-theme-gold .board-btn-paper {
+  color: #614800 !important;
+}
+
+.jenjang-theme-maroon .board-btn-paper {
+  color: #631219 !important;
+}
+
+/* --- 4. MENGAPA JEJAK SKI (4 PILAR SESUAI ACUAN REFERENSI) --- */
+.board-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.board-pillar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.5rem 0.25rem;
+  transition: transform 0.25s ease;
+}
+
+.board-pillar-item:hover {
+  transform: translateY(-3px);
+}
+
+.board-pillar-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #EFECE3;
+  color: #163E2B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.board-pillar-item:hover .board-pillar-icon-wrap {
+  background: #E5DFD0;
+  transform: scale(1.05);
+}
+
+.board-pillar-num {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #163E2B;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+.board-pillar-title {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #163E2B;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.35;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.board-pillar-desc {
+  font-size: 0.88rem;
+  color: #4F5A54;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* --- 5. INSTITUTIONAL CREDIT SECTION --- */
+.board-credit-section {
+  padding-top: 1rem;
+  padding-bottom: 3.5rem;
+}
+
+.board-credit-card {
+  max-width: 1120px;
+  margin: 0 auto;
+  background: #F4EFE4;
+  border: 1px solid #D8CEBC;
+  border-left: 5px solid #163E2B;
   border-radius: 10px;
-  padding: 1.75rem 1.5rem;
+  padding: 1.5rem 1.85rem;
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.board-credit-mark {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.board-credit-text strong {
+  display: block;
+  font-size: 1.05rem;
+  color: #163E2B;
+  margin-bottom: 0.35rem;
+}
+
+.board-credit-text p {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: #3E4742;
+  margin: 0;
+}
+
+/* =========================================================
+   KATALOG DAFTAR BAB PER KELAS (LAYAR 2 MOCKUP)
+   ========================================================= */
+.chapter-catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.chapter-catalog-card {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ski-border);
+  border-left: 5px solid var(--ifm-color-primary);
+  border-radius: 8px;
+  padding: 1.4rem;
   display: flex;
   flex-direction: column;
   box-shadow: var(--ski-card-shadow);
   transition: all 0.25s ease;
-  position: relative;
 }
 
-.ski-class-card:hover {
+.chapter-catalog-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 24px rgba(22, 62, 43, 0.14);
-  border-top-color: var(--ski-gold);
+  border-left-color: var(--ski-gold);
+  box-shadow: 0 8px 20px rgba(22, 51, 47, 0.12);
 }
 
-.ski-class-badge {
-  display: inline-block;
-  align-self: flex-start;
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  background-color: var(--ski-gold-bg);
-  color: var(--ski-gold);
-  border: 1px solid var(--ski-gold-border);
-  padding: 0.2rem 0.6rem;
-  border-radius: 9999px;
+.chapter-catalog-badge-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 0.75rem;
 }
 
-.ski-class-title {
-  font-size: 1.6rem;
-  margin-bottom: 0.5rem;
+.chapter-catalog-badge {
+  background: var(--ski-gold-bg);
+  color: var(--ski-gold);
+  border: 1px solid var(--ski-gold-border);
+  font-weight: 700;
+  font-size: 0.78rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  letter-spacing: 0.05em;
 }
 
-.ski-class-count {
-  font-size: 0.88rem;
-  color: var(--ifm-color-emphasis-700);
-  font-weight: 600;
-  margin-bottom: 1rem;
+.chapter-catalog-source {
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-600);
+  font-style: italic;
 }
 
-.ski-class-desc {
-  font-size: 0.95rem;
-  line-height: 1.55;
-  color: var(--ifm-font-color-base);
-  margin-bottom: 1.5rem;
-  flex-grow: 1;
+.chapter-catalog-title {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin-bottom: 0.6rem;
 }
 
-.ski-class-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 48px; /* Touch target NFR-01 */
-  font-weight: 600;
-  font-size: 0.95rem;
-  border-radius: 6px;
+.chapter-catalog-title a {
+  color: var(--ifm-heading-color);
   text-decoration: none;
-  background-color: var(--ifm-color-primary);
-  color: #ffffff !important;
-  transition: all 0.2s ease;
 }
 
-.ski-class-btn:hover {
-  background-color: var(--ifm-color-primary-light);
-  transform: translateY(-1px);
+.chapter-catalog-title a:hover {
+  color: var(--ifm-color-primary-light);
+  text-decoration: underline;
+}
+
+.chapter-catalog-desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--ifm-font-color-base);
+  flex: 1;
+  margin-bottom: 1.25rem;
+}
+
+.chapter-catalog-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.75rem;
+  border-top: 1px dashed var(--ski-border);
+}
+
+.chapter-catalog-meta {
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-700);
+  font-weight: 500;
+}
+
+.chapter-catalog-btn {
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.35rem 0.85rem;
 }
 
 /* Aksesibilitas: Keyboard Focus Ring */
@@ -479,15 +1341,283 @@ a:focus-visible, button:focus-visible {
   outline-offset: 2px;
 }
 
-/* Responsif Mobile (360-768px) */
-@media (max-width: 768px) {
-  .ski-hero-title {
-    font-size: 2.1rem;
+/* =========================================================
+   PENGUATAN RESPONSIF MOBILE & KONTEN (360px - 768px)
+   ========================================================= */
+/* Mencegah Horizontal Scroll */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Gambar Responsif */
+article img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Tabel Responsif (Scroll internal tanpa merusak lebar halaman) */
+article table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+/* Blok Kode / Pre */
+pre {
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Mobile Drawer (Menu Hamburger Navbar) */
+.navbar-sidebar {
+  background-color: #F7F3E7 !important;
+}
+
+[data-theme='dark'] .navbar-sidebar {
+  background-color: #121815 !important;
+}
+
+.navbar-sidebar__brand {
+  background-color: #16332F !important;
+  border-bottom: 2px solid var(--ski-gold) !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-sidebar__brand .navbar__title {
+  color: #ffffff !important;
+  font-family: var(--ifm-heading-font-family);
+  font-weight: 700;
+}
+
+.navbar-sidebar__items .menu__list-item {
+  margin: 0.25rem 0;
+}
+
+.navbar-sidebar__items .menu__link {
+  font-size: 0.98rem;
+  padding: 0.75rem 1rem !important;
+  min-height: 48px; /* Touch target aksesibel NFR-01 */
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  color: var(--ifm-font-color-base);
+}
+
+.navbar-sidebar__items .menu__link--active {
+  background-color: var(--ski-gold-bg) !important;
+  color: var(--ifm-color-primary) !important;
+  font-weight: 700;
+  border-left: 4px solid var(--ski-gold);
+}
+
+/* Halaman 404 Responsif */
+.not-found-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.not-found-btn {
+  margin: 0 !important;
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.not-found-class-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* =========================================================
+   RESPONSIF MOBILE BREAKPOINTS BOARD UI & SISTEM DOKUMENTASI
+   ========================================================= */
+@media (max-width: 1080px) {
+  .board-pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
   }
-  .ski-hero {
-    padding: 2.5rem 1rem 2rem 1rem;
+}
+
+@media (max-width: 900px) {
+  /* Hero: mosque bg menjadi center coverage pada mobile */
+  .board-hero-bg-img {
+    right: -15%;
+    width: 90%;
+    opacity: 0.5;
   }
-  .ski-card-grid {
+
+  .board-hero-overlay {
+    background: linear-gradient(
+      to right,
+      rgba(13, 33, 23, 0.96) 0%,
+      rgba(16, 42, 29, 0.92) 40%,
+      rgba(20, 54, 37, 0.8) 70%,
+      rgba(22, 62, 43, 0.6) 100%
+    );
+  }
+
+  .board-hero-content {
+    max-width: 100%;
+  }
+
+  .board-continue-body {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+  .board-continue-action-col {
+    width: 100%;
+  }
+
+  .board-btn-continue {
+    width: 100%;
+  }
+
+  .board-jenjang-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .board-jenjang-card {
+    min-height: 360px;
+  }
+
+  .board-credit-card {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .board-hero {
+    padding: 3.5rem 1.25rem 4rem 1.25rem;
+    min-height: 440px;
+  }
+
+  .board-hero-title {
+    font-size: 4rem;
+  }
+
+  .board-hero-subheadline {
+    font-size: 1.3rem;
+  }
+
+  .board-hero-bg-img {
+    right: -20%;
+    width: 100%;
+    opacity: 0.35;
+  }
+
+  .not-found-class-group {
+    flex-direction: column;
+  }
+
+  .not-found-class-group .button {
+    width: 100%;
+    margin: 0.25rem 0 !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .board-hero {
+    padding: 3rem 1rem 3.5rem 1rem;
+  }
+
+  .board-hero-title {
+    font-size: 3.2rem;
+  }
+
+  .board-hero-subheadline {
+    font-size: 1.2rem;
+  }
+
+  .board-hero-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .board-hero-actions .board-btn {
+    width: 100%;
+  }
+
+  .board-continue-card {
+    padding: 1.25rem 1.1rem;
+  }
+
+  .board-continue-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .board-continue-progress-group {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .board-progress-track {
+    width: 120px;
+  }
+
+  .board-pillars-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .board-section {
+    padding: 2.75rem 1rem;
+  }
+
+  .board-section-title {
+    font-size: 1.85rem;
+  }
+
+  .chapter-catalog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chapter-meta-container {
+    padding: 1rem;
+  }
+
+  .chapter-summary-card {
+    padding: 0.75rem 0.9rem;
+    font-size: 0.9rem;
+  }
+
+  .not-found-actions {
+    flex-direction: column;
+  }
+
+  .not-found-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .board-hero-title {
+    font-size: 2.6rem;
+  }
+
+  .board-hero-eyebrow {
+    font-size: 0.72rem;
+  }
+
+  .chapter-catalog-badge-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
   }
 }

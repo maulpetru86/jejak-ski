@@ -1,6 +1,6 @@
 # Jejak SKI — Portal Referensi Sejarah Kebudayaan Islam
 
-Portal referensi materi Sejarah Kebudayaan Islam (SKI) untuk siswa Madrasah Aliyah (MAN 2 Nganjuk), berbasis Docusaurus dan di-hosting melalui Firebase Hosting.
+Portal referensi materi Sejarah Kebudayaan Islam (SKI) terbuka untuk seluruh siswa Madrasah Aliyah di Indonesia, diinisiasi oleh civitas akademika MAN 2 Nganjuk, dibangun dengan Docusaurus dan di-hosting melalui Firebase Hosting.
 
 ---
 
@@ -97,4 +97,4 @@ Situs langsung terbarui di alamat: [https://jejak-ski.web.app](https://jejak-ski
 
 ## 📜 Lisensi & Sumber Referensi
 - **Sumber Materi:** Buku Siswa SKI Kelas X, XI, XII terbitan Kementerian Agama Republik Indonesia.
-- **Pengembang & Pengelola:** Muhamad Maulana Rokhim, S.Pd. — MAN 2 Nganjuk.
+- **Inisiator & Pengembang:** Muhamad Maulana Rokhim, S.Pd. (MAN 2 Nganjuk) sebagai media belajar terbuka (OER) siswa Madrasah Aliyah se-Indonesia.

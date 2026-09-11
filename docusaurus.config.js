@@ -4,8 +4,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Jejak SKI',
-  tagline: 'Portal Referensi Materi Sejarah Kebudayaan Islam Madrasah Aliyah',
-  favicon: 'img/favicon.ico',
+  tagline: 'Portal Referensi Terbuka Sejarah Kebudayaan Islam Siswa Madrasah Aliyah',
+  favicon: 'img/favicon.svg',
 
   // URL deployment Firebase Hosting
   url: 'https://jejak-ski.web.app',
@@ -27,6 +27,10 @@ const config = {
     locales: ['id'],
   },
 
+  clientModules: [
+    './src/clientModules/gtagFix.js',
+  ],
+
   presets: [
     [
       'classic',
@@ -41,18 +45,20 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
-        gtag: {
+        gtag: process.env.NODE_ENV === 'production' ? {
           trackingID: 'G-GR5KG10DK7', // Firebase Analytics Measurement ID
           anonymizeIP: true,           // NFR-05: Anonimkan IP pengunjung tanpa PII
-        },
+        } : undefined,
       }),
     ],
   ],
 
   themes: [
     [
+      // @ts-ignore -- docusaurus-search-local non-standard theme tuple
       '@easyops-cn/docusaurus-search-local',
       /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      // @ts-ignore -- PluginOptions index signature mismatch
       ({
         hashed: true,
         language: ['en'],
@@ -82,30 +88,25 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'skiSidebar',
             position: 'left',
-            label: 'Materi Pembelajaran',
+            label: 'Materi',
           },
           {
-            to: '/docs/kelas-x/bab-1-makkah',
+            to: '/docs/kelas-x/',
             label: 'Kelas X',
             position: 'left',
           },
           {
-            to: '/docs/kelas-xi/bab-1-usmani',
+            to: '/docs/kelas-xi/',
             label: 'Kelas XI',
             position: 'left',
           },
           {
-            to: '/docs/kelas-xii/bab-1-kerajaan-nusantara',
+            to: '/docs/kelas-xii/',
             label: 'Kelas XII',
             position: 'left',
           },
           {
             type: 'search',
-            position: 'right',
-          },
-          {
-            href: 'https://github.com/maulpetru86/jejak-ski',
-            label: 'GitHub',
             position: 'right',
           },
         ],
@@ -114,37 +115,23 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Materi SKI per Jenjang',
+            title: ' ',
             items: [
               {
-                label: 'Kelas X (6 Bab)',
-                to: '/docs/kelas-x/bab-1-makkah',
-              },
-              {
-                label: 'Kelas XI (5 Bab)',
-                to: '/docs/kelas-xi/bab-1-usmani',
-              },
-              {
-                label: 'Kelas XII (5 Bab)',
-                to: '/docs/kelas-xii/bab-1-kerajaan-nusantara',
+                html: '<div class="footer-left-block"><div class="footer-brand"><img src="/img/logo.svg" alt="Jejak SKI" class="footer-brand-logo" /><span class="footer-brand-title">Jejak <span class="footer-brand-accent">SKI</span></span></div><p class="footer-tagline">Menelusuri sejarah, memahami peradaban.</p><div class="footer-nav-row"><a href="/docs/intro" class="footer__link-item">Materi</a><a href="/docs/kelas-x/" class="footer__link-item">Kelas X</a><a href="/docs/kelas-xi/" class="footer__link-item">Kelas XI</a><a href="/docs/kelas-xii/" class="footer__link-item">Kelas XII</a></div></div>',
               },
             ],
           },
           {
-            title: 'Tentang & Kontak',
+            title: ' ',
             items: [
               {
-                label: 'MAN 2 Nganjuk',
-                href: 'https://man2nganjuk.sch.id',
-              },
-              {
-                label: 'Repositori GitHub',
-                href: 'https://github.com/maulpetru86/jejak-ski',
+                html: '<div class="footer-right-block"><a href="https://github.com/maulpetru86/jejak-ski" target="_blank" rel="noopener noreferrer" class="footer-github-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="vertical-align: -3px; margin-right: 6px;"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>GitHub</a></div>',
               },
             ],
           },
         ],
-        copyright: `Hak Cipta © ${new Date().getFullYear()} Jejak SKI — MAN 2 Nganjuk. Disusun untuk keperluan pembelajaran siswa.`,
+        copyright: `© ${new Date().getFullYear()} Jejak SKI. Dibuat dengan semangat untuk pendidikan.`,
       },
       prism: {
         theme: prismThemes.github,

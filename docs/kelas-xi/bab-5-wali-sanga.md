@@ -2,6 +2,7 @@
 kelas: "XI"
 bab_nomor: 5
 judul: "Peran Wali Sanga dalam Penyebaran Islam di Indonesia"
+sidebar_label: "Bab 5: Peran Wali Sanga"
 sumber_buku: "Buku Siswa SKI Kelas XI, Kemenag RI"
 tokoh_terkait:
   - "Sunan Gresik (Maulana Malik Ibrahim)"
@@ -25,26 +26,28 @@ terakhir_diperbarui: "2026-09-11"
 # Peran Wali Sanga dalam Penyebaran Islam di Indonesia
 
 ### Konteks Singkat
-[RANGKUMAN BAB — diisi admin]
+Wali Sanga adalah sembilan wali yang berperan besar dalam penyebaran Islam di tanah Jawa, aktif sekitar abad ke-15 hingga ke-16 M, sezaman dengan keruntuhan Majapahit dan berdirinya Kesultanan Demak-Cirebon. Keberhasilan mereka islamisasi masyarakat Jawa yang saat itu mayoritas Hindu-Buddha terletak pada strategi akulturasi budaya — menyampaikan ajaran Islam lewat media yang sudah akrab dengan masyarakat lokal, seperti wayang kulit, tembang macapat, dan pendekatan sosial yang bijaksana, tanpa kekerasan maupun pemaksaan.
 
 ### Poin-Poin Kunci
-- [POIN KUNCI 1 — diisi admin]
-- [POIN KUNCI 2 — diisi admin]
-- [POIN KUNCI 3 — diisi admin]
+- Sunan Gresik (Maulana Malik Ibrahim) menjadi pelopor dakwah di Jawa lewat pendirian sistem pesantren dan pendekatan personal yang santun kepada masyarakat.
+- Sunan Ampel mendirikan Pesantren Ampeldenta yang mencetak wali-wali lain, serta mengajarkan falsafah "Moh Limo" (menjauhi lima perbuatan tercela) sebagai panduan moral.
+- Sunan Bonang dan Sunan Giri berdakwah lewat jalur seni dan sastra, termasuk tembang macapat dan permainan anak, sebagai media dakwah yang tidak konfrontatif terhadap tradisi lokal.
+- Sunan Kalijaga dikenal sebagai tokoh akulturasi budaya paling ikonik lewat wayang kulit (lakon Dewa Ruci) dan tembang, menjembatani nilai Islam dengan tradisi Jawa yang sudah mengakar.
+- Sunan Kudus mengajarkan toleransi lewat kebijakan menghormati tradisi umat Hindu, sementara Sunan Muria dan Sunan Gunung Jati memperluas dakwah hingga ke pelosok pedesaan dan wilayah Jawa Barat.
 
 ### Istilah Kunci
-- **Wali Sanga**: [Penjelasan istilah — diisi admin]
-- **Akulturasi Budaya**: [Penjelasan istilah — diisi admin]
-- **Tembang Macapat**: [Penjelasan istilah — diisi admin]
-- **Wayang Kulit**: [Penjelasan istilah — diisi admin]
+- **Wali Sanga**: sebutan bagi sembilan wali yang berperan besar dalam penyebaran Islam di tanah Jawa pada abad ke-15 hingga ke-16 M.
+- **Akulturasi Budaya**: strategi dakwah dengan memadukan ajaran Islam ke dalam tradisi dan kesenian lokal yang sudah ada, sehingga lebih mudah diterima masyarakat tanpa menimbulkan gesekan budaya.
+- **Tembang Macapat**: jenis puisi atau lagu tradisional Jawa yang dipakai para wali, terutama Sunan Bonang dan Sunan Kalijaga, sebagai media dakwah yang menyisipkan nilai-nilai Islam.
+- **Wayang Kulit**: seni pertunjukan tradisional Jawa yang diislamisasi oleh Sunan Kalijaga, terutama lewat penciptaan lakon-lakon baru seperti Dewa Ruci yang sarat pesan tauhid.
 
 ### Tokoh Terkait
-- **Sunan Gresik (Maulana Malik Ibrahim)**: [Peran tokoh — diisi admin]
-- **Sunan Ampel**: [Peran tokoh — diisi admin]
-- **Sunan Bonang**: [Peran tokoh — diisi admin]
-- **Sunan Kalijaga**: [Peran tokoh — diisi admin]
-- **Sunan Giri**: [Peran tokoh — diisi admin]
-- **Sunan Drajat**: [Peran tokoh — diisi admin]
-- **Sunan Kudus**: [Peran tokoh — diisi admin]
-- **Sunan Muria**: [Peran tokoh — diisi admin]
-- **Sunan Gunung Jati**: [Peran tokoh — diisi admin]
+- **Sunan Gresik (Maulana Malik Ibrahim)**: pelopor dakwah Islam di Jawa lewat pendirian sistem pesantren dan pendekatan personal yang santun.
+- **Sunan Ampel**: mendirikan Pesantren Ampeldenta yang mencetak banyak wali lain, serta mengajarkan falsafah moral "Moh Limo".
+- **Sunan Bonang**: berdakwah lewat seni dan sastra, khususnya tembang dan gamelan, di wilayah Tuban.
+- **Sunan Kalijaga**: tokoh akulturasi budaya Jawa-Islam paling ikonik lewat wayang kulit dan tembang, berperan besar dalam pembangunan Masjid Agung Demak.
+- **Sunan Giri**: mendirikan pesantren Giri Kedaton dan berperan ganda sebagai tokoh spiritual sekaligus penguasa politik.
+- **Sunan Drajat**: berdakwah dengan pendekatan kepedulian sosial dan santunan bagi masyarakat kurang mampu di wilayah Lamongan.
+- **Sunan Kudus**: berperan dalam bidang militer dan keagamaan Kesultanan Demak, dikenal atas sikap toleransinya terhadap tradisi umat Hindu.
+- **Sunan Muria**: melanjutkan metode akulturasi budaya untuk menjangkau masyarakat pedesaan dan pegunungan yang lebih terpencil.
+- **Sunan Gunung Jati**: memadukan kepemimpinan spiritual dan politik sebagai penguasa Cirebon, memperluas dakwah hingga wilayah Jawa Barat.
