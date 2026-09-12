@@ -15,6 +15,7 @@ istilah_kunci:
   - "Baghdad"
   - "Gerakan Penerjemahan"
 ringkasan_singkat: "Rangkuman masa keemasan peradaban Islam di bawah Daulah Abasiah di Baghdad, Baitul Hikmah, penerjemahan literatur, dan kemajuan sains serta filsafat."
+thumbnail: "/img/thumbs/x-6-abasiah.jpg"
 terakhir_diperbarui: "2026-09-11"
 ---
 

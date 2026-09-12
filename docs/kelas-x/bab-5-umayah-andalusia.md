@@ -15,6 +15,7 @@ istilah_kunci:
   - "Jabal Thariq"
   - "Peradaban Islam Eropa"
 ringkasan_singkat: "Rangkuman masuknya Islam ke semenanjung Iberia, kejayaan Daulah Umayah di Spanyol, Kordoba sebagai pusat ilmu pengetahuan dunia, dan tokoh cendekiawan muslim."
+thumbnail: "/img/thumbs/x-5-umayah-andalusia.jpg"
 terakhir_diperbarui: "2026-09-11"
 ---
 

@@ -1,4 +1,4 @@
----
+﻿---
 kelas: "XI"
 bab_nomor: 5
 judul: "Peran Wali Sanga dalam Penyebaran Islam di Indonesia"
@@ -20,6 +20,7 @@ istilah_kunci:
   - "Tembang Macapat"
   - "Wayang Kulit"
 ringkasan_singkat: "Rangkuman biografi, strategi dakwah, dan pendekatan kultural Wali Sanga dalam menyebarkan ajaran Islam secara damai dan toleran di tanah Jawa."
+thumbnail: "/img/thumbs/xi-5-wali-sanga.jpg"
 terakhir_diperbarui: "2026-09-11"
 ---
 

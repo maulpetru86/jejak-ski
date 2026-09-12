@@ -15,6 +15,7 @@ istilah_kunci:
   - "Arabisasi Administrasi"
   - "Masjid Umayyah"
 ringkasan_singkat: "Rangkuman berdirinya Daulah Umayah di Damaskus, sistem pemerintahan monarki, perkembangan peradaban dan ilmu pengetahuan, serta kepemimpinan Umar bin Abdul Aziz."
+thumbnail: "/img/thumbs/x-4-umayah-damaskus.jpg"
 terakhir_diperbarui: "2026-09-11"
 ---
 

@@ -1,4 +1,4 @@
----
+﻿---
 kelas: "XI"
 bab_nomor: 3
 judul: "Perkembangan Peradaban dan Ilmu Pengetahuan Islam pada Masa Daulah Mughal"
@@ -15,6 +15,7 @@ istilah_kunci:
   - "Benteng Merah (Red Fort)"
   - "Fatawa-i-Alamgiri"
 ringkasan_singkat: "Rangkuman sejarah Daulah Mughal di anak benua India, kebijakan pluralisme Akbar, mahakarya arsitektur Taj Mahal di era Shah Jahan, dan ketegasan hukum Aurangzeb."
+thumbnail: "/img/thumbs/xi-3-mughal.jpg"
 terakhir_diperbarui: "2026-09-11"
 ---
 

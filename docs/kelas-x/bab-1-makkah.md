@@ -15,6 +15,7 @@ istilah_kunci:
   - "Dakwah Jahriyah"
   - "Assabiqunal Awwalun"
 ringkasan_singkat: "Rangkuman kondisi masyarakat Makkah pra-Islam, awal mula kerasulan Nabi Muhammad Saw., tahapan dakwah sirriyah dan jahriyah, serta ketabahan para sahabat."
+thumbnail: "/img/thumbs/x-1-makkah.jpg"
 terakhir_diperbarui: "2026-09-11"
 ---
 

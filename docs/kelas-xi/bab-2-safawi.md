@@ -1,4 +1,4 @@
----
+﻿---
 kelas: "XI"
 bab_nomor: 2
 judul: "Perkembangan Peradaban dan Ilmu Pengetahuan Islam pada Masa Daulah Safawi"
@@ -15,6 +15,7 @@ istilah_kunci:
   - "Qizilbash"
   - "Hikmah Muta'aliyah"
 ringkasan_singkat: "Rangkuman transformasi tarekat ke daulah di Persia, masa keemasan Shah Abbas I, keindahan arsitektur kota Isfahan, dan kemajuan filsafat Islam."
+thumbnail: "/img/thumbs/xi-2-safawi.jpg"
 terakhir_diperbarui: "2026-09-11"
 ---
 

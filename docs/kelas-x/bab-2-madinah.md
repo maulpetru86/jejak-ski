@@ -15,6 +15,7 @@ istilah_kunci:
   - "Persaudaraan Islam"
   - "Masjid Nabawi"
 ringkasan_singkat: "Rangkuman peristiwa hijrah ke Yatsrib, pembentukan tatanan masyarakat baru di Madinah, Piagam Madinah, serta pertahanan kedaulatan umat Islam."
+thumbnail: "/img/thumbs/x-2-madinah.jpg"
 terakhir_diperbarui: "2026-09-11"
 ---
 

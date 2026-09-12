@@ -1,4 +1,4 @@
----
+﻿---
 kelas: "XII"
 bab_nomor: 1
 judul: "Kerajaan Islam Nusantara"
@@ -16,6 +16,7 @@ istilah_kunci:
   - "Gowa-Tallo"
   - "Ternate-Tidore"
 ringkasan_singkat: "Rangkuman jejak sejarah kesultanan-kesultanan Islam di Nusantara (Sumatera, Jawa, Sulawesi, Maluku), corak pemerintahan, ekonomi maritim, dan pertahanan kedaulatan."
+thumbnail: "/img/thumbs/xii-1-kerajaan-nusantara.jpg"
 terakhir_diperbarui: "2026-09-11"
 ---
 

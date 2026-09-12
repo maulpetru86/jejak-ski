@@ -1,4 +1,4 @@
----
+﻿---
 kelas: "XI"
 bab_nomor: 1
 judul: "Perkembangan Peradaban dan Ilmu Pengetahuan Islam pada Masa Daulah Usmani"
@@ -15,6 +15,7 @@ istilah_kunci:
   - "Al-Qanun"
   - "Hagia Sophia"
 ringkasan_singkat: "Rangkuman sejarah berdirinya Daulah Usmani di Turki, penaklukan Konstantinopel oleh Muhammad Al-Fatih, kejayaan militer dan hukum di era Sulaiman Al-Qanuni."
+thumbnail: "/img/thumbs/xi-1-usmani.jpg"
 terakhir_diperbarui: "2026-09-11"
 ---
 

@@ -1,4 +1,4 @@
----
+﻿---
 kelas: "XII"
 bab_nomor: 2
 judul: "Peran Ulama Awal Nusantara Prakemerdekaan"
@@ -16,6 +16,7 @@ istilah_kunci:
   - "Karya Sastra Sufistik"
   - "Pesantren Tradisional"
 ringkasan_singkat: "Rangkuman biografi, karya ilmiah, dan jejaring keilmuan para ulama awal Nusantara yang menjadi pilar transmisi keilmuan Islam dan pengkaderan umat."
+thumbnail: "/img/thumbs/xii-2-ulama-awal.jpg"
 terakhir_diperbarui: "2026-09-11"
 ---
 

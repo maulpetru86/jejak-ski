@@ -1,4 +1,4 @@
----
+﻿---
 kelas: "XII"
 bab_nomor: 5
 judul: "Tokoh Islam Nusantara Paling Berpengaruh Pascakemerdekaan RI"
@@ -16,6 +16,7 @@ istilah_kunci:
   - "Pluralisme & Pribumisasi Islam"
   - "ICMI"
 ringkasan_singkat: "Rangkuman kiprah tokoh-tokoh muslim terkemuka dalam menjaga keutuhan NKRI, pengembangan pemikiran Islam moderat, kepemimpinan nasional, dan integrasi iptek."
+thumbnail: "/img/thumbs/xii-5-tokoh-berpengaruh.jpg"
 terakhir_diperbarui: "2026-09-11"
 ---
 

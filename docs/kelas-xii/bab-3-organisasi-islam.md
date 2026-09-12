@@ -1,4 +1,4 @@
----
+﻿---
 kelas: "XII"
 bab_nomor: 3
 judul: "Kontribusi Umat Islam Prakemerdekaan melalui Organisasi Berbasis Islam"
@@ -15,6 +15,7 @@ istilah_kunci:
   - "Nahdlatul Ulama (NU)"
   - "Persatuan Islam (Persis)"
 ringkasan_singkat: "Rangkuman kebangkitan kesadaran nasional melalui organisasi Islam di awal abad ke-20, kontribusi dalam pendidikan modern, filantropi, dan pergerakan kemerdekaan."
+thumbnail: "/img/thumbs/xii-3-organisasi-islam.jpg"
 terakhir_diperbarui: "2026-09-11"
 ---
 

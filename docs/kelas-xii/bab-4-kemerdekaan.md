@@ -1,4 +1,4 @@
----
+﻿---
 kelas: "XII"
 bab_nomor: 4
 judul: "Peran Umat Islam Masa Kemerdekaan dan Pascakemerdekaan"
@@ -15,6 +15,7 @@ istilah_kunci:
   - "Resolusi Jihad"
   - "Laskar Hizbullah & Sabilillah"
 ringkasan_singkat: "Rangkuman kontribusi tokoh-tokoh Islam dalam perumusan dasar negara Pancasila dan UUD 1945, serta Resolusi Jihad dalam mempertahankan kemerdekaan RI."
+thumbnail: "/img/thumbs/xii-4-kemerdekaan.jpg"
 terakhir_diperbarui: "2026-09-11"
 ---
 

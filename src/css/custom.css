@@ -44,7 +44,20 @@
   --ifm-navbar-link-color: #FBF9F4;
   --ifm-navbar-link-hover-color: #E5B869;
   --doc-sidebar-width: 330px;
+  --ifm-navbar-sidebar-width: min(340px, 86vw);
   --ifm-footer-background-color: #163E2B;
+
+  /* Search & Modal Sistem Desain Kitab Digital */
+  --ifm-navbar-search-input-color: #E5B869;
+  --ifm-navbar-search-input-placeholder-color: rgba(251, 249, 244, 0.65);
+  --search-local-modal-background: #FBF9F4;
+  --search-local-modal-shadow: 0 16px 40px rgba(0, 0, 0, 0.18), 0 0 0 1.5px rgba(229, 184, 105, 0.35);
+  --search-local-hit-background: #FFFFFF;
+  --search-local-hit-shadow: 0 2px 6px rgba(22, 62, 43, 0.05);
+  --search-local-hit-color: #1E2522;
+  --search-local-highlight-color: #163E2B;
+  --search-local-hit-active-color: #FBF9F4;
+  --search-local-muted-color: #7A7268;
 }
 
 [data-theme='dark'] {
@@ -73,25 +86,40 @@
   --ifm-navbar-background-color: #0f1613;
   --ifm-navbar-link-color: #eae6dd;
   --ifm-navbar-link-hover-color: #f0c968;
+
+  --ifm-navbar-search-input-color: #F0C968;
+  --ifm-navbar-search-input-placeholder-color: rgba(234, 230, 221, 0.6);
+  --search-local-modal-background: #141A17;
+  --search-local-modal-shadow: 0 16px 40px rgba(0, 0, 0, 0.5), 0 0 0 1.5px rgba(229, 184, 105, 0.25);
+  --search-local-hit-background: #1C2420;
+  --search-local-hit-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  --search-local-hit-color: #EAE6DD;
+  --search-local-highlight-color: #4EC48F;
+  --search-local-hit-active-color: #F0FDF4;
+  --search-local-muted-color: #9BA49F;
 }
 
 /* Header & Navbar Sesuai Board UI (Tinggi 68px, Bersih, Tipis, Elegan) */
 .navbar {
   height: 68px;
   background-color: #163E2B;
-  border-bottom: 1px solid rgba(229, 184, 105, 0.25);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+  border-bottom: 1.5px solid rgba(229, 184, 105, 0.3);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
   padding: 0 1.5rem;
+  transition: all 0.2s ease;
 }
 
 .navbar__brand {
-  margin-right: 2rem;
+  margin-right: 1.75rem;
+  display: inline-flex;
+  align-items: center;
 }
 
 .navbar__logo {
   height: 38px;
   width: auto;
-  margin-right: 0.5rem;
+  margin-right: 0.65rem;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
 }
 
 .navbar__title {
@@ -104,35 +132,648 @@
 
 .navbar__item {
   font-size: 0.95rem;
-  font-weight: 500;
+  font-weight: 600;
   padding: 0.4rem 0.85rem;
-  transition: color 0.2s ease;
+  transition: all 0.2s ease;
+  border-radius: 8px;
 }
 
 .navbar__link {
   color: #E8E3D8;
 }
 
-.navbar__link:hover,
-.navbar__link--active {
+.navbar__link:hover {
   color: #E5B869 !important;
+  background-color: rgba(255, 255, 255, 0.06);
 }
 
-/* Search input di navbar */
-.navbar__search-input {
-  background-color: rgba(255, 255, 255, 0.12) !important;
+.navbar__link--active {
+  color: #E5B869 !important;
+  background-color: rgba(229, 184, 105, 0.12);
+}
+
+/* Tombol Hamburger Navbar Mobile */
+.navbar__toggle {
   color: #FBF9F4 !important;
-  border: 1px solid rgba(229, 184, 105, 0.3) !important;
-  border-radius: 8px !important;
-  font-size: 0.88rem !important;
+  display: inline-flex;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 10px !important;
+  padding: 7px !important;
+  margin-right: 0.75rem !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(229, 184, 105, 0.35) !important;
+  cursor: pointer !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+@media (min-width: 997px) {
+  .navbar__toggle {
+    display: none !important;
+  }
+}
+
+.navbar__toggle:hover,
+.navbar__toggle:focus-visible {
+  color: #E5B869 !important;
+  background: rgba(229, 184, 105, 0.2) !important;
+  border-color: #E5B869 !important;
+  transform: scale(1.04);
+}
+
+.navbar__toggle svg {
+  width: 22px !important;
+  height: 22px !important;
+}
+
+.navbar__toggle svg path {
+  stroke: currentColor !important;
+  stroke-width: 2.3 !important;
+}
+
+/* ==========================================================================
+   Komponen Search Bar Navbar (Desktop & Mobile)
+   ========================================================================== */
+.navbar__search {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Icon Kaca Pembesar (Hanya anak langsung dari navbar__search) */
+.navbar__search > svg[class*="searchIcon"],
+.navbar__search > svg {
+  color: #E5B869 !important;
+  width: 17px !important;
+  height: 17px !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 0.85rem !important;
+  transform: translateY(-50%) !important;
+  pointer-events: none !important;
+  z-index: 2 !important;
   transition: all 0.2s ease !important;
 }
 
-.navbar__search-input:focus {
+/* Search input desktop (dibatasi min-width: 997px agar tidak mengganggu mobile) */
+@media (min-width: 997px) {
+  .navbar__search-input {
+    width: 210px !important;
+    height: 38px !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: #FBF9F4 !important;
+    border: 1px solid rgba(229, 184, 105, 0.35) !important;
+    border-radius: 20px !important;
+    font-size: 0.88rem !important;
+    padding: 0 2rem 0 2.35rem !important;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  }
+
+  .navbar__search-input::placeholder {
+    color: rgba(251, 249, 244, 0.6) !important;
+  }
+
+  .navbar__search-input:focus {
+    width: 280px !important;
+    background-color: #FFFFFF !important;
+    color: #1E2522 !important;
+    border-color: #E5B869 !important;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2) !important;
+    outline: none !important;
+  }
+
+  .navbar__search-input:focus::placeholder {
+    color: #8C827A !important;
+  }
+
+  .navbar__search-input:focus ~ svg,
+  .navbar__search > svg {
+    color: #163E2B !important;
+  }
+}
+
+/* Shortcut Keyboard (Ctrl+K) */
+.navbar__search kbd,
+.navbar__search div[class*="searchHintContainer"] kbd {
+  background: rgba(229, 184, 105, 0.15) !important;
+  color: #E5B869 !important;
+  border: 1px solid rgba(229, 184, 105, 0.4) !important;
+  border-radius: 4px !important;
+  font-size: 0.72rem !important;
+  font-weight: 600 !important;
+}
+
+/* ==========================================================================
+   Tampilan Pencarian Khusus Mobile View (max-width: 768px)
+   ========================================================================== */
+/* ==========================================================================
+   Tampilan Pencarian Khusus Mobile View (max-width: 996px)
+   ========================================================================== */
+@media (max-width: 996px) {
+  .navbar {
+    height: 64px;
+    padding: 0 0.85rem;
+    position: relative !important;
+  }
+
+  .navbar__inner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* Logo dan Judul Jejak SKI Proporsional & Presisi di Tengah Navbar Mobile */
+  .navbar > .navbar__inner .navbar__brand {
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    margin: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.55rem !important;
+    max-width: calc(100% - 110px) !important;
+    text-decoration: none !important;
+    z-index: 1;
+  }
+
+  .navbar__logo {
+    height: 34px !important;
+    width: auto !important;
+    margin: 0 !important;
+    flex-shrink: 0 !important;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2)) !important;
+  }
+
+  .navbar__title {
+    font-family: var(--ifm-heading-font-family) !important;
+    font-size: 1.32rem !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    letter-spacing: 0.02em !important;
+    color: #FBF9F4 !important;
+    white-space: nowrap !important;
+    display: inline-flex !important;
+    align-items: center !important;
+  }
+
+  /* Saat drawer menu samping terbuka, sembunyikan navbar utama agar logo tengah tidak bertabrakan */
+  .navbar-sidebar--show .navbar__inner,
+  .navbar-sidebar--show .navbar > .navbar__inner,
+  .navbar-sidebar--show .navbar > .navbar__inner .navbar__brand {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transition: opacity 0.15s ease, visibility 0.15s ease;
+  }
+
+  /* Saat tidak aktif: berbentuk tombol icon elegan dan rapi di pojok kanan */
+  .navbar__search:not(:focus-within) {
+    width: 40px !important;
+    height: 40px !important;
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-left: 0.5rem;
+  }
+
+  .navbar__search:not(:focus-within) .navbar__search-input {
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px !important;
+    padding: 0 !important;
+    cursor: pointer !important;
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(229, 184, 105, 0.35) !important;
+    border-radius: 10px !important;
+    color: transparent !important;
+    text-indent: -9999px !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1) !important;
+    box-sizing: border-box !important;
+  }
+
+  .navbar__search:not(:focus-within) .navbar__search-input::placeholder {
+    color: transparent !important;
+  }
+
+  .navbar__search:not(:focus-within) > svg[class*="searchIcon"],
+  .navbar__search:not(:focus-within) > svg {
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 18px !important;
+    height: 18px !important;
+    color: #E5B869 !important;
+    pointer-events: none !important;
+  }
+
+  .navbar__search:not(:focus-within):hover .navbar__search-input {
+    background-color: rgba(229, 184, 105, 0.2) !important;
+    border-color: #E5B869 !important;
+    transform: scale(1.04);
+  }
+
+  /* Saat aktif / fokus di mobile: Mengambil alih bilah navigasi atas secara penuh (Full Takeover)
+     sehingga LEGA, nyaman diketik, dan sama sekali TIDAK menabrak logo atau nama "Jejak SKI" */
+  .navbar__search:focus-within,
+  .navbar__search[class*="focused"],
+  [class*="searchBarContainer"]:focus-within,
+  [class*="searchBarContainer"][class*="focused"] {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100vw !important;
+    height: 64px !important;
+    background-color: #163E2B !important;
+    border-bottom: 1.5px solid rgba(229, 184, 105, 0.3) !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25) !important;
+    z-index: 99999 !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 1rem !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+  }
+
+  /* Pastikan pembungkus autocomplete mengisi 100% lebar */
+  .navbar__search:focus-within span.algolia-autocomplete,
+  .navbar__search:focus-within span[class*="searchBar"],
+  .navbar__search:focus-within .algolia-autocomplete,
+  .navbar__search:focus-within div[class*="searchBar"],
+  [class*="searchBarContainer"]:focus-within span.algolia-autocomplete,
+  [class*="searchBarContainer"]:focus-within .algolia-autocomplete {
+    display: flex !important;
+    flex: 1 1 100% !important;
+    width: 100% !important;
+    position: relative !important;
+  }
+
+  .navbar__search:focus-within .navbar__search-input,
+  [class*="searchBarContainer"]:focus-within .navbar__search-input,
+  .navbar__search[class*="focused"] .navbar__search-input {
+    width: 100% !important;
+    flex: 1 1 100% !important;
+    height: 44px !important;
+    padding: 0 2.8rem 0 2.75rem !important;
+    background-color: #FFFFFF !important;
+    color: #1E2522 !important;
+    border: 1.5px solid #E5B869 !important;
+    border-radius: 22px !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.22) !important;
+    font-size: 0.95rem !important;
+    text-indent: 0 !important;
+    outline: none !important;
+    box-sizing: border-box !important;
+  }
+
+  .navbar__search:focus-within .navbar__search-input::placeholder {
+    color: #8C827A !important;
+  }
+
+  .navbar__search:focus-within > svg[class*="searchIcon"],
+  .navbar__search:focus-within > svg {
+    position: absolute !important;
+    left: 1.95rem !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    width: 18px !important;
+    height: 18px !important;
+    color: #163E2B !important;
+    z-index: 100001 !important;
+    pointer-events: none !important;
+  }
+
+  /* Tombol Hapus / Batal Pencarian (✕) & Loading Ring */
+  .navbar__search:focus-within button[class*="searchClearButton"],
+  .navbar__search:focus-within .searchClearButton,
+  [class*="searchBarContainer"]:focus-within button[class*="searchClearButton"],
+  [class*="searchBarContainer"]:focus-within .searchClearButton {
+    position: absolute !important;
+    right: 1.85rem !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 50% !important;
+    background: rgba(22, 62, 43, 0.12) !important;
+    color: #163E2B !important;
+    border: 1px solid rgba(22, 62, 43, 0.25) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 0.85rem !important;
+    font-weight: 700 !important;
+    cursor: pointer !important;
+    z-index: 100001 !important;
+    padding: 0 !important;
+    transition: all 0.2s ease !important;
+  }
+
+  .navbar__search:focus-within button[class*="searchClearButton"]:hover,
+  [class*="searchBarContainer"]:focus-within button[class*="searchClearButton"]:hover {
+    background: rgba(22, 62, 43, 0.25) !important;
+    color: #163E2B !important;
+    transform: translateY(-50%) scale(1.08) !important;
+  }
+
+  .navbar__search:focus-within [class*="searchBarLoadingRing"],
+  [class*="searchBarContainer"]:focus-within [class*="searchBarLoadingRing"] {
+    position: absolute !important;
+    right: 2rem !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    z-index: 100001 !important;
+  }
+
+  /* Backdrop redup di bawah bilah pencarian mobile */
+  .navbar__search:focus-within::before {
+    content: "";
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(2px);
+    z-index: 9998;
+    pointer-events: auto;
+  }
+
+  /* Dropdown modal pencarian di layar mobile (Mendukung span & div dari autocomplete.js) */
+  .navbar__search:focus-within [class*="dropdownMenu"],
+  .navbar__search:focus-within .aa-dropdown-menu,
+  .navbar__search:focus-within span[class*="dropdownMenu"],
+  .navbar__search:focus-within div[class*="dropdownMenu"] {
+    position: fixed !important;
+    top: 72px !important;
+    left: 12px !important;
+    right: 12px !important;
+    width: calc(100vw - 24px) !important;
+    max-width: calc(100vw - 24px) !important;
+    margin: 0 auto !important;
+    max-height: calc(100vh - 85px) !important;
+    overflow-y: auto !important;
+    z-index: 100000 !important;
+    border-radius: 14px !important;
+    background: #FBF9F4 !important;
+    border: 1.5px solid rgba(229, 184, 105, 0.45) !important;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25) !important;
+    padding: 14px !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* ==========================================================================
+   Menu Dropdown Hasil Pencarian (Modal & Suggestion) - Universal
+   ========================================================================== */
+[class*="dropdownMenu"],
+.aa-dropdown-menu,
+.searchBar .dropdownMenu,
+[class*="searchBar"] [class*="dropdownMenu"] {
+  background: #FBF9F4 !important; /* Latar naskah Kitab Digital yang hangat, lembut & bersih */
+  background-color: #FBF9F4 !important;
+  border-radius: 14px !important;
+  border: 1.5px solid rgba(229, 184, 105, 0.45) !important;
+  box-shadow: 0 16px 40px rgba(22, 62, 43, 0.16), 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+  padding: 10px !important;
+  max-height: 80vh !important;
+  box-sizing: border-box !important;
+}
+
+/* Pastikan dataset dan wrapper internal transparan mengikuti latar modal */
+[class*="dataset"],
+.aa-dataset-1,
+[class*="suggestions"],
+.aa-suggestions {
+  background: transparent !important;
+  background-color: transparent !important;
+  display: block !important;
+}
+
+/* Scrollbar ramping & halus untuk hasil pencarian */
+[class*="dropdownMenu"]::-webkit-scrollbar,
+.aa-dropdown-menu::-webkit-scrollbar {
+  width: 5px !important;
+}
+
+[class*="dropdownMenu"]::-webkit-scrollbar-track,
+.aa-dropdown-menu::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+[class*="dropdownMenu"]::-webkit-scrollbar-thumb,
+.aa-dropdown-menu::-webkit-scrollbar-thumb {
+  background: rgba(229, 184, 105, 0.5) !important;
+  border-radius: 9999px !important;
+}
+
+/* Isolasi total SEMUA SVG di dalam dropdown & kartu hasil pencarian */
+[class*="dropdownMenu"] svg,
+.aa-dropdown-menu svg,
+[class*="suggestion_"] svg,
+.aa-suggestion svg {
+  position: static !important;
+  transform: none !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  pointer-events: auto !important;
+  margin: 0 !important;
+  z-index: auto !important;
+}
+
+/* Sembunyikan garis cabang hierarki (hitTree) agar tidak tumpang tindih atau keluar batas kartu */
+[class*="hitTree"],
+.aa-suggestion [class*="hitTree"] {
+  display: none !important;
+}
+
+/* Kartu Item Hasil Pencarian
+   PENTING: Gunakan [class*="suggestion_"] (dengan underscore) agar TIDAK mencocokkan
+   wadah .aa-suggestions / [class*="suggestions"] yang berisi semua item.
+   CSS Module menghasilkan kelas seperti "suggestion_fB_2" (ada underscore),
+   sedangkan wadah menghasilkan "suggestions_xyz" (ada "s" sebelum underscore). */
+[class*="suggestion_"],
+.aa-suggestion {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  background: #FFFFFF !important;
   background-color: #FFFFFF !important;
+  border-radius: 10px !important;
+  border: 1px solid #ECE4D4 !important;
+  box-shadow: 0 2px 6px rgba(22, 62, 43, 0.04) !important;
+  padding: 10px 14px !important;
+  margin-bottom: 6px !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  height: auto !important;
+  min-height: 52px !important;
+  cursor: pointer !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+/* Badge Icon di sisi kiri kartu */
+[class*="hitIcon"],
+.aa-suggestion [class*="hitIcon"] {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 8px !important;
+  background-color: rgba(22, 62, 43, 0.08) !important;
+  color: #163E2B !important;
+  margin-right: 12px !important;
+  transition: all 0.2s ease !important;
+}
+
+[class*="hitIcon"] > svg,
+.aa-suggestion [class*="hitIcon"] > svg {
+  width: 16px !important;
+  height: 16px !important;
+  color: inherit !important;
+  stroke: currentColor !important;
+  fill: none !important;
+}
+
+/* Wrapper Judul & Path */
+[class*="hitWrapper"],
+.aa-suggestion [class*="hitWrapper"] {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  margin: 0 !important;
+  width: auto !important;
+}
+
+[class*="hitTitle"],
+.aa-suggestion .hitTitle {
+  font-weight: 600 !important;
+  font-size: 0.94rem !important;
+  line-height: 1.4 !important;
   color: #1E2522 !important;
+  white-space: normal !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+}
+
+[class*="hitPath"],
+.aa-suggestion .hitPath {
+  font-size: 0.8rem !important;
+  color: #6C7771 !important;
+  line-height: 1.4 !important;
+  margin-top: 3px !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+/* Ikon Aksi (Panah Enter di kanan) */
+[class*="hitAction"],
+.aa-suggestion [class*="hitAction"] {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+  margin-left: 10px !important;
+  color: #A3ABA6 !important;
+  transition: all 0.2s ease !important;
+}
+
+[class*="hitAction"] > svg,
+.aa-suggestion [class*="hitAction"] > svg {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+/* Keadaan Aktif / Hover / Dipilih dengan Keyboard */
+[class*="suggestion_"]:hover,
+[class*="suggestion_"][class*="cursor"],
+.aa-suggestion.aa-cursor {
+  background: linear-gradient(135deg, #163E2B 0%, #1E4E37 100%) !important;
   border-color: #E5B869 !important;
-  box-shadow: 0 0 0 2px rgba(229, 184, 105, 0.25) !important;
+  box-shadow: 0 4px 14px rgba(22, 62, 43, 0.2) !important;
+  transform: translateY(-1px) !important;
+}
+
+[class*="suggestion_"]:hover [class*="hitTitle"],
+[class*="suggestion_"][class*="cursor"] [class*="hitTitle"],
+.aa-suggestion.aa-cursor .hitTitle {
+  color: #FFFFFF !important;
+}
+
+[class*="suggestion_"]:hover [class*="hitPath"],
+[class*="suggestion_"][class*="cursor"] [class*="hitPath"],
+.aa-suggestion.aa-cursor .hitPath {
+  color: #D3DDD7 !important;
+}
+
+[class*="suggestion_"]:hover [class*="hitIcon"],
+[class*="suggestion_"][class*="cursor"] [class*="hitIcon"],
+.aa-suggestion.aa-cursor [class*="hitIcon"] {
+  background-color: rgba(229, 184, 105, 0.22) !important;
+  color: #E5B869 !important;
+}
+
+[class*="suggestion_"]:hover [class*="hitAction"],
+[class*="suggestion_"][class*="cursor"] [class*="hitAction"],
+.aa-suggestion.aa-cursor [class*="hitAction"] {
+  color: #E5B869 !important;
+  transform: translateX(2px) !important;
+}
+
+/* Sorotan Kata Kunci Pencarian (mark) */
+[class*="suggestion_"] mark,
+.aa-suggestion mark {
+  background: transparent !important;
+  color: #946E0A !important;
+  font-weight: 700 !important;
+  text-decoration: underline !important;
+}
+
+[class*="suggestion_"]:hover mark,
+[class*="suggestion_"][class*="cursor"] mark,
+.aa-suggestion.aa-cursor mark {
+  color: #F8D37D !important;
+  text-decoration: underline !important;
+}
+
+/* Peringatan Index Pencarian Dev Mode & Status Kosong */
+[class*="noResults"],
+.aa-empty,
+[class*="empty"],
+[class*="dropdownMenu"] div[class*="warning"],
+[class*="dropdownMenu"] [role="alert"] {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  padding: 1.25rem 1.15rem !important;
+  background: #FDF9F0 !important;
+  border: 1.5px solid #D8BD7E !important;
+  border-radius: 10px !important;
+  color: #7A5C00 !important;
+  font-size: 0.92rem !important;
+  line-height: 1.6 !important;
+  font-weight: 500 !important;
+  box-shadow: 0 2px 8px rgba(122, 92, 0, 0.06) !important;
+  margin: 0 !important;
 }
 
 /* Tipografi Judul */
@@ -1138,48 +1779,65 @@ article strong {
 .board-pillars-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
+  gap: 1.5rem;
   max-width: 1160px;
   margin: 0 auto;
 }
 
 .board-pillar-item {
+  background: #FFFFFF;
+  border: 1px solid #ECE4D4;
+  border-radius: 14px;
+  padding: 1.5rem 1.4rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0.5rem 0.25rem;
-  transition: transform 0.25s ease;
+  box-shadow: 0 2px 10px rgba(22, 62, 43, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .board-pillar-item:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
+  border-color: #D4A24E;
+  box-shadow: 0 8px 24px rgba(22, 62, 43, 0.08);
+}
+
+.board-pillar-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1.1rem;
 }
 
 .board-pillar-icon-wrap {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: #EFECE3;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #E8F0EB;
   color: #163E2B;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0;
   transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .board-pillar-item:hover .board-pillar-icon-wrap {
-  background: #E5DFD0;
+  background: #D5E4DB;
   transform: scale(1.05);
 }
 
 .board-pillar-num {
   font-family: var(--ifm-heading-font-family);
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 700;
-  color: #163E2B;
-  margin-bottom: 0.4rem;
-  display: block;
+  color: #B58A38;
+  background: #FDF9F2;
+  border: 1px solid #F0E6D2;
+  padding: 0.2rem 0.65rem;
+  border-radius: 9999px;
+  line-height: 1.2;
 }
 
 .board-pillar-title {
@@ -1315,6 +1973,10 @@ article strong {
   margin-bottom: 1.25rem;
 }
 
+.chapter-catalog-desc p {
+  margin: 0;
+}
+
 .chapter-catalog-footer {
   display: flex;
   justify-content: space-between;
@@ -1374,46 +2036,277 @@ pre {
   -webkit-overflow-scrolling: touch;
 }
 
-/* Mobile Drawer (Menu Hamburger Navbar) */
+/* ==========================================================================
+   Drawer Bilah Menu Mobile (.navbar-sidebar)
+   Sistem Desain "Kitab Digital" — Elegan, Berstruktur, Nyaman Disentuh
+   ========================================================================== */
 .navbar-sidebar {
-  background-color: #F7F3E7 !important;
-}
-
-[data-theme='dark'] .navbar-sidebar {
-  background-color: #121815 !important;
+  background-color: #FBF9F4 !important;
+  box-shadow: 8px 0 32px rgba(0, 0, 0, 0.25) !important;
+  border-right: 1.5px solid #E5DEC9 !important;
+  width: min(340px, 86vw) !important;
+  z-index: 1000 !important;
 }
 
 .navbar-sidebar__brand {
-  background-color: #16332F !important;
-  border-bottom: 2px solid var(--ski-gold) !important;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  height: 68px !important;
+  background: linear-gradient(135deg, #163E2B 0%, #0E291C 100%) !important;
+  border-bottom: 2px solid rgba(229, 184, 105, 0.4) !important;
+  padding: 0 1.15rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15) !important;
+}
+
+.navbar-sidebar__brand .navbar__brand {
+  position: static !important;
+  transform: none !important;
+  margin-right: auto !important;
+  left: auto !important;
+  top: auto !important;
+  display: inline-flex !important;
+  align-items: center !important;
 }
 
 .navbar-sidebar__brand .navbar__title {
-  color: #ffffff !important;
-  font-family: var(--ifm-heading-font-family);
+  color: #FBF9F4 !important;
+  font-family: var(--ifm-heading-font-family) !important;
+  font-size: 1.35rem !important;
+  font-weight: 700 !important;
+}
+
+/* Tombol Mode Gelap/Terang di Drawer Mobile */
+.navbar-sidebar__brand .navbar__color-mode-toggle button,
+.navbar-sidebar__brand .clean-btn:not(.navbar-sidebar__close) {
+  color: #E5B869 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 38px !important;
+  height: 38px !important;
+  border-radius: 9px !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(229, 184, 105, 0.3) !important;
+  margin-right: 0.5rem !important;
+  transition: all 0.2s ease !important;
+}
+
+.navbar-sidebar__brand .navbar__color-mode-toggle button:hover {
+  background: rgba(229, 184, 105, 0.2) !important;
+  border-color: #E5B869 !important;
+}
+
+.navbar-sidebar__brand .navbar__color-mode-toggle button svg {
+  fill: #E5B869 !important;
+  color: #E5B869 !important;
+  width: 18px !important;
+  height: 18px !important;
+}
+
+/* Tombol Tutup Drawer Mobile */
+.navbar-sidebar__close {
+  color: #FBF9F4 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 38px !important;
+  height: 38px !important;
+  border-radius: 9px !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(229, 184, 105, 0.3) !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+
+.navbar-sidebar__close:hover {
+  color: #E5B869 !important;
+  background: rgba(229, 184, 105, 0.2) !important;
+  border-color: #E5B869 !important;
+  transform: rotate(90deg);
+}
+
+.navbar-sidebar__close svg {
+  stroke: currentColor !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+
+/* Konten Menu Drawer Mobile */
+.navbar-sidebar__items {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.navbar-sidebar__item {
+  box-sizing: border-box !important;
+  width: var(--ifm-navbar-sidebar-width) !important;
+  max-width: 100% !important;
+  padding: 1.25rem 1.15rem !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+
+.navbar-sidebar__item.menu {
+  padding: 1.25rem 1.15rem !important;
+}
+
+.navbar-sidebar__item.menu::before {
+  content: "Navigasi Pembelajaran";
+  display: block;
+  font-family: var(--ifm-font-family-base);
+  font-size: 0.72rem;
   font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #7A5C00;
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1.5px solid #E5DEC9;
 }
 
-.navbar-sidebar__items .menu__list-item {
-  margin: 0.25rem 0;
+.navbar-sidebar .menu__list {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
 }
 
-.navbar-sidebar__items .menu__link {
-  font-size: 0.98rem;
+.navbar-sidebar .menu__list-item {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+.navbar-sidebar .menu__link {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 0.85rem 1.15rem !important;
+  border-radius: 12px !important;
+  font-size: 0.98rem !important;
+  font-weight: 600 !important;
+  background-color: #FFFFFF !important;
+  color: #163E2B !important;
+  border: 1.5px solid #E8DFCE !important;
+  box-shadow: 0 2px 6px rgba(22, 62, 43, 0.04) !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+}
+
+.navbar-sidebar .menu__link::after {
+  content: "›";
+  font-size: 1.4rem;
+  color: #D8BD7E;
+  font-weight: 400;
+  margin-left: auto;
+  line-height: 1;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.navbar-sidebar .menu__link:hover {
+  background-color: #FDFBF5 !important;
+  border-color: #D8BD7E !important;
+  transform: translateX(4px) !important;
+  box-shadow: 0 4px 12px rgba(216, 189, 126, 0.25) !important;
+  color: #163E2B !important;
+}
+
+.navbar-sidebar .menu__link:hover::after {
+  transform: translateX(3px);
+  color: #7A5C00;
+}
+
+/* State Aktif di Menu Mobile */
+.navbar-sidebar .menu__link--active {
+  background: linear-gradient(135deg, #163E2B 0%, #1b4d36 100%) !important;
+  color: #FBF9F4 !important;
+  border-color: #E5B869 !important;
+  box-shadow: 0 4px 14px rgba(22, 62, 43, 0.25) !important;
+}
+
+.navbar-sidebar .menu__link--active::after {
+  color: #E5B869 !important;
+}
+
+/* Icon pembantu untuk setiap item navigasi */
+.navbar-sidebar .menu__link[href*="/docs/intro"]::before {
+  content: "📖";
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+
+.navbar-sidebar .menu__link[href*="/docs/kelas-x"]::before {
+  content: "🏛️";
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+
+.navbar-sidebar .menu__link[href*="/docs/kelas-xi"]::before {
+  content: "🕌";
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+
+.navbar-sidebar .menu__link[href*="/docs/kelas-xii"]::before {
+  content: "📜";
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+
+/* Tombol Kembali di Sub-menu Sidebar */
+.navbar-sidebar__back {
+  background: #F4EFE6 !important;
+  color: #163E2B !important;
+  font-weight: 600 !important;
+  border: 1.5px solid #E5DEC9 !important;
+  border-radius: 10px !important;
   padding: 0.75rem 1rem !important;
-  min-height: 48px; /* Touch target aksesibel NFR-01 */
-  display: flex;
-  align-items: center;
-  border-radius: 6px;
-  color: var(--ifm-font-color-base);
+  margin-bottom: 0.85rem !important;
 }
 
-.navbar-sidebar__items .menu__link--active {
-  background-color: var(--ski-gold-bg) !important;
-  color: var(--ifm-color-primary) !important;
-  font-weight: 700;
-  border-left: 4px solid var(--ski-gold);
+/* Dark Mode untuk Drawer Mobile */
+[data-theme='dark'] .navbar-sidebar {
+  background-color: #121815 !important;
+  border-right-color: #2A352F !important;
+}
+
+[data-theme='dark'] .navbar-sidebar__brand {
+  background: linear-gradient(135deg, #0F1613 0%, #080D0B 100%) !important;
+  border-bottom-color: rgba(229, 184, 105, 0.25) !important;
+}
+
+[data-theme='dark'] .navbar-sidebar__items .navbar-sidebar__item.menu::before {
+  color: #F0C968;
+  border-bottom-color: #2A352F;
+}
+
+[data-theme='dark'] .navbar-sidebar__items .menu__link {
+  background-color: #1A221E !important;
+  color: #EAE6DD !important;
+  border-color: #2E3A33 !important;
+}
+
+[data-theme='dark'] .navbar-sidebar__items .menu__link:hover {
+  background-color: #222D27 !important;
+  border-color: #6E581E !important;
+  color: #F0C968 !important;
+}
+
+[data-theme='dark'] .navbar-sidebar__items .menu__link--active {
+  background: linear-gradient(135deg, #1e4532 0%, #265940 100%) !important;
+  color: #F0FDF4 !important;
+  border-color: #F0C968 !important;
+}
+
+[data-theme='dark'] .navbar-sidebar__back {
+  background: #1A221E !important;
+  color: #EAE6DD !important;
+  border-color: #2E3A33 !important;
 }
 
 /* Halaman 404 Responsif */
@@ -1472,8 +2365,24 @@ pre {
 
   .board-continue-body {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 1.25rem;
+  }
+
+  .board-continue-thumb-col {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
+  .board-continue-thumb {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .board-continue-info-col {
+    width: 100%;
   }
 
   .board-continue-action-col {
@@ -1482,6 +2391,9 @@ pre {
 
   .board-btn-continue {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .board-jenjang-grid {
@@ -1496,6 +2408,11 @@ pre {
   .board-credit-card {
     flex-direction: column;
     gap: 0.75rem;
+  }
+
+  .board-pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
   }
 }
 
@@ -1553,17 +2470,26 @@ pre {
   }
 
   .board-continue-card {
-    padding: 1.25rem 1.1rem;
+    padding: 1.25rem 1.15rem;
+    border-radius: 16px;
   }
 
   .board-continue-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.75rem;
+    padding-bottom: 0.95rem;
+    margin-bottom: 1.15rem;
+  }
+
+  .board-continue-heading {
+    font-size: 1.3rem;
   }
 
   .board-continue-progress-group {
     width: 100%;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
   }
 
@@ -1571,17 +2497,58 @@ pre {
     width: 120px;
   }
 
-  .board-pillars-grid {
-    grid-template-columns: 1fr;
+  .board-continue-body {
     gap: 1rem;
   }
 
+  .board-continue-thumb {
+    height: 155px;
+    border-radius: 10px;
+  }
+
+  .board-continue-chapter-title {
+    font-size: 1.2rem;
+    line-height: 1.35;
+    margin-top: 0.25rem;
+  }
+
+  .board-continue-chapter-desc {
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+
+  .board-pillars-grid {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .board-pillar-item {
+    padding: 1.2rem 1.15rem;
+    border-radius: 12px;
+  }
+
+  .board-pillar-title {
+    font-size: 1.08rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .board-pillar-desc {
+    font-size: 0.86rem;
+    line-height: 1.55;
+  }
+
   .board-section {
-    padding: 2.75rem 1rem;
+    padding: 2.25rem 1rem;
   }
 
   .board-section-title {
-    font-size: 1.85rem;
+    font-size: 1.65rem;
+  }
+
+  .board-section-subtitle {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
   }
 
   .chapter-catalog-grid {

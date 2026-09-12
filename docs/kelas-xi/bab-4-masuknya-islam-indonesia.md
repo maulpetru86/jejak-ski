@@ -1,4 +1,4 @@
----
+﻿---
 kelas: "XI"
 bab_nomor: 4
 judul: "Menelusuri Jejak Sejarah Masuknya Islam ke Indonesia"
@@ -15,6 +15,7 @@ istilah_kunci:
   - "Teori Persia"
   - "Saluran Islamisasi"
 ringkasan_singkat: "Rangkuman teori-teori masuknya Islam ke Nusantara (Gujarat, Makkah, Persia, China), serta saluran penyebaran melalui perdagangan, perkawinan, pendidikan, dan seni budaya."
+thumbnail: "/img/thumbs/xi-4-masuknya-islam-indonesia.jpg"
 terakhir_diperbarui: "2026-09-11"
 ---
 

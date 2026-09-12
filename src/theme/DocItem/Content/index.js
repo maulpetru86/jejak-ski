@@ -47,21 +47,37 @@ export default function DocItemContentWrapper(props) {
         } catch (err) {}
       }
 
-      // Hitung jumlah bab yang sudah dipelajari di kelas ini
-      const chaptersReadInClass = readHistory.filter(item => item.startsWith(`${kelas}-`)).length;
-      const finishedBab = Math.max(chaptersReadInClass, Math.max(1, currentBabNum - 1));
-      const progressPercent = Math.min(100, Math.max(15, Math.round((finishedBab / totalBab) * 100)));
+      // Hitung jumlah bab yang sudah dipelajari di kelas ini (bab sebelum bab saat ini dianggap selesai)
+      const finishedBab = Math.max(0, currentBabNum - 1);
+      const progressPercent = Math.min(100, Math.round((finishedBab / totalBab) * 100));
 
-      // Tentukan thumbnail sesuai kelas dan bab
+      // Pemetaan default thumbnail ilustrasi unik untuk tiap Bab
+      const CHAPTER_THUMBNAILS = {
+        'X-1': '/img/thumbs/x-1-makkah.jpg',
+        'X-2': '/img/thumbs/x-2-madinah.jpg',
+        'X-3': '/img/thumbs/x-3-khulafaurasyidin.png',
+        'X-4': '/img/thumbs/x-4-umayah-damaskus.jpg',
+        'X-5': '/img/thumbs/x-5-umayah-andalusia.jpg',
+        'X-6': '/img/thumbs/x-6-abasiah.jpg',
+        'XI-1': '/img/thumbs/xi-1-usmani.jpg',
+        'XI-2': '/img/thumbs/xi-2-safawi.jpg',
+        'XI-3': '/img/thumbs/xi-3-mughal.jpg',
+        'XI-4': '/img/thumbs/xi-4-masuknya-islam-indonesia.jpg',
+        'XI-5': '/img/thumbs/xi-5-wali-sanga.jpg',
+        'XII-1': '/img/thumbs/xii-1-kerajaan-nusantara.jpg',
+        'XII-2': '/img/thumbs/xii-2-ulama-awal.jpg',
+        'XII-3': '/img/thumbs/xii-3-organisasi-islam.jpg',
+        'XII-4': '/img/thumbs/xii-4-kemerdekaan.jpg',
+        'XII-5': '/img/thumbs/xii-5-tokoh-berpengaruh.jpg',
+      };
+
+      // Tentukan thumbnail sesuai frontmatter, pemetaan bab unik, atau background kelas
       const classBgMap = {
         'X': '/img/card-kelas-x-bg.png',
         'XI': '/img/card-kelas-xi-bg.png',
         'XII': '/img/card-kelas-xii-bg.png',
       };
-      let thumb = classBgMap[kelas] || '/img/thumb-khulafaurasyidin.png';
-      if (kelas === 'X' && currentBabNum === 3) {
-        thumb = '/img/thumb-khulafaurasyidin.png';
-      }
+      const thumb = frontMatter?.thumbnail || frontMatter?.gambar_sampul || CHAPTER_THUMBNAILS[chapterKey] || classBgMap[kelas] || '/img/thumbs/x-1-makkah.jpg';
 
       // Judul ringkas untuk kartu
       let cleanTitle = sidebar_label

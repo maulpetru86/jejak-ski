@@ -1,4 +1,4 @@
----
+﻿---
 id: index
 title: Daftar Bab SKI Kelas XI
 sidebar_label: Daftar Isi Kelas XI
@@ -18,9 +18,9 @@ Ringkasan materi Sejarah Kebudayaan Islam (SKI) Kelas XI Madrasah Aliyah, disusu
     <h3 className="chapter-catalog-title">
       <a href="/docs/kelas-xi/bab-1-usmani">Perkembangan Peradaban dan Ilmu Pengetahuan Islam pada Masa Daulah Usmani</a>
     </h3>
-    <p className="chapter-catalog-desc">
+    <div className="chapter-catalog-desc">
       Rangkuman sejarah berdirinya Daulah Usmani di Turki, penaklukan Konstantinopel oleh Muhammad Al-Fatih, kejayaan militer dan hukum di era Sulaiman Al-Qanuni.
-    </p>
+    </div>
     <div className="chapter-catalog-footer">
       <span className="chapter-catalog-meta">👥 4 Tokoh • 🔑 4 Istilah</span>
       <a className="button button--primary button--sm chapter-catalog-btn" href="/docs/kelas-xi/bab-1-usmani">
@@ -37,9 +37,9 @@ Ringkasan materi Sejarah Kebudayaan Islam (SKI) Kelas XI Madrasah Aliyah, disusu
     <h3 className="chapter-catalog-title">
       <a href="/docs/kelas-xi/bab-2-safawi">Perkembangan Peradaban dan Ilmu Pengetahuan Islam pada Masa Daulah Safawi</a>
     </h3>
-    <p className="chapter-catalog-desc">
+    <div className="chapter-catalog-desc">
       Rangkuman transformasi tarekat ke daulah di Persia, masa keemasan Shah Abbas I, keindahan arsitektur kota Isfahan, dan kemajuan filsafat Islam.
-    </p>
+    </div>
     <div className="chapter-catalog-footer">
       <span className="chapter-catalog-meta">👥 4 Tokoh • 🔑 4 Istilah</span>
       <a className="button button--primary button--sm chapter-catalog-btn" href="/docs/kelas-xi/bab-2-safawi">
@@ -56,9 +56,9 @@ Ringkasan materi Sejarah Kebudayaan Islam (SKI) Kelas XI Madrasah Aliyah, disusu
     <h3 className="chapter-catalog-title">
       <a href="/docs/kelas-xi/bab-3-mughal">Perkembangan Peradaban dan Ilmu Pengetahuan Islam pada Masa Daulah Mughal</a>
     </h3>
-    <p className="chapter-catalog-desc">
+    <div className="chapter-catalog-desc">
       Rangkuman sejarah Daulah Mughal di anak benua India, kebijakan pluralisme Akbar, mahakarya arsitektur Taj Mahal di era Shah Jahan, dan ketegasan hukum Aurangzeb.
-    </p>
+    </div>
     <div className="chapter-catalog-footer">
       <span className="chapter-catalog-meta">👥 4 Tokoh • 🔑 4 Istilah</span>
       <a className="button button--primary button--sm chapter-catalog-btn" href="/docs/kelas-xi/bab-3-mughal">
@@ -75,9 +75,9 @@ Ringkasan materi Sejarah Kebudayaan Islam (SKI) Kelas XI Madrasah Aliyah, disusu
     <h3 className="chapter-catalog-title">
       <a href="/docs/kelas-xi/bab-4-masuknya-islam-indonesia">Menelusuri Jejak Sejarah Masuknya Islam ke Indonesia</a>
     </h3>
-    <p className="chapter-catalog-desc">
+    <div className="chapter-catalog-desc">
       Rangkuman teori-teori masuknya Islam ke Nusantara (Gujarat, Makkah, Persia, China), serta saluran penyebaran melalui perdagangan, perkawinan, pendidikan, dan seni budaya.
-    </p>
+    </div>
     <div className="chapter-catalog-footer">
       <span className="chapter-catalog-meta">👥 4 Tokoh • 🔑 4 Istilah</span>
       <a className="button button--primary button--sm chapter-catalog-btn" href="/docs/kelas-xi/bab-4-masuknya-islam-indonesia">
@@ -94,9 +94,9 @@ Ringkasan materi Sejarah Kebudayaan Islam (SKI) Kelas XI Madrasah Aliyah, disusu
     <h3 className="chapter-catalog-title">
       <a href="/docs/kelas-xi/bab-5-wali-sanga">Peran Wali Sanga dalam Penyebaran Islam di Indonesia</a>
     </h3>
-    <p className="chapter-catalog-desc">
+    <div className="chapter-catalog-desc">
       Rangkuman dakwah damai sembilan wali di tanah Jawa, strategi akulturasi budaya lokal (wayang, tembang macapat, gamelan), serta warisan pesantren.
-    </p>
+    </div>
     <div className="chapter-catalog-footer">
       <span className="chapter-catalog-meta">👥 9 Tokoh • 🔑 4 Istilah</span>
       <a className="button button--primary button--sm chapter-catalog-btn" href="/docs/kelas-xi/bab-5-wali-sanga">

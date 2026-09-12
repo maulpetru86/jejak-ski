@@ -50,15 +50,15 @@ function IslamicOrnamentIcon() {
     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       {/* Outer arch shape */}
       <path d="M20 2 C20 2, 36 12, 36 22 C36 30, 29 36, 20 36 C11 36, 4 30, 4 22 C4 12, 20 2, 20 2Z"
-            fill="none" stroke="currentColor" strokeWidth="1.5" opacity="0.5"/>
+        fill="none" stroke="currentColor" strokeWidth="1.5" opacity="0.5" />
       {/* Inner geometric star */}
       <path d="M20 8 L22.5 15 L30 15 L24 19.5 L26 27 L20 23 L14 27 L16 19.5 L10 15 L17.5 15 Z"
-            fill="currentColor" fillOpacity="0.2" stroke="currentColor" strokeWidth="0.8"/>
+        fill="currentColor" fillOpacity="0.2" stroke="currentColor" strokeWidth="0.8" />
       {/* Center circle */}
-      <circle cx="20" cy="18" r="3" fill="none" stroke="currentColor" strokeWidth="1"/>
+      <circle cx="20" cy="18" r="3" fill="none" stroke="currentColor" strokeWidth="1" />
       {/* Crescent */}
-      <circle cx="20" cy="18" r="2" fill="currentColor" fillOpacity="0.3"/>
-      <circle cx="21" cy="17.2" r="1.6" fill="currentColor" fillOpacity="0" stroke="none"/>
+      <circle cx="20" cy="18" r="2" fill="currentColor" fillOpacity="0.3" />
+      <circle cx="21" cy="17.2" r="1.6" fill="currentColor" fillOpacity="0" stroke="none" />
     </svg>
   );
 }
@@ -66,17 +66,8 @@ function IslamicOrnamentIcon() {
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
 
-  // State untuk Lanjutkan Belajar (fallback default ke Bab Khulafaurasyidin)
-  const [continueState, setContinueState] = useState({
-    kelas: 'Kelas X',
-    babLabel: 'Kelas X · Bab 3',
-    title: 'Khulafaurasyidin',
-    desc: 'Kepemimpinan empat sahabat utama pascawafatnya Rasulullah SAW, meletakkan fondasi tata kelola pemerintahan dan perluasan dakwah Islam.',
-    to: '/docs/kelas-x/bab-3-khulafaurasyidin',
-    progressText: '2 dari 6 bab selesai',
-    progressPercent: 33,
-    thumb: '/img/thumb-khulafaurasyidin.png',
-  });
+  // State untuk Lanjutkan Belajar (null saat pertama kali kunjungan, baru muncul setelah ada riwayat baca)
+  const [continueState, setContinueState] = useState(null);
 
   useEffect(() => {
     // Sinkronisasi data progress terakhir dari localStorage jika tersedia
@@ -86,7 +77,7 @@ export default function Home() {
         if (saved) {
           const parsed = JSON.parse(saved);
           if (parsed && parsed.title && parsed.to) {
-            setContinueState(prev => ({ ...prev, ...parsed }));
+            setContinueState(parsed);
           }
         }
       } catch (e) {
@@ -189,46 +180,46 @@ export default function Home() {
     <Layout
       title={`${siteConfig.title} | Portal Pembelajaran Sejarah Kebudayaan Islam`}
       description="Ringkasan materi Sejarah Kebudayaan Islam untuk siswa Madrasah Aliyah, disusun mengikuti struktur pembelajaran Kelas X, XI, dan XII.">
-      
+
       {/* =========================================================
           1. HERO SECTION — Atmospheric background, no framed card
           ========================================================= */}
       <section className="board-hero">
         {/* Mosque image sebagai background atmosferik besar */}
         <div className="board-hero-bg" aria-hidden="true">
-          <img 
-            src="/img/hero-mosque.png" 
-            alt="" 
+          <img
+            src="/img/hero-mosque.png"
+            alt=""
             className="board-hero-bg-img"
             loading="eager"
           />
         </div>
         <div className="board-hero-overlay" aria-hidden="true" />
-        
+
         <div className="container board-hero-container">
           <div className="board-hero-content">
             <span className="board-hero-eyebrow">Portal Pembelajaran Sejarah Kebudayaan Islam</span>
-            
+
             <h1 className="board-hero-title">
               Jejak <span className="board-hero-title-accent">SKI</span>
             </h1>
-            
+
             <div className="board-hero-subheadline">
               Menelusuri sejarah. Memahami peradaban.{'\n'}Menemukan makna.
             </div>
-            
+
             <p className="board-hero-description">
               Ringkasan materi Sejarah Kebudayaan Islam untuk siswa Madrasah Aliyah,
               disusun mengikuti struktur pembelajaran Kelas X, XI, dan XII.
             </p>
-            
+
             <div className="board-hero-actions">
               <Link to="/docs/intro" className="board-btn board-btn-primary">
                 Mulai Belajar <span className="btn-arrow" aria-hidden="true">→</span>
               </Link>
-              
-              <button 
-                type="button" 
+
+              <button
+                type="button"
                 onClick={handleSearchClick}
                 className="board-btn board-btn-secondary"
                 aria-label="Cari materi Sejarah Kebudayaan Islam">
@@ -244,54 +235,56 @@ export default function Home() {
       </section>
 
       {/* =========================================================
-          2. CONTINUE LEARNING SECTION
+          2. CONTINUE LEARNING SECTION (Hanya tampil jika sudah ada riwayat membaca)
           ========================================================= */}
-      <section className="board-section board-continue-section">
-        <div className="container">
-          <div className="board-continue-card">
-            <div className="board-continue-header">
-              <div className="board-continue-title-group">
-                <h2 className="board-continue-heading">Lanjutkan Belajar</h2>
-                <p className="board-continue-subtext">Kamu sedang belajar di {continueState.kelas}</p>
+      {continueState && (
+        <section className="board-section board-continue-section">
+          <div className="container">
+            <div className="board-continue-card">
+              <div className="board-continue-header">
+                <div className="board-continue-title-group">
+                  <h2 className="board-continue-heading">Lanjutkan Belajar</h2>
+                  <p className="board-continue-subtext">Kamu sedang belajar di {continueState.kelas}</p>
+                </div>
+
+                <div className="board-continue-progress-group">
+                  <span className="board-continue-progress-label">{continueState.progressText}</span>
+                  <div className="board-progress-track" role="progressbar" aria-valuenow={continueState.progressPercent} aria-valuemin="0" aria-valuemax="100">
+                    <div className="board-progress-bar" style={{ width: `${continueState.progressPercent}%` }} />
+                  </div>
+                </div>
               </div>
-              
-              <div className="board-continue-progress-group">
-                <span className="board-continue-progress-label">{continueState.progressText}</span>
-                <div className="board-progress-track" role="progressbar" aria-valuenow={continueState.progressPercent} aria-valuemin="0" aria-valuemax="100">
-                  <div className="board-progress-bar" style={{ width: `${continueState.progressPercent}%` }} />
+
+              <div className="board-continue-body">
+                <div className="board-continue-thumb-col">
+                  <img
+                    src={continueState.thumb}
+                    alt="Thumbnail Materi"
+                    className="board-continue-thumb"
+                    loading="lazy"
+                    onError={(e) => {
+                      // Graceful fallback jika image gagal load
+                      e.currentTarget.style.display = 'none';
+                    }}
+                  />
+                </div>
+
+                <div className="board-continue-info-col">
+                  <span className="board-continue-badge">{continueState.babLabel}</span>
+                  <h3 className="board-continue-chapter-title">{continueState.title}</h3>
+                  <p className="board-continue-chapter-desc">{continueState.desc}</p>
+                </div>
+
+                <div className="board-continue-action-col">
+                  <Link to={continueState.to} className="board-btn board-btn-continue">
+                    Lanjutkan <span className="btn-arrow" aria-hidden="true">→</span>
+                  </Link>
                 </div>
               </div>
             </div>
-
-            <div className="board-continue-body">
-              <div className="board-continue-thumb-col">
-                <img 
-                  src={continueState.thumb} 
-                  alt="Thumbnail Materi" 
-                  className="board-continue-thumb"
-                  loading="lazy"
-                  onError={(e) => {
-                    // Graceful fallback jika image gagal load
-                    e.currentTarget.style.display = 'none';
-                  }}
-                />
-              </div>
-
-              <div className="board-continue-info-col">
-                <span className="board-continue-badge">{continueState.babLabel}</span>
-                <h3 className="board-continue-chapter-title">{continueState.title}</h3>
-                <p className="board-continue-chapter-desc">{continueState.desc}</p>
-              </div>
-
-              <div className="board-continue-action-col">
-                <Link to={continueState.to} className="board-btn board-btn-continue">
-                  Lanjutkan <span className="btn-arrow" aria-hidden="true">→</span>
-                </Link>
-              </div>
-            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* =========================================================
           3. PILIH JENJANG PEMBELAJARAN
@@ -308,13 +301,13 @@ export default function Home() {
           <div className="board-jenjang-grid">
             {jenjangList.map((item) => (
               <div key={item.id} className={`board-jenjang-card ${item.colorTheme}`}>
-                <div 
+                <div
                   className="board-jenjang-card-bg"
                   style={{ backgroundImage: `url(${item.bgImage})` }}
                   aria-hidden="true"
                 />
                 <div className="board-jenjang-card-overlay" aria-hidden="true" />
-                
+
                 <div className="board-jenjang-card-content">
                   {/* Top: Ornament icon + Kelas title */}
                   <div className="board-jenjang-top">
@@ -359,10 +352,12 @@ export default function Home() {
           <div className="board-pillars-grid">
             {featurePillars.map((pillar) => (
               <div key={pillar.number} className="board-pillar-item">
-                <div className="board-pillar-icon-wrap" aria-hidden="true">
-                  {pillar.icon}
+                <div className="board-pillar-header-row">
+                  <div className="board-pillar-icon-wrap" aria-hidden="true">
+                    {pillar.icon}
+                  </div>
+                  <span className="board-pillar-num">{pillar.number}</span>
                 </div>
-                <span className="board-pillar-num">{pillar.number}</span>
                 <h3 className="board-pillar-title">{pillar.title}</h3>
                 <p className="board-pillar-desc">{pillar.desc}</p>
               </div>
@@ -379,9 +374,9 @@ export default function Home() {
           <div className="board-credit-card">
             <div className="board-credit-mark" aria-hidden="true">🏛️</div>
             <div className="board-credit-text">
-              <strong>Inisiatif Pembelajaran Terbuka Jejak SKI</strong>
+              <strong>Catatan Kecil dari Jejak SKI</strong>
               <p>
-                Jejak SKI diinisiasi oleh civitas akademika <strong>MAN 2 Nganjuk</strong> sebagai wujud kontribusi dalam menghadirkan ruang belajar digital terbuka bagi seluruh siswa Madrasah Aliyah di Indonesia. Seluruh materi merupakan intisari yang mengacu langsung pada buku teks resmi Kementerian Agama Republik Indonesia untuk memudahkan pemahaman, persiapan asesmen harian, dan ujian madrasah.
+                diinisiasi oleh civitas akademika <strong>MAN 2 Nganjuk</strong> sebagai wujud kontribusi dalam menghadirkan ruang belajar digital terbuka bagi seluruh siswa Madrasah Aliyah di Indonesia. Seluruh materi merupakan intisari yang mengacu langsung pada buku teks resmi Kementerian Agama Republik Indonesia untuk memudahkan pemahaman, persiapan asesmen harian, dan ujian madrasah.
               </p>
             </div>
           </div>

@@ -15,6 +15,7 @@ istilah_kunci:
   - "Kodifikasi Al-Qur'an"
   - "Futuhat"
 ringkasan_singkat: "Rangkuman masa kepemimpinan empat khalifah rasyidin, strategi dakwah, perluasan wilayah, penulisan mushaf, serta teladan kepemimpinan."
+thumbnail: "/img/thumbs/x-3-khulafaurasyidin.png"
 terakhir_diperbarui: "2026-09-11"
 ---
 

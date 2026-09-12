@@ -1,4 +1,4 @@
----
+﻿---
 id: index
 title: Daftar Bab SKI Kelas X
 sidebar_label: Daftar Isi Kelas X
@@ -18,9 +18,9 @@ Ringkasan materi Sejarah Kebudayaan Islam (SKI) Kelas X Madrasah Aliyah, disusun
     <h3 className="chapter-catalog-title">
       <a href="/docs/kelas-x/bab-1-makkah">Perkembangan Islam Masa Rasulullah Saw. Periode Makkah</a>
     </h3>
-    <p className="chapter-catalog-desc">
+    <div className="chapter-catalog-desc">
       Rangkuman kondisi masyarakat Makkah pra-Islam, awal mula kerasulan Nabi Muhammad Saw., tahapan dakwah sirriyah dan jahriyah, serta ketabahan para sahabat.
-    </p>
+    </div>
     <div className="chapter-catalog-footer">
       <span className="chapter-catalog-meta">👥 4 Tokoh • 🔑 4 Istilah</span>
       <a className="button button--primary button--sm chapter-catalog-btn" href="/docs/kelas-x/bab-1-makkah">
@@ -37,9 +37,9 @@ Ringkasan materi Sejarah Kebudayaan Islam (SKI) Kelas X Madrasah Aliyah, disusun
     <h3 className="chapter-catalog-title">
       <a href="/docs/kelas-x/bab-2-madinah">Perkembangan Islam Masa Rasulullah Saw. Periode Madinah</a>
     </h3>
-    <p className="chapter-catalog-desc">
+    <div className="chapter-catalog-desc">
       Rangkuman peristiwa hijrah ke Yatsrib, pembentukan tatanan masyarakat baru di Madinah, Piagam Madinah, serta pertahanan kedaulatan umat Islam.
-    </p>
+    </div>
     <div className="chapter-catalog-footer">
       <span className="chapter-catalog-meta">👥 4 Tokoh • 🔑 4 Istilah</span>
       <a className="button button--primary button--sm chapter-catalog-btn" href="/docs/kelas-x/bab-2-madinah">
@@ -56,9 +56,9 @@ Ringkasan materi Sejarah Kebudayaan Islam (SKI) Kelas X Madrasah Aliyah, disusun
     <h3 className="chapter-catalog-title">
       <a href="/docs/kelas-x/bab-3-khulafaurasyidin">Perkembangan Islam Masa Khulafaurasyidin</a>
     </h3>
-    <p className="chapter-catalog-desc">
+    <div className="chapter-catalog-desc">
       Rangkuman masa kepemimpinan empat khalifah rasyidin, strategi dakwah, perluasan wilayah, penulisan mushaf, serta teladan kepemimpinan.
-    </p>
+    </div>
     <div className="chapter-catalog-footer">
       <span className="chapter-catalog-meta">👥 4 Tokoh • 🔑 4 Istilah</span>
       <a className="button button--primary button--sm chapter-catalog-btn" href="/docs/kelas-x/bab-3-khulafaurasyidin">
@@ -75,9 +75,9 @@ Ringkasan materi Sejarah Kebudayaan Islam (SKI) Kelas X Madrasah Aliyah, disusun
     <h3 className="chapter-catalog-title">
       <a href="/docs/kelas-x/bab-4-umayah-damaskus">Perkembangan Islam Masa Daulah Umayah di Damaskus</a>
     </h3>
-    <p className="chapter-catalog-desc">
+    <div className="chapter-catalog-desc">
       Rangkuman berdirinya Daulah Umayah di Damaskus, sistem pemerintahan monarki, perkembangan peradaban dan ilmu pengetahuan, serta kepemimpinan Umar bin Abdul Aziz.
-    </p>
+    </div>
     <div className="chapter-catalog-footer">
       <span className="chapter-catalog-meta">👥 4 Tokoh • 🔑 4 Istilah</span>
       <a className="button button--primary button--sm chapter-catalog-btn" href="/docs/kelas-x/bab-4-umayah-damaskus">
@@ -94,9 +94,9 @@ Ringkasan materi Sejarah Kebudayaan Islam (SKI) Kelas X Madrasah Aliyah, disusun
     <h3 className="chapter-catalog-title">
       <a href="/docs/kelas-x/bab-5-umayah-andalusia">Perkembangan Islam Masa Daulah Umayah di Andalusia</a>
     </h3>
-    <p className="chapter-catalog-desc">
+    <div className="chapter-catalog-desc">
       Rangkuman masuknya Islam ke semenanjung Iberia, kejayaan Daulah Umayah di Spanyol, Kordoba sebagai pusat ilmu pengetahuan dunia, dan tokoh cendekiawan muslim.
-    </p>
+    </div>
     <div className="chapter-catalog-footer">
       <span className="chapter-catalog-meta">👥 4 Tokoh • 🔑 4 Istilah</span>
       <a className="button button--primary button--sm chapter-catalog-btn" href="/docs/kelas-x/bab-5-umayah-andalusia">
@@ -113,9 +113,9 @@ Ringkasan materi Sejarah Kebudayaan Islam (SKI) Kelas X Madrasah Aliyah, disusun
     <h3 className="chapter-catalog-title">
       <a href="/docs/kelas-x/bab-6-abasiah">Perkembangan Islam Masa Daulah Abasiah</a>
     </h3>
-    <p className="chapter-catalog-desc">
+    <div className="chapter-catalog-desc">
       Rangkuman masa keemasan peradaban Islam di bawah Daulah Abasiah di Baghdad, Baitul Hikmah, penerjemahan literatur, dan kemajuan sains serta filsafat.
-    </p>
+    </div>
     <div className="chapter-catalog-footer">
       <span className="chapter-catalog-meta">👥 4 Tokoh • 🔑 4 Istilah</span>
       <a className="button button--primary button--sm chapter-catalog-btn" href="/docs/kelas-x/bab-6-abasiah">
