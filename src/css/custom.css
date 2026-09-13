@@ -265,6 +265,18 @@
   font-weight: 600 !important;
 }
 
+/* Loading Ring Pencarian: Pastikan tersembunyi saat index SUDAH selesai dimuat.
+   Plugin hanya menampilkan saat class searchIndexLoading aktif. */
+.navbar__search [class*="searchBarLoadingRing"],
+[class*="searchBarContainer"] [class*="searchBarLoadingRing"] {
+  display: none !important;
+}
+
+.navbar__search[class*="searchIndexLoading"] [class*="searchBarLoadingRing"],
+[class*="searchBarContainer"][class*="searchIndexLoading"] [class*="searchBarLoadingRing"] {
+  display: inline-block !important;
+}
+
 /* ==========================================================================
    Tampilan Pencarian Khusus Mobile View (max-width: 768px)
    ========================================================================== */
@@ -402,11 +414,12 @@
     margin: 0 !important;
   }
 
-  /* Pastikan pembungkus autocomplete mengisi 100% lebar */
+  /* Pastikan pembungkus autocomplete mengisi 100% lebar
+     PENTING: Gunakan :not() agar tidak mencocokkan LoadingRing (class searchBarLoadingRing) */
   .navbar__search:focus-within span.algolia-autocomplete,
-  .navbar__search:focus-within span[class*="searchBar"],
+  .navbar__search:focus-within span[class*="searchBar"]:not([class*="LoadingRing"]):not([class*="loadingRing"]),
   .navbar__search:focus-within .algolia-autocomplete,
-  .navbar__search:focus-within div[class*="searchBar"],
+  .navbar__search:focus-within div[class*="searchBar"]:not([class*="LoadingRing"]):not([class*="loadingRing"]),
   [class*="searchBarContainer"]:focus-within span.algolia-autocomplete,
   [class*="searchBarContainer"]:focus-within .algolia-autocomplete {
     display: flex !important;
@@ -483,8 +496,15 @@
     transform: translateY(-50%) scale(1.08) !important;
   }
 
-  .navbar__search:focus-within [class*="searchBarLoadingRing"],
-  [class*="searchBarContainer"]:focus-within [class*="searchBarLoadingRing"] {
+  /* Loading Ring: Sembunyikan secara default, hanya tampilkan saat index sedang dimuat */
+  .navbar__search [class*="searchBarLoadingRing"],
+  [class*="searchBarContainer"] [class*="searchBarLoadingRing"] {
+    display: none !important;
+  }
+
+  .navbar__search[class*="searchIndexLoading"]:focus-within [class*="searchBarLoadingRing"],
+  [class*="searchBarContainer"][class*="searchIndexLoading"]:focus-within [class*="searchBarLoadingRing"] {
+    display: inline-block !important;
     position: absolute !important;
     right: 2rem !important;
     top: 50% !important;
