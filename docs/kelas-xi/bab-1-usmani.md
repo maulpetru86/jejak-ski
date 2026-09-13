@@ -1,9 +1,9 @@
-﻿---
+---
 kelas: "XI"
 bab_nomor: 1
 judul: "Perkembangan Peradaban dan Ilmu Pengetahuan Islam pada Masa Daulah Usmani"
 sidebar_label: "Bab 1: Daulah Usmani di Turki"
-sumber_buku: "Buku Siswa SKI Kelas XI, Kemenag RI"
+sumber_buku: "Buku Siswa SKI Kelas XI, Kemenag RI (Kurikulum Merdeka, KMA 1503/2025)"
 tokoh_terkait:
   - "Usman I"
   - "Muhammad Al-Fatih"

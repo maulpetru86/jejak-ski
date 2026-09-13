@@ -1,9 +1,9 @@
-﻿---
+---
 kelas: "XI"
 bab_nomor: 3
 judul: "Perkembangan Peradaban dan Ilmu Pengetahuan Islam pada Masa Daulah Mughal"
 sidebar_label: "Bab 3: Daulah Mughal di India"
-sumber_buku: "Buku Siswa SKI Kelas XI, Kemenag RI"
+sumber_buku: "Buku Siswa SKI Kelas XI, Kemenag RI (Kurikulum Merdeka, KMA 1503/2025)"
 tokoh_terkait:
   - "Zahiruddin Babur"
   - "Jalaluddin Akbar"

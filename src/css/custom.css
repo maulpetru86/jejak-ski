@@ -1140,17 +1140,12 @@ article strong {
   display: none !important; /* Hide default centered logo */
 }
 
-/* Hide empty column titles (we use ' ' as workaround) */
-.footer__title {
-  display: none !important;
-}
-
 /* Footer brand area: logo + title inline */
 .footer-brand {
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .footer-brand-logo {
@@ -1172,96 +1167,158 @@ article strong {
 
 .footer-tagline {
   font-size: 0.88rem;
-  line-height: 1.5;
+  line-height: 1.6;
   color: #B5C0BA;
   margin: 0;
 }
 
-/* Footer 2-column layout */
+/* =========================================================
+   FOOTER — TATA LETAK 3 KOLOM STANDAR NASIONAL
+   Kolom 1: Brand & Deskripsi (lebar)
+   Kolom 2: Navigasi (tautan vertikal)
+   Kolom 3: Informasi (tautan vertikal)
+   Bar bawah: Hak cipta + atribusi
+   ========================================================= */
+
+/* Override Docusaurus default footer container */
+.footer--dark {
+  background-color: #0D2117 !important;
+  border-top: 3px solid rgba(229, 184, 105, 0.25);
+}
+
+/* 3-column grid layout */
 .footer__links {
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: flex-start !important;
-  margin-bottom: 1.5rem !important;
+  display: grid !important;
+  grid-template-columns: 2fr 1fr 1fr !important;
+  gap: 3rem !important;
+  margin-bottom: 2rem !important;
+  max-width: 1200px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  align-items: start !important;
 }
 
-.footer__col:first-child {
-  flex: 1 1 70% !important;
-  max-width: 75% !important;
+/* Reset all column overrides */
+.footer__col {
+  flex: unset !important;
+  max-width: unset !important;
+  display: block !important;
+  justify-content: unset !important;
 }
 
-.footer__col:last-child {
-  flex: 0 0 25% !important;
-  max-width: 25% !important;
-  display: flex !important;
-  justify-content: flex-end !important;
-}
-
-.footer-left-block {
+/* --- Kolom 1: Brand & Deskripsi --- */
+.footer-brand-col {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.35rem;
+  gap: 0.75rem;
+  padding-right: 2rem;
 }
 
-/* Footer nav links: horizontal row below tagline */
-.footer-nav-row {
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-  flex-wrap: wrap;
-  padding-top: 1rem;
-}
-
-.footer-nav-row .footer__link-item {
-  color: #D8D4CC !important;
-  font-size: 0.92rem;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
-
-.footer-nav-row .footer__link-item:hover {
-  color: #E5B869 !important;
-}
-
-/* Right block: GitHub link */
-.footer-right-block {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding-top: 0.35rem;
-}
-
-.footer-github-link {
-  color: #D8D4CC !important;
-  font-size: 0.92rem;
-  font-weight: 500;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  transition: color 0.2s ease;
-}
-
-.footer-github-link:hover {
-  color: #E5B869 !important;
-}
-
-/* Remove default list styling from HTML items */
-.footer__items {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer__copyright {
-  color: #A9B5AF !important;
+/* --- Kolom 2 & 3: Headings --- */
+.footer__title {
+  font-family: var(--ifm-heading-font-family) !important;
   font-size: 0.85rem !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
-  padding-top: 1.25rem !important;
-  margin-top: 1.5rem !important;
-  line-height: 1.6 !important;
-  text-align: left !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: #E5B869 !important;
+  margin-bottom: 1rem !important;
+  padding-bottom: 0.5rem !important;
+  border-bottom: 1px solid rgba(229, 184, 105, 0.2) !important;
+}
+
+/* Hide the empty title on brand column */
+.footer__col:first-child .footer__title {
+  display: none !important;
+}
+
+/* --- Kolom 2 & 3: Vertical link list --- */
+.footer__items {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.6rem !important;
+}
+
+.footer__link-item {
+  color: #C8D0CB !important;
+  font-size: 0.9rem !important;
+  font-weight: 400 !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease, padding-left 0.2s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.45rem !important;
+  line-height: 1.65 !important;
+}
+
+.footer__link-item:hover {
+  color: #E5B869 !important;
+  text-decoration: none !important;
+  padding-left: 4px !important;
+}
+
+/* GitHub icon in Kode Sumber link */
+.footer-github-link {
+  gap: 0.5rem !important;
+}
+
+.footer-github-link svg {
+  flex-shrink: 0;
+  opacity: 0.75;
+  transition: opacity 0.2s ease;
+}
+
+.footer-github-link:hover svg {
+  opacity: 1;
+}
+
+/* --- Copyright bar --- */
+.footer__copyright {
+  color: #8A9690 !important;
+  font-size: 0.82rem !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  padding-top: 1.5rem !important;
+  margin-top: 0.5rem !important;
+  line-height: 1.7 !important;
+  text-align: center !important;
+  letter-spacing: 0.01em !important;
+}
+
+/* --- Responsive: Tablet (≤996px) --- */
+@media (max-width: 996px) {
+  .footer__links {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .footer__col:first-child {
+    grid-column: 1 / -1 !important;
+  }
+
+  .footer-brand-col {
+    padding-right: 0;
+  }
+}
+
+/* --- Responsive: Mobile (≤640px) --- */
+@media (max-width: 640px) {
+  .footer__links {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .footer__col:first-child {
+    grid-column: unset !important;
+  }
+
+  .footer__copyright {
+    text-align: left !important;
+    font-size: 0.78rem !important;
+  }
 }
 
 /* =========================================================
@@ -1335,6 +1392,8 @@ article strong {
   z-index: 3;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -1474,6 +1533,136 @@ article strong {
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+/* --- HERO BOOK SPINE SHELF (3 punggung kitab vertikal) --- */
+.board-hero-spines {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 0 0 auto;
+  align-self: center;
+}
+
+.hero-spine {
+  display: flex;
+  align-items: stretch;
+  text-decoration: none !important;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.35s cubic-bezier(0.22, 0.61, 0.36, 1), box-shadow 0.35s ease;
+  cursor: pointer;
+  min-width: 220px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  position: relative;
+}
+
+.hero-spine::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  border: 1.5px solid rgba(229, 184, 105, 0.2);
+  pointer-events: none;
+  z-index: 2;
+  transition: border-color 0.3s ease;
+}
+
+.hero-spine:hover::before {
+  border-color: rgba(229, 184, 105, 0.5);
+}
+
+.hero-spine:hover {
+  transform: translateX(-6px) scale(1.02);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(229, 184, 105, 0.3);
+}
+
+/* Individual spine colors */
+.hero-spine-x {
+  background: linear-gradient(135deg, #163E2B 0%, #1a4a33 50%, #0e291c 100%);
+}
+
+.hero-spine-xi {
+  background: linear-gradient(135deg, #3d3010 0%, #4a3a14 50%, #2d2410 100%);
+}
+
+.hero-spine-xii {
+  background: linear-gradient(135deg, #4a1520 0%, #5a1a28 50%, #3a1018 100%);
+}
+
+.hero-spine-inner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-spine-roman {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 2rem;
+  font-weight: 700;
+  color: #E5B869;
+  line-height: 1;
+  min-width: 52px;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  flex-shrink: 0;
+}
+
+.hero-spine-label {
+  font-family: var(--ifm-font-family-base);
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: rgba(251, 249, 244, 0.88);
+  line-height: 1.35;
+  flex: 1;
+}
+
+.hero-spine-bab {
+  font-family: var(--ifm-font-family-base);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #E5B869;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding: 0.25rem 0.6rem;
+  background: rgba(229, 184, 105, 0.12);
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+/* Dark mode adjustments for spines */
+[data-theme='dark'] .hero-spine-x {
+  background: linear-gradient(135deg, #0f2a1d 0%, #163828 50%, #0a1e14 100%);
+}
+
+[data-theme='dark'] .hero-spine-xi {
+  background: linear-gradient(135deg, #2a2008 0%, #352a0e 50%, #1e1808 100%);
+}
+
+[data-theme='dark'] .hero-spine-xii {
+  background: linear-gradient(135deg, #350e16 0%, #42121e 50%, #2a0a10 100%);
+}
+
+[data-theme='dark'] .hero-spine::before {
+  border-color: rgba(240, 201, 104, 0.15);
+}
+
+[data-theme='dark'] .hero-spine:hover::before {
+  border-color: rgba(240, 201, 104, 0.4);
+}
+
+[data-theme='dark'] .hero-spine-roman {
+  color: #F0C968;
+}
+
+[data-theme='dark'] .hero-spine-bab {
+  color: #F0C968;
+  background: rgba(240, 201, 104, 0.1);
 }
 
 /* --- UMUM: SECTION HEADINGS --- */
@@ -2383,6 +2572,41 @@ pre {
     max-width: 100%;
   }
 
+  .board-hero-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .board-hero-spines {
+    flex-direction: row;
+    width: 100%;
+    gap: 0.6rem;
+  }
+
+  .hero-spine {
+    min-width: 0;
+    flex: 1;
+  }
+
+  .hero-spine-inner {
+    flex-direction: column;
+    text-align: center;
+    padding: 0.85rem 0.75rem;
+    gap: 0.5rem;
+  }
+
+  .hero-spine-roman {
+    min-width: auto;
+  }
+
+  .hero-spine-label {
+    font-size: 0.75rem;
+  }
+
+  .hero-spine:hover {
+    transform: translateY(-4px) scale(1.02);
+  }
+
   .board-continue-body {
     flex-direction: column;
     align-items: stretch;
@@ -2487,6 +2711,38 @@ pre {
 
   .board-hero-actions .board-btn {
     width: 100%;
+  }
+
+  .board-hero-spines {
+    flex-direction: column;
+  }
+
+  .hero-spine {
+    flex: 0 0 auto;
+  }
+
+  .hero-spine-inner {
+    flex-direction: row;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    gap: 0.75rem;
+  }
+
+  .hero-spine-roman {
+    font-size: 1.6rem;
+    min-width: 40px;
+  }
+
+  .hero-spine-label {
+    font-size: 0.78rem;
+  }
+
+  .hero-spine-bab {
+    font-size: 0.68rem;
+  }
+
+  .hero-spine:hover {
+    transform: translateX(-4px) scale(1.01);
   }
 
   .board-continue-card {

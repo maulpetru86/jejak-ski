@@ -3,7 +3,7 @@ kelas: "X"
 bab_nomor: 6
 judul: "Perkembangan Islam Masa Daulah Abasiah"
 sidebar_label: "Bab 6: Keemasan Daulah Abasiah"
-sumber_buku: "Buku Siswa SKI Kelas X, Kemenag RI"
+sumber_buku: "Buku Siswa SKI Kelas X, Kemenag RI (Kurikulum Merdeka, KMA 1503/2025)"
 tokoh_terkait:
   - "Abu Abbas As-Saffah"
   - "Abu Ja'far Al-Manshur"

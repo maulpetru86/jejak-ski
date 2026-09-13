@@ -1,9 +1,9 @@
-﻿---
+---
 kelas: "XII"
 bab_nomor: 5
 judul: "Tokoh Islam Nusantara Paling Berpengaruh Pascakemerdekaan RI"
 sidebar_label: "Bab 5: Tokoh Pascakemerdekaan RI"
-sumber_buku: "Buku Siswa SKI Kelas XII, Kemenag RI"
+sumber_buku: "Buku Siswa SKI Kelas XII, Kemenag RI (Kurikulum Merdeka, KMA 1503/2025)"
 tokoh_terkait:
   - "Mohammad Natsir"
   - "Buya Hamka"

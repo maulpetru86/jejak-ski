@@ -3,7 +3,7 @@ kelas: "X"
 bab_nomor: 3
 judul: "Perkembangan Islam Masa Khulafaurasyidin"
 sidebar_label: "Bab 3: Masa Khulafaurasyidin"
-sumber_buku: "Buku Siswa SKI Kelas X, Kemenag RI"
+sumber_buku: "Buku Siswa SKI Kelas X, Kemenag RI (Kurikulum Merdeka, KMA 1503/2025)"
 tokoh_terkait:
   - "Abu Bakar Ash-Shiddiq"
   - "Umar bin Khattab"

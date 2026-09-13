@@ -1,9 +1,9 @@
-﻿---
+---
 kelas: "XII"
 bab_nomor: 3
 judul: "Kontribusi Umat Islam Prakemerdekaan melalui Organisasi Berbasis Islam"
 sidebar_label: "Bab 3: Organisasi Pergerakan Islam"
-sumber_buku: "Buku Siswa SKI Kelas XII, Kemenag RI"
+sumber_buku: "Buku Siswa SKI Kelas XII, Kemenag RI (Kurikulum Merdeka, KMA 1503/2025)"
 tokoh_terkait:
   - "H.O.S. Tjokroaminoto"
   - "K.H. Ahmad Dahlan"

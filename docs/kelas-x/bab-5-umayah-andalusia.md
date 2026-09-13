@@ -3,7 +3,7 @@ kelas: "X"
 bab_nomor: 5
 judul: "Perkembangan Islam Masa Daulah Umayah di Andalusia"
 sidebar_label: "Bab 5: Daulah Umayah Andalusia"
-sumber_buku: "Buku Siswa SKI Kelas X, Kemenag RI"
+sumber_buku: "Buku Siswa SKI Kelas X, Kemenag RI (Kurikulum Merdeka, KMA 1503/2025)"
 tokoh_terkait:
   - "Thariq bin Ziyad"
   - "Abdurrahman Ad-Dakhil"

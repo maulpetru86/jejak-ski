@@ -3,7 +3,7 @@ kelas: "X"
 bab_nomor: 4
 judul: "Perkembangan Islam Masa Daulah Umayah di Damaskus"
 sidebar_label: "Bab 4: Daulah Umayah Damaskus"
-sumber_buku: "Buku Siswa SKI Kelas X, Kemenag RI"
+sumber_buku: "Buku Siswa SKI Kelas X, Kemenag RI (Kurikulum Merdeka, KMA 1503/2025)"
 tokoh_terkait:
   - "Muawiyah bin Abi Sufyan"
   - "Abdul Malik bin Marwan"

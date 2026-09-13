@@ -1,9 +1,9 @@
-﻿---
+---
 kelas: "XI"
 bab_nomor: 5
 judul: "Peran Wali Sanga dalam Penyebaran Islam di Indonesia"
 sidebar_label: "Bab 5: Peran Wali Sanga"
-sumber_buku: "Buku Siswa SKI Kelas XI, Kemenag RI"
+sumber_buku: "Buku Siswa SKI Kelas XI, Kemenag RI (Kurikulum Merdeka, KMA 1503/2025)"
 tokoh_terkait:
   - "Sunan Gresik (Maulana Malik Ibrahim)"
   - "Sunan Ampel"
@@ -27,7 +27,7 @@ terakhir_diperbarui: "2026-09-11"
 # Peran Wali Sanga dalam Penyebaran Islam di Indonesia
 
 ### Konteks Singkat
-Wali Sanga adalah sembilan wali yang berperan besar dalam penyebaran Islam di tanah Jawa, aktif sekitar abad ke-15 hingga ke-16 M, sezaman dengan keruntuhan Majapahit dan berdirinya Kesultanan Demak-Cirebon. Keberhasilan mereka islamisasi masyarakat Jawa yang saat itu mayoritas Hindu-Buddha terletak pada strategi akulturasi budaya — menyampaikan ajaran Islam lewat media yang sudah akrab dengan masyarakat lokal, seperti wayang kulit, tembang macapat, dan pendekatan sosial yang bijaksana, tanpa kekerasan maupun pemaksaan.
+Wali Sanga adalah sembilan wali yang berperan besar dalam penyebaran Islam di tanah Jawa, aktif sekitar abad ke-15 hingga ke-16 M, sezaman dengan keruntuhan Majapahit dan berdirinya Kesultanan Demak-Cirebon. Keberhasilan mereka islamisasi masyarakat Jawa yang saat itu mayoritas Hindu-Buddha terletak pada strategi akulturasi budaya � menyampaikan ajaran Islam lewat media yang sudah akrab dengan masyarakat lokal, seperti wayang kulit, tembang macapat, dan pendekatan sosial yang bijaksana, tanpa kekerasan maupun pemaksaan.
 
 ### Poin-Poin Kunci
 - Sunan Gresik (Maulana Malik Ibrahim) menjadi pelopor dakwah di Jawa lewat pendirian sistem pesantren dan pendekatan personal yang santun kepada masyarakat.

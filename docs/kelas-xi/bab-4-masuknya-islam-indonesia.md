@@ -1,9 +1,9 @@
-﻿---
+---
 kelas: "XI"
 bab_nomor: 4
 judul: "Menelusuri Jejak Sejarah Masuknya Islam ke Indonesia"
 sidebar_label: "Bab 4: Masuknya Islam ke Nusantara"
-sumber_buku: "Buku Siswa SKI Kelas XI, Kemenag RI"
+sumber_buku: "Buku Siswa SKI Kelas XI, Kemenag RI (Kurikulum Merdeka, KMA 1503/2025)"
 tokoh_terkait:
   - "Snouck Hurgronje"
   - "Buya Hamka"

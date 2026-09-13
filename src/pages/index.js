@@ -127,7 +127,7 @@ export default function Home() {
       id: 'kelas-xi',
       kelas: 'Kelas XI',
       fase: 'Fase F',
-      title: 'Khulafaur Rasyidin, Bani Umayyah & Abbasiyah',
+      title: 'Tiga Kerajaan Besar & Masuknya Islam ke Nusantara',
       meta: '5 Bab · 1–2 Semester',
       desc: 'Mempelajari kejayaan Daulah Usmani di Turki, Daulah Safawi di Persia, Daulah Mughal di India, serta jalur sejarah masuknya Islam dan peran Wali Sanga di Nusantara.',
       to: '/docs/kelas-xi/',
@@ -139,7 +139,7 @@ export default function Home() {
       id: 'kelas-xii',
       kelas: 'Kelas XII',
       fase: 'Fase F',
-      title: 'Peradaban Islam di Dunia',
+      title: 'Islam di Nusantara & Perjuangan Kemerdekaan',
       meta: '5 Bab · 1–2 Semester',
       desc: 'Mengkaji kerajaan-kerajaan Islam Nusantara, peran ulama awal dan pesantren, organisasi pergerakan Islam, perjuangan kemerdekaan, hingga tokoh pascakemerdekaan.',
       to: '/docs/kelas-xii/',
@@ -182,10 +182,10 @@ export default function Home() {
       description="Ringkasan materi Sejarah Kebudayaan Islam untuk siswa Madrasah Aliyah, disusun mengikuti struktur pembelajaran Kelas X, XI, dan XII.">
 
       {/* =========================================================
-          1. HERO SECTION — Atmospheric background, no framed card
+          1. HERO SECTION — Atmospheric background + Book Spine Shelf
           ========================================================= */}
       <section className="board-hero">
-        {/* Mosque image sebagai background atmosferik besar */}
+        {/* Mosque image sebagai background atmosferik */}
         <div className="board-hero-bg" aria-hidden="true">
           <img
             src="/img/hero-mosque.png"
@@ -230,6 +230,23 @@ export default function Home() {
                 </svg>
               </button>
             </div>
+          </div>
+
+          {/* Book Spine Shelf — 3 punggung kitab vertikal */}
+          <div className="board-hero-spines" aria-label="Pilih jenjang kelas">
+            {[
+              { roman: 'X', label: 'Sirah Nabawiyah & Daulah Islam Awal', bab: '6 Bab', to: '/docs/kelas-x/' },
+              { roman: 'XI', label: 'Tiga Kerajaan Besar & Islam Nusantara', bab: '5 Bab', to: '/docs/kelas-xi/' },
+              { roman: 'XII', label: 'Nusantara & Perjuangan Kemerdekaan', bab: '5 Bab', to: '/docs/kelas-xii/' },
+            ].map((spine) => (
+              <Link key={spine.roman} to={spine.to} className={`hero-spine hero-spine-${spine.roman.toLowerCase()}`}>
+                <div className="hero-spine-inner">
+                  <span className="hero-spine-roman">{spine.roman}</span>
+                  <span className="hero-spine-label">{spine.label}</span>
+                  <span className="hero-spine-bab">{spine.bab}</span>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>

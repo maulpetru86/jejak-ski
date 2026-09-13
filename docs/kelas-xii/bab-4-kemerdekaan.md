@@ -1,9 +1,9 @@
-﻿---
+---
 kelas: "XII"
 bab_nomor: 4
 judul: "Peran Umat Islam Masa Kemerdekaan dan Pascakemerdekaan"
 sidebar_label: "Bab 4: Peran Masa Kemerdekaan RI"
-sumber_buku: "Buku Siswa SKI Kelas XII, Kemenag RI"
+sumber_buku: "Buku Siswa SKI Kelas XII, Kemenag RI (Kurikulum Merdeka, KMA 1503/2025)"
 tokoh_terkait:
   - "K.H. Wahid Hasyim"
   - "Ki Bagus Hadikusumo"

@@ -3,7 +3,7 @@ kelas: "X"
 bab_nomor: 1
 judul: "Perkembangan Islam Masa Rasulullah Saw. Periode Makkah"
 sidebar_label: "Bab 1: Rasulullah Periode Makkah"
-sumber_buku: "Buku Siswa SKI Kelas X, Kemenag RI"
+sumber_buku: "Buku Siswa SKI Kelas X, Kemenag RI (Kurikulum Merdeka, KMA 1503/2025)"
 tokoh_terkait:
   - "Nabi Muhammad Saw."
   - "Khadijah binti Khuwailid"

@@ -1,9 +1,9 @@
-﻿---
+---
 kelas: "XI"
 bab_nomor: 2
 judul: "Perkembangan Peradaban dan Ilmu Pengetahuan Islam pada Masa Daulah Safawi"
 sidebar_label: "Bab 2: Daulah Safawi di Persia"
-sumber_buku: "Buku Siswa SKI Kelas XI, Kemenag RI"
+sumber_buku: "Buku Siswa SKI Kelas XI, Kemenag RI (Kurikulum Merdeka, KMA 1503/2025)"
 tokoh_terkait:
   - "Safi Al-Din"
   - "Ismail I"

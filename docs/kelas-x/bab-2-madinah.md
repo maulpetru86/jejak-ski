@@ -3,7 +3,7 @@ kelas: "X"
 bab_nomor: 2
 judul: "Perkembangan Islam Masa Rasulullah Saw. Periode Madinah"
 sidebar_label: "Bab 2: Rasulullah Periode Madinah"
-sumber_buku: "Buku Siswa SKI Kelas X, Kemenag RI"
+sumber_buku: "Buku Siswa SKI Kelas X, Kemenag RI (Kurikulum Merdeka, KMA 1503/2025)"
 tokoh_terkait:
   - "Nabi Muhammad Saw."
   - "Muhajirin"

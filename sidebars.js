@@ -16,7 +16,7 @@ const sidebars = {
         type: 'doc',
         id: 'kelas-x/index',
       },
-      collapsed: false,
+      collapsed: true,
       items: [
         'kelas-x/bab-1-makkah',
         'kelas-x/bab-2-madinah',
@@ -33,7 +33,7 @@ const sidebars = {
         type: 'doc',
         id: 'kelas-xi/index',
       },
-      collapsed: false,
+      collapsed: true,
       items: [
         'kelas-xi/bab-1-usmani',
         'kelas-xi/bab-2-safawi',
@@ -49,7 +49,7 @@ const sidebars = {
         type: 'doc',
         id: 'kelas-xii/index',
       },
-      collapsed: false,
+      collapsed: true,
       items: [
         'kelas-xii/bab-1-kerajaan-nusantara',
         'kelas-xii/bab-2-ulama-awal',

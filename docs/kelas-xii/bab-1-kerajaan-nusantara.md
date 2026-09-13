@@ -1,9 +1,9 @@
-﻿---
+---
 kelas: "XII"
 bab_nomor: 1
 judul: "Kerajaan Islam Nusantara"
 sidebar_label: "Bab 1: Kerajaan Islam Nusantara"
-sumber_buku: "Buku Siswa SKI Kelas XII, Kemenag RI"
+sumber_buku: "Buku Siswa SKI Kelas XII, Kemenag RI (Kurikulum Merdeka, KMA 1503/2025)"
 tokoh_terkait:
   - "Sultan Malik As-Saleh"
   - "Raden Patah"
