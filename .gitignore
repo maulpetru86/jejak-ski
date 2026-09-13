@@ -27,3 +27,12 @@ Thumbs.db
 .vscode/
 .idea/
 *.log
+
+# Security: Private keys & credentials
+*.pem
+*.key
+*credentials*
+*service-account*
+
+# Security audit output
+security/
