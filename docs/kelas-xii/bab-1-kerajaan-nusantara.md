@@ -2,45 +2,67 @@
 kelas: "XII"
 bab_nomor: 1
 judul: "Kerajaan Islam Nusantara"
-sidebar_label: "Bab 1: Kerajaan Islam Nusantara"
-sumber_buku: "Buku Siswa SKI Kelas XII, Kemenag RI (Kurikulum Merdeka, KMA 1503/2025)"
+sumber_buku: "Buku Siswa SKI Kelas XII, Kemenag RI"
 tokoh_terkait:
   - "Sultan Malik As-Saleh"
   - "Raden Patah"
   - "Sultan Hasanuddin"
   - "Sultan Baabullah"
+  - "Sultan Iskandar Muda"
+  - "Sultan Suriansyah"
 istilah_kunci:
   - "Samudera Pasai"
   - "Kesultanan Demak"
   - "Kesultanan Mataram"
   - "Gowa-Tallo"
   - "Ternate-Tidore"
-ringkasan_singkat: "Rangkuman jejak sejarah kesultanan-kesultanan Islam di Nusantara (Sumatera, Jawa, Sulawesi, Maluku), corak pemerintahan, ekonomi maritim, dan pertahanan kedaulatan."
-thumbnail: "/img/thumbs/xii-1-kerajaan-nusantara.jpg"
-terakhir_diperbarui: "2026-09-11"
+  - "Kerajaan Perlak"
+  - "Kesultanan Aceh Darussalam"
+ringkasan_singkat: "Rangkuman jejak sejarah 13 kerajaan Islam di Nusantara (Sumatra, Jawa, Kalimantan, Sulawesi-Maluku), corak pemerintahan, ekonomi maritim, dan pertahanan kedaulatan."
+terakhir_diperbarui: "2026-09-20"
 ---
 
 # Kerajaan Islam Nusantara
 
 ### Konteks Singkat
-Kesultanan-kesultanan Islam tumbuh di berbagai wilayah Nusantara sejak akhir abad ke-13 M, dimulai dari Samudera Pasai di Sumatra sebagai kerajaan Islam pertama, lalu menyebar ke Jawa (Demak, Mataram), Sulawesi (Gowa-Tallo), hingga Maluku (Ternate-Tidore). Masing-masing kesultanan tumbuh dengan corak pemerintahan, kekuatan ekonomi maritim, dan strategi pertahanan kedaulatan yang berbeda-beda, namun sama-sama berperan besar dalam mengakarkan Islam di bumi Nusantara.
+Kesultanan-kesultanan Islam tumbuh di empat wilayah besar Nusantara: Sumatra (Perlak, Samudra Pasai, Malaka, Aceh), Jawa (Demak, Pajang, Mataram, Cirebon, Banten), Kalimantan (Banjar, Kutai Kartanegara), serta Sulawesi-Maluku (Gowa-Tallo, Ternate-Tidore). Menariknya, Kerajaan Perlak yang berdiri 840 M diklaim sebagai kerajaan Islam tertua di Nusantara, mendahului Samudra Pasai yang selama ini lebih populer disebut sebagai yang pertama. Masing-masing kesultanan tumbuh dengan corak pemerintahan, kekuatan ekonomi maritim, dan strategi pertahanan kedaulatan yang berbeda-beda, namun sama-sama berperan besar mengakarkan Islam di bumi Nusantara.
 
 ### Poin-Poin Kunci
-- Samudera Pasai menjadi kerajaan Islam pertama di Nusantara, dipimpin Sultan Malik As-Saleh yang wafat tahun 696 H/1297 M, dengan bukti nisan bercorak Gujarat yang menegaskan jejak awal islamisasi di Aceh.
-- Kesultanan Demak berdiri sekitar tahun 1478 M sebagai kerajaan Islam pertama di Jawa, didirikan Raden Patah dengan dukungan penuh Wali Sanga, menandai runtuhnya pengaruh Majapahit.
-- Kesultanan Mataram Islam didirikan Sutawijaya di Kota Gede, Yogyakarta, dan mencapai puncak kejayaan pada masa Sultan Agung Hanyokrokusumo yang menguasai hampir seluruh Jawa Tengah dan Jawa Timur.
-- Kerajaan Gowa-Tallo di Sulawesi Selatan mencapai puncak popularitas pada masa Sultan Hasanuddin (1653-1669 M), yang gigih mempertahankan kedaulatan Makassar dari VOC sebelum akhirnya terdesak.
-- Kesultanan Ternate-Tidore di Maluku berkembang sebagai pusat perdagangan rempah, dengan Sultan Baabullah berhasil mengusir Portugis dari Ternate dan memperluas wilayah kekuasaan hingga Kepulauan Sulu, Filipina.
+
+**A. Kerajaan Islam di Sumatra**
+- Kerajaan Perlak berdiri 1 Muharam 225 H/840 M, didirikan Sayid Abdul Aziz — diklaim sebagai kerajaan Islam tertua di Nusantara, dengan sistem pemerintahan mirip Dinasti Abasiyah (dibantu para wazir urusan politik, keamanan, administrasi, keuangan). Perlak akhirnya melebur ke Samudra Pasai pada 1292 M.
+- Samudra Pasai, dipimpin Sultan Malik As-Saleh (wafat 696 H/1297 M), menjadi kerajaan Islam paling populer sebagai rujukan awal islamisasi Aceh, dibuktikan nisan bercorak Gujarat.
+- Kerajaan Malaka didirikan Parameswara yang masuk Islam pada 1414 M dan bergelar Sultan Iskandar Syah; meski secara geografis kini bukan wilayah Indonesia, Malaka erat kaitannya dengan jaringan dagang kerajaan Islam Nusantara.
+- Kesultanan Aceh Darussalam berdiri 12 Zulkaidah 916 H/1511 M oleh Sultan Ali Mughayat Syah yang melepaskan Aceh dari kekuasaan Pidie; mencapai puncak kejayaan pada masa Sultan Iskandar Muda (1607 M dst.) sebagai pusat perdagangan dan pemikiran Islam terkemuka.
+
+**B. Kerajaan Islam di Jawa**
+- Kesultanan Demak berdiri sekitar 1478 M sebagai kerajaan Islam pertama di Jawa, didirikan Raden Patah dengan dukungan penuh Wali Sanga, menandai runtuhnya pengaruh Majapahit.
+- Kesultanan Pajang muncul sebagai penerus Demak pasca konflik internal keluarga kerajaan.
+- Kesultanan Mataram Islam didirikan Sutawijaya di Kota Gede, Yogyakarta, mencapai puncak kejayaan pada masa Sultan Agung Hanyokrokusumo yang menguasai hampir seluruh Jawa Tengah-Timur.
+- Kesultanan Cirebon tumbuh dari peran Sunan Gunung Jati sebagai ulama sekaligus penguasa.
+- Kesultanan Banten didirikan Sunan Gunung Jati dan diperintah putranya, Sultan Hasanuddin dari Banten (wafat 1570 M, berbeda dari Sultan Hasanuddin Gowa), yang membangun Keraton Surosowan dan mengembangkan perdagangan lada.
+
+**C. Kerajaan Islam di Kalimantan**
+- Kesultanan Banjar lahir dari konflik pewarisan takhta Kerajaan Daha (Hindu); Pangeran Samudra dibantu Patih Masih masuk Islam dan menjadi raja pertama bergelar Sultan Suriansyah (Sultan Suryanullah), menjadikan Islam agama resmi kerajaan.
+- Kerajaan Kutai Kartanegara di Kalimantan Timur diislamkan oleh dua penyebar agama pada tahun 1607, mengislamkan rajanya dan bertahan hingga era modern.
+
+**D. Kerajaan Islam di Sulawesi dan Maluku**
+- Kerajaan Gowa-Tallo mencapai puncak popularitas pada masa Sultan Hasanuddin (1653-1669 M), yang gigih mempertahankan kedaulatan Makassar dari VOC sebelum akhirnya terdesak.
+- Kesultanan Ternate-Tidore berkembang sebagai pusat perdagangan rempah, dengan Sultan Baabullah berhasil mengusir Portugis dari Ternate dan memperluas wilayah kekuasaan hingga Kepulauan Sulu, Filipina.
 
 ### Istilah Kunci
-- **Samudera Pasai**: kerajaan Islam pertama di Nusantara, berdiri di Aceh dengan Sultan Malik As-Saleh sebagai raja pertamanya.
-- **Kesultanan Demak**: kerajaan Islam pertama di Jawa, berdiri sekitar tahun 1478 M berkat dukungan Wali Sanga, menjadi penerus kekuasaan pasca runtuhnya Majapahit.
+- **Kerajaan Perlak**: kerajaan Islam yang diklaim tertua di Nusantara, berdiri 840 M di Aceh, akhirnya melebur ke Samudra Pasai pada 1292 M.
+- **Samudera Pasai**: kerajaan Islam paling populer sebagai rujukan awal islamisasi Nusantara, berdiri di Aceh dengan Sultan Malik As-Saleh sebagai raja pertamanya.
+- **Kesultanan Aceh Darussalam**: kerajaan Islam di ujung utara Sumatra, berdiri 1511 M, mencapai puncak kejayaan sebagai pusat dagang dan keilmuan Islam pada masa Sultan Iskandar Muda.
+- **Kesultanan Demak**: kerajaan Islam pertama di Jawa, berdiri sekitar 1478 M berkat dukungan Wali Sanga, penerus kekuasaan pasca runtuhnya Majapahit.
 - **Kesultanan Mataram**: kerajaan Islam di Jawa Tengah-Timur yang didirikan Sutawijaya, mencapai puncak kejayaan pada masa Sultan Agung Hanyokrokusumo.
 - **Gowa-Tallo**: persekutuan dua kerajaan di Sulawesi Selatan yang bersatu pada 1528 M menjadi Kerajaan Makassar, mencapai puncak popularitas pada masa Sultan Hasanuddin.
-- **Ternate-Tidore**: kesultanan-kesultanan Islam di Maluku yang menguasai jalur perdagangan rempah, dengan Ternate mencapai puncak perlawanan terhadap Portugis pada masa Sultan Baabullah.
+- **Ternate-Tidore**: kesultanan-kesultanan Islam di Maluku yang menguasai jalur perdagangan rempah, mencapai puncak perlawanan terhadap Portugis pada masa Sultan Baabullah.
 
 ### Tokoh Terkait
-- **Sultan Malik As-Saleh**: raja pertama Kerajaan Samudera Pasai, wafat pada tahun 696 H/1297 M, menjadi bukti awal berdirinya kerajaan Islam di Nusantara.
-- **Raden Patah**: pendiri Kesultanan Demak, putra Raja Brawijaya V dari Majapahit yang diangkat Sunan Ampel untuk memimpin kerajaan Islam pertama di Jawa.
-- **Sultan Hasanuddin**: penguasa Kerajaan Gowa-Tallo (1653-1669 M) yang gigih melawan dominasi VOC di Sulawesi Selatan, dikenal sebagai simbol perlawanan terhadap kolonialisme.
-- **Sultan Baabullah**: penguasa Kesultanan Ternate yang berhasil mengusir Portugis dan memperluas wilayah kekuasaan kesultanan hingga Kepulauan Sulu, Filipina.
+- **Sultan Malik As-Saleh**: raja pertama Kerajaan Samudera Pasai, wafat 696 H/1297 M.
+- **Raden Patah**: pendiri Kesultanan Demak, putra Raja Brawijaya V dari Majapahit yang diangkat Sunan Ampel.
+- **Sultan Hasanuddin (Gowa)**: penguasa Kerajaan Gowa-Tallo (1653-1669 M) yang gigih melawan dominasi VOC di Sulawesi Selatan.
+- **Sultan Baabullah**: penguasa Kesultanan Ternate yang mengusir Portugis dan memperluas wilayah hingga Kepulauan Sulu, Filipina.
+- **Sultan Iskandar Muda**: pemimpin Kesultanan Aceh Darussalam (sejak 1607 M) yang membawa Aceh ke puncak kejayaan perdagangan dan keilmuan Islam.
+- **Sultan Suriansyah**: nama Islam Pangeran Samudra, raja pertama Kesultanan Banjar di Kalimantan Selatan yang menjadikan Islam agama resmi kerajaan.

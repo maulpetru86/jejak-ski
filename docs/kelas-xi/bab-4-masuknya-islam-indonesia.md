@@ -2,43 +2,45 @@
 kelas: "XI"
 bab_nomor: 4
 judul: "Menelusuri Jejak Sejarah Masuknya Islam ke Indonesia"
-sidebar_label: "Bab 4: Masuknya Islam ke Nusantara"
-sumber_buku: "Buku Siswa SKI Kelas XI, Kemenag RI (Kurikulum Merdeka, KMA 1503/2025)"
+sumber_buku: "Buku Siswa SKI Kelas XI, Kemenag RI"
 tokoh_terkait:
   - "Snouck Hurgronje"
   - "Buya Hamka"
   - "Husein Djajadiningrat"
-  - "Ibn Batutah"
+  - "Sumanto Al-Qurtuby"
 istilah_kunci:
   - "Teori Gujarat"
   - "Teori Makkah"
   - "Teori Persia"
+  - "Teori Cina"
   - "Saluran Islamisasi"
-ringkasan_singkat: "Rangkuman teori-teori masuknya Islam ke Nusantara (Gujarat, Makkah, Persia, China), serta saluran penyebaran melalui perdagangan, perkawinan, pendidikan, dan seni budaya."
-thumbnail: "/img/thumbs/xi-4-masuknya-islam-indonesia.jpg"
-terakhir_diperbarui: "2026-09-11"
+  - "Khalifatullah fi al-Ardli"
+ringkasan_singkat: "Rangkuman kondisi Nusantara pra-Islam, empat teori masuknya Islam (Gujarat, Makkah, Persia, Cina), saluran dakwah, hingga pengaruh Islam terhadap kebudayaan Indonesia."
+terakhir_diperbarui: "2026-09-20"
 ---
 
 # Menelusuri Jejak Sejarah Masuknya Islam ke Indonesia
 
 ### Konteks Singkat
-Masuknya Islam ke Nusantara dijelaskan melalui beberapa teori berbeda oleh para sejarawan: Teori Gujarat (India) yang didukung Snouck Hurgronje, Teori Makkah (Arab) yang didukung Buya Hamka, Teori Persia yang diusulkan Husein Djajadiningrat, dan Teori Cina. Setelah masuk, ajaran Islam menyebar secara damai di kalangan masyarakat Nusantara melalui berbagai saluran islamisasi, seperti perdagangan, perkawinan, politik, pendidikan, tasawuf, dan kesenian.
+Sebelum Islam datang, Nusantara telah memiliki peradaban maju di bawah kerajaan Hindu-Buddha seperti Sriwijaya dan Majapahit, dengan sistem politik dan kepercayaan yang mapan (dibuktikan Prasasti Kutai dan naskah Nagara Kartagama). Masuknya Islam dijelaskan lewat empat teori oleh para sejarawan: Teori Gujarat (Snouck Hurgronje), Teori Makkah (Buya Hamka), Teori Persia (Husein Djajadiningrat), dan Teori Cina (Sumanto Al-Qurtuby). Setelah masuk, Islam menyebar damai lewat berbagai saluran islamisasi, lalu meninggalkan pengaruh mendalam pada arsitektur masjid, seni budaya, adat istiadat, hingga konsep politik kerajaan Nusantara.
 
 ### Poin-Poin Kunci
-- Teori Gujarat, didukung oleh Snouck Hurgronje dan sejumlah sejarawan Belanda, menyatakan Islam masuk ke Nusantara sekitar abad ke-13 M melalui para pedagang dari Gujarat, India, dengan bukti arkeologis berupa kemiripan batu nisan Samudra Pasai dan Gresik dengan batu nisan Gujarat.
-- Teori Makkah (Arab), didukung oleh Buya Hamka, menyatakan Islam masuk langsung dari Makkah sejak abad ke-7 hingga ke-8 Masehi, jauh lebih awal dari Teori Gujarat, didukung catatan perjalanan pendeta Buddha I-Tsing yang menjumpai komunitas Arab di Nusantara.
-- Teori Persia, diusulkan oleh Husein Djajadiningrat, menyoroti kesamaan budaya dan tradisi keagamaan antara Nusantara dan Persia, seperti peringatan 10 Muharam dan ajaran tasawuf, sebagai bukti pengaruh Persia dalam islamisasi awal.
-- Penyebaran Islam di Nusantara berlangsung damai lewat berbagai saluran islamisasi: perdagangan (sejak abad ke-7), perkawinan (seperti Sunan Ampel dengan Nyai Manila), dan jalur politik lewat penguasa lokal yang memeluk Islam.
-- Catatan perjalanan tokoh seperti Ibn Batutah turut menjadi rujukan penting yang memperkuat bukti keberadaan komunitas Islam di wilayah Samudra Pasai pada abad ke-14.
+- Sebelum kedatangan Islam, Nusantara telah memiliki sistem politik-pemerintahan mapan (dibuktikan Prasasti Kutai dan Sriwijaya) serta kepercayaan Hindu-Buddha yang mengakar kuat, khususnya pada masa kejayaan Majapahit (dicatat dalam Nagara Kartagama karya Mpu Prapanca).
+- Teori Gujarat (Snouck Hurgronje) menyatakan Islam masuk abad ke-13 M lewat pedagang India; Teori Makkah (Buya Hamka) menyatakan Islam masuk langsung dari Arab sejak abad ke-7 hingga ke-8 M; Teori Persia (Husein Djajadiningrat) menyoroti kesamaan tradisi seperti peringatan 10 Muharam; Teori Cina (Sumanto Al-Qurtuby, buku "Arus Cina-Islam-Jawa") mencatat pemukiman muslim di Kanton-Zhang Zhao-Quanzhou serta dugaan garis keturunan Tiongkok pada Raden Fatah, raja pertama Demak.
+- Penyebaran Islam berlangsung damai lewat berbagai saluran islamisasi: perdagangan (sejak abad ke-7), perkawinan, pendidikan, ajaran tasawuf, dan kesenian — didukung ajaran Islam yang menekankan kesetaraan manusia tanpa sistem kasta.
+- Pengaruh Islam pada kebudayaan Indonesia tampak nyata pada arsitektur masjid yang memadukan unsur lokal (Masjid Agung Demak, Kasepuhan Cirebon, Banten, Menara Kudus, Baiturrahim Aceh), seni (wayang sebagai media dakwah, rebana dan qasidah), serta adat istiadat (tradisi salam, ucapan basmalah).
+- Dalam bidang politik, konsep khalifatullah fi al-ardli (khalifah Allah di bumi) dan dzillullah fi al-ardli (bayangan Allah di bumi) diterapkan sebagai landasan filosofis kekuasaan di Kesultanan Aceh Darussalam dan Kerajaan Islam Mataram.
 
 ### Istilah Kunci
-- **Teori Gujarat**: teori yang menjelaskan masuknya Islam ke Nusantara sekitar abad ke-13 M melalui para pedagang dari Gujarat, India, didukung oleh Snouck Hurgronje dan sejarawan Belanda lainnya.
-- **Teori Makkah**: teori yang menjelaskan Islam masuk langsung dari tanah Arab (Makkah) sejak abad ke-7 hingga ke-8 Masehi tanpa perantara, didukung oleh Buya Hamka.
-- **Teori Persia**: teori yang menyoroti pengaruh budaya dan tradisi keagamaan Persia dalam proses islamisasi Nusantara, diusulkan oleh Husein Djajadiningrat.
-- **Saluran Islamisasi**: berbagai jalur penyebaran Islam di Nusantara yang berlangsung damai, meliputi perdagangan, perkawinan, politik, pendidikan, tasawuf, dan kesenian.
+- **Teori Gujarat**: teori masuknya Islam ke Nusantara sekitar abad ke-13 M melalui pedagang dari Gujarat, India, didukung Snouck Hurgronje.
+- **Teori Makkah**: teori yang menyatakan Islam masuk langsung dari tanah Arab sejak abad ke-7 hingga ke-8 M tanpa perantara, didukung Buya Hamka.
+- **Teori Persia**: teori yang menyoroti pengaruh budaya dan tradisi keagamaan Persia dalam islamisasi Nusantara, diusulkan Husein Djajadiningrat.
+- **Teori Cina**: teori yang menyatakan Islam masuk lewat perantau Tiongkok, didukung Sumanto Al-Qurtuby lewat bukti pemukiman muslim di selatan Tiongkok dan dugaan garis keturunan Tiongkok pada Raden Fatah.
+- **Saluran Islamisasi**: berbagai jalur penyebaran Islam di Nusantara yang berlangsung damai, meliputi perdagangan, perkawinan, pendidikan, tasawuf, dan kesenian.
+- **Khalifatullah fi al-Ardli**: konsep politik Islam (khalifah Allah di bumi) yang menjadi landasan filosofis kekuasaan di Kesultanan Aceh Darussalam dan Kerajaan Islam Mataram.
 
 ### Tokoh Terkait
-- **Snouck Hurgronje**: orientalis Belanda yang mendukung dan memperkaya Teori Gujarat, menyoroti peran pelabuhan-pelabuhan India sebagai jembatan penyebaran Islam ke Nusantara.
-- **Buya Hamka**: ulama dan sejarawan Indonesia yang menjadi pendukung utama Teori Makkah, meyakini Islam masuk langsung dari Arab sejak abad pertama Hijriah.
-- **Husein Djajadiningrat**: sejarawan pengusul Teori Persia, menganalisis kesamaan tradisi dan budaya keagamaan antara Persia dan Nusantara sebagai bukti pendukung.
-- **Ibn Batutah**: pengembara muslim yang catatan perjalanannya menjadi salah satu sumber sejarah penting yang mencatat keberadaan komunitas Islam di Samudra Pasai pada abad ke-14.
+- **Snouck Hurgronje**: orientalis Belanda yang mendukung dan memperkaya Teori Gujarat, menyoroti peran pelabuhan India sebagai jembatan islamisasi Nusantara.
+- **Buya Hamka**: ulama dan sejarawan Indonesia, pendukung utama Teori Makkah, meyakini Islam masuk langsung dari Arab sejak abad pertama Hijriah.
+- **Husein Djajadiningrat**: sejarawan pengusul Teori Persia, menganalisis kesamaan tradisi keagamaan Persia-Nusantara.
+- **Sumanto Al-Qurtuby**: penulis buku "Arus Cina-Islam-Jawa", pengusul Teori Cina berdasarkan bukti pemukiman muslim Tiongkok dan dugaan garis keturunan Tiongkok pada Raden Fatah, raja pertama Kesultanan Demak.

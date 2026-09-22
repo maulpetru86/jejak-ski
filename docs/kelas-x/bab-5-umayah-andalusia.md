@@ -2,43 +2,58 @@
 kelas: "X"
 bab_nomor: 5
 judul: "Perkembangan Islam Masa Daulah Umayah di Andalusia"
-sidebar_label: "Bab 5: Daulah Umayah Andalusia"
-sumber_buku: "Buku Siswa SKI Kelas X, Kemenag RI (Kurikulum Merdeka, KMA 1503/2025)"
+sumber_buku: "Buku Siswa SKI Kelas X, Kemenag RI"
 tokoh_terkait:
   - "Thariq bin Ziyad"
   - "Abdurrahman Ad-Dakhil"
   - "Abdurrahman An-Nashir"
   - "Ibnu Rusyd"
+  - "Musa bin Nusair"
+  - "Abu Abdullah (Boabdil)"
 istilah_kunci:
   - "Andalusia"
   - "Kordoba"
   - "Jabal Thariq"
   - "Peradaban Islam Eropa"
-ringkasan_singkat: "Rangkuman masuknya Islam ke semenanjung Iberia, kejayaan Daulah Umayah di Spanyol, Kordoba sebagai pusat ilmu pengetahuan dunia, dan tokoh cendekiawan muslim."
-thumbnail: "/img/thumbs/x-5-umayah-andalusia.jpg"
-terakhir_diperbarui: "2026-09-11"
+  - "Mulūk al-Thawā'if"
+  - "Reconquista"
+ringkasan_singkat: "Rangkuman masuknya Islam ke semenanjung Iberia, kejayaan Daulah Umayah di Spanyol, Kordoba sebagai pusat ilmu pengetahuan dunia, hingga keruntuhannya di tangan Reconquista pada 1492 M."
+terakhir_diperbarui: "2026-09-20"
 ---
 
 # Perkembangan Islam Masa Daulah Umayah di Andalusia
 
 ### Konteks Singkat
-Islam masuk ke Andalusia (Semenanjung Iberia) pada tahun 711 M melalui penaklukan yang dipimpin Thariq bin Ziyad. Setelah Daulah Umayah di Damaskus runtuh pada 750 M, Abdurrahman Ad-Dakhil — seorang pangeran Bani Umayah yang lolos dari kejaran Daulah Abasiah — mendirikan kembali kekuasaan Umayah di Andalusia pada tahun 756 M dengan Kordoba sebagai ibu kota. Di bawah kepemimpinan Abdurrahman An-Nashir, Andalusia mencapai puncak kejayaan sebagai pusat peradaban dan ilmu pengetahuan yang menjembatani dunia Islam dengan Eropa, melahirkan cendekiawan besar seperti Ibnu Rusyd.
+Islam masuk ke Andalusia pada 711 M lewat ekspedisi yang diprakarsai Gubernur Musa bin Nusair dan dipimpin Thariq bin Ziyad, mengalahkan Raja Roderick dan menguasai hampir seluruh Andalusia pada 718 M. Setelah Daulah Umayah Damaskus runtuh, Abdurrahman Ad-Dakhil mendirikan kembali kekuasaan Umayah yang mandiri di Andalusia (756 M) dengan Kordoba sebagai ibu kota, mencapai puncak kejayaan pada masa Abdurrahman An-Nashir. Namun setelah lebih dari tujuh abad berjaya, perpecahan politik internal dan Reconquista oleh kerajaan-kerajaan Kristen mengakhiri kekuasaan Islam di Andalusia, ditandai jatuhnya Granada pada 2 Januari 1492 M.
 
 ### Poin-Poin Kunci
-- Penaklukan Andalusia dimulai tahun 711 M dipimpin Thariq bin Ziyad, yang menyeberangi Selat Gibraltar (Jabal Thariq) bersama sekitar 7.000 pasukan muslimin dan mengalahkan pasukan Raja Roderick.
-- Abdurrahman Ad-Dakhil mendirikan Daulah Umayah di Andalusia pada tahun 756 M setelah lolos dari kejaran Daulah Abasiah, menjadikan Kordoba sebagai ibu kota pemerintahan.
-- Abdurrahman An-Nashir (Abdurrahman III) membawa Andalusia ke puncak kejayaan, mempromosikan toleransi beragama, dan menjadikan Kordoba sebagai pusat intelektual yang terkenal di dunia.
-- Al-Hakam II melanjutkan kejayaan ilmu pengetahuan dengan membangun Perpustakaan Kordoba, perpustakaan terbesar di Eropa pada masanya.
-- Ibnu Rusyd menjadi puncak kejayaan filsafat Andalusia, menafsirkan karya Aristoteles dan menjembatani pemikiran Islam dengan Eropa yang kelak memengaruhi Renaisans Barat.
+- Penaklukan Andalusia (711 M) diprakarsai Gubernur Afrika Utara Musa bin Nusair, dimulai penyelidikan oleh Tharif bin Malik, lalu Thariq bin Ziyad memimpin sekitar 7.000 pasukan menyeberangi Selat Gibraltar mengalahkan pasukan Raja Roderick; pada 718 M hampir seluruh Andalusia dikuasai Islam.
+- Abdurrahman Ad-Dakhil ("Sang Pendatang") mendirikan Daulah Umayah mandiri di Andalusia pada 756 M dengan Kordoba sebagai ibu kota, menyatukan Muslim, Kristen, dan Yahudi dalam pemerintahan yang relatif harmonis.
+- Abdurrahman An-Nashir membawa Andalusia ke puncak kejayaan sebagai pusat intelektual dunia, dilanjutkan Al-Hakam II lewat Perpustakaan Kordoba, dan melahirkan cendekiawan besar seperti Ibnu Rusyd.
+- Kemunduran dimulai sejak Khalifah Hisyam II (976-1009 M), saat kekuasaan diambil alih wazir diktator Al-Mansur bin Abi Amir; pada 1031 M Daulah pecah menjadi kerajaan-kerajaan kecil (mulūk al-thawā'if) yang saling berkonflik.
+- Reconquista oleh kerajaan-kerajaan Kristen (Castile, Leon, Aragon, Navarra) berlangsung berabad-abad, berpuncak saat Granada — wilayah muslim terakhir — jatuh ke tangan Raja Ferdinand dan Ratu Isabella pada 2 Januari 1492 M, mengakhiri lebih dari tujuh abad kekuasaan Islam di Andalusia.
+
+### Garis Waktu
+- **711 M**: Thariq bin Ziyad memimpin penaklukan Andalusia, mengalahkan Raja Roderick.
+- **718 M**: Hampir seluruh wilayah Andalusia dikuasai Islam.
+- **756 M**: Abdurrahman Ad-Dakhil mendirikan Daulah Umayah mandiri di Andalusia, Kordoba sebagai ibu kota.
+- **Era Abdurrahman An-Nashir & Al-Hakam II**: puncak kejayaan intelektual dan pembangunan Perpustakaan Kordoba.
+- **976-1009 M**: Masa Khalifah Hisyam II — kekuasaan diambil alih wazir diktator Al-Mansur bin Abi Amir, awal kemunduran.
+- **1031 M**: Daulah Umayah Andalusia pecah menjadi kerajaan-kerajaan kecil (mulūk al-thawā'if).
+- **2 Januari 1492 M**: Granada jatuh ke tangan Raja Ferdinand dan Ratu Isabella; Abu Abdullah (Boabdil) menyerah, mengakhiri kekuasaan Islam di Andalusia.
 
 ### Istilah Kunci
-- **Andalusia**: wilayah Semenanjung Iberia (kini Spanyol dan Portugal) yang menjadi pusat peradaban Islam di Eropa selama masa kekuasaan Daulah Umayah.
+- **Andalusia**: wilayah Semenanjung Iberia (kini Spanyol dan Portugal) yang menjadi pusat peradaban Islam di Eropa selama lebih dari tujuh abad.
 - **Kordoba**: ibu kota Daulah Umayah di Andalusia, berkembang menjadi pusat intelektual dan peradaban Islam yang gemilang di Eropa.
-- **Jabal Thariq**: nama Selat Gibraltar yang diabadikan dari nama Thariq bin Ziyad, panglima yang memimpin penaklukan Andalusia pada tahun 711 M.
+- **Jabal Thariq**: nama Selat Gibraltar yang diabadikan dari nama Thariq bin Ziyad, panglima yang memimpin penaklukan Andalusia pada 711 M.
 - **Peradaban Islam Eropa**: kemajuan ilmu pengetahuan, seni, dan arsitektur Islam yang berkembang di Andalusia dan menjembatani dunia Islam dengan Eropa.
+- **Mulūk al-Thawā'if**: kerajaan-kerajaan kecil yang muncul pasca pecahnya Daulah Umayah Andalusia pada 1031 M, saling bersaing dan melemahkan pertahanan bersama.
+- **Reconquista**: rangkaian penaklukan kembali wilayah Andalusia oleh kerajaan-kerajaan Kristen (Castile, Leon, Aragon, Navarra), berpuncak pada jatuhnya Granada 1492 M.
 
 ### Tokoh Terkait
-- **Thariq bin Ziyad**: panglima yang memimpin pasukan muslimin menaklukkan Andalusia pada tahun 711 M, namanya diabadikan sebagai nama Selat Gibraltar (Jabal Thariq).
-- **Abdurrahman Ad-Dakhil**: pendiri Daulah Umayah di Andalusia pada tahun 756 M, menjadikan Kordoba sebagai ibu kota pemerintahan.
-- **Abdurrahman An-Nashir**: membawa Daulah Umayah di Andalusia mencapai puncak kejayaan dan menjadikan Kordoba pusat intelektual dunia.
+- **Thariq bin Ziyad**: panglima yang memimpin pasukan muslimin menaklukkan Andalusia pada 711 M, namanya diabadikan sebagai nama Selat Gibraltar (Jabal Thariq).
+- **Musa bin Nusair**: Gubernur Afrika Utara yang memprakarsai dan mengirim ekspedisi penaklukan Andalusia.
+- **Abdurrahman Ad-Dakhil**: pendiri Daulah Umayah mandiri di Andalusia pada 756 M, menjadikan Kordoba sebagai ibu kota.
+- **Abdurrahman An-Nashir**: membawa Daulah Umayah Andalusia mencapai puncak kejayaan dan menjadikan Kordoba pusat intelektual dunia.
 - **Ibnu Rusyd**: filsuf dan ahli fikih Andalusia, terkenal dengan karya Tahafut At-Tahafut dan penafsiran pemikiran Aristoteles yang berpengaruh hingga ke Eropa.
+- **Abu Abdullah (Boabdil)**: penguasa muslim terakhir Granada, terpaksa menyerahkan kotanya kepada Raja Ferdinand dan Ratu Isabella pada 1492 M, mengakhiri kekuasaan Islam di Andalusia.
