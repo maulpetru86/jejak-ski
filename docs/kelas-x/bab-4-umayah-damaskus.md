@@ -24,17 +24,17 @@ terakhir_diperbarui: "2026-09-20"
 
 # Perkembangan Islam Masa Daulah Umayah di Damaskus
 
-### Konteks Singkat
+## Konteks Singkat
 Daulah Umayah di Damaskus lahir dari konflik politik Ali bin Abi Thalib dan Muawiyah bin Abi Sufyan yang memuncak di Perang Sifin (37 H/657 M), berlanjut ke Tahkim (arbitrase) yang justru melahirkan kelompok Khawarij, hingga penyerahan kekuasaan damai oleh Hasan bin Ali kepada Muawiyah pada tahun 41 H/661 M (Amuljamaah). Muawiyah mengubah sistem kepemimpinan menjadi monarki herediter dan menjadikan Damaskus sebagai ibu kota. Selama hampir 90 tahun, 14 khalifah membawa kemajuan besar di bidang administrasi dan peradaban, sebelum akhirnya runtuh akibat perebutan kekuasaan internal, diskriminasi terhadap kaum mawali, dan pemberontakan Bani Abasiah yang berpuncak di Pertempuran Zab (132 H/750 M).
 
-### Poin-Poin Kunci
+## Poin-Poin Kunci
 - Daulah Umayah lahir dari rangkaian Perang Sifin (37 H/657 M) antara Ali dan Muawiyah, Tahkim yang dimanipulasi pihak Muawiyah hingga melahirkan Khawarij, dan Amuljamaah (41 H/661 M) — penyerahan kekuasaan Hasan bin Ali kepada Muawiyah demi menghindari pertumpahan darah lebih lanjut.
 - Muawiyah bin Abi Sufyan mengubah sistem pemerintahan dari musyawarah menjadi monarki herediter (turun-temurun) dan menjadikan Damaskus sebagai ibu kota.
 - Abdul Malik bin Marwan melakukan arabisasi administrasi dan mencetak mata uang dinar-dirham sendiri; Al-Walid bin Abdul Malik membangun Masjid Umayyah dan memperluas wilayah hingga Andalusia dan Asia Tengah; Umar bin Abdul Aziz dikenal sebagai pemimpin paling adil dan zuhud.
 - Kemunduran mulai terlihat sejak era Hisyam bin Abdul Malik: pemberontakan suku Arab dan kaum mawali (muslim non-Arab) akibat diskriminasi, gaya hidup mewah pejabat, serta perebutan kekuasaan antaranggota keluarga Umayah.
 - Faktor eksternal mempercepat keruntuhan: ancaman Bizantium di perbatasan utara, dan pemberontakan Bani Abasiah yang menggalang dukungan kaum mawali dan Syiah, hingga berpuncak pada kekalahan Khalifah Marwan bin Muhammad (khalifah terakhir) di Pertempuran Zab (132 H/750 M) oleh pasukan Abu Abbas As-Saffah dan Abu Muslim Al-Khurasani.
 
-### Garis Waktu
+## Garis Waktu
 - **37 H/657 M**: Perang Sifin antara pasukan Ali bin Abi Thalib dan Muawiyah bin Abi Sufyan.
 - **37 H**: Tahkim (arbitrase) antara Amr bin Ash (wakil Muawiyah) dan Abu Musa Al-Asy'ari (wakil Ali); memicu lahirnya kelompok Khawarij.
 - **40 H/661 M**: Ali bin Abi Thalib wafat; Hasan bin Ali memimpin sekitar 6 bulan di tengah tekanan Muawiyah.
@@ -43,7 +43,7 @@ Daulah Umayah di Damaskus lahir dari konflik politik Ali bin Abi Thalib dan Muaw
 - **Era Hisyam bin Abdul Malik**: mulai muncul pemberontakan suku Arab dan kaum mawali akibat diskriminasi.
 - **132 H/750 M**: Pertempuran Zab di Irak — pasukan Abasiah (Abu Abbas As-Saffah dan Abu Muslim Al-Khurasani) mengalahkan Khalifah Marwan bin Muhammad, mengakhiri Daulah Umayah di Damaskus dan menandai berdirinya Daulah Abasiah.
 
-### Istilah Kunci
+## Istilah Kunci
 - **Monarki Herediter**: sistem pemerintahan turun-temurun yang diterapkan Daulah Umayah, menggantikan sistem musyawarah pada masa Khulafaurasyidin.
 - **Diwanul Barid**: departemen pos yang dibentuk untuk mempercepat komunikasi antarprovinsi dalam sistem administrasi Daulah Umayah.
 - **Arabisasi Administrasi**: kebijakan menjadikan Bahasa Arab sebagai bahasa resmi administrasi pemerintahan, menggantikan bahasa Yunani dan Persia.
@@ -53,7 +53,7 @@ Daulah Umayah di Damaskus lahir dari konflik politik Ali bin Abi Thalib dan Muaw
 - **Amuljamaah**: "Tahun Persatuan" (41 H/661 M), saat Hasan bin Ali menyerahkan kekuasaan kepada Muawiyah sehingga umat Islam kembali bersatu di bawah satu kepemimpinan.
 - **Pertempuran Zab**: pertempuran 132 H/750 M di Irak yang mengakhiri kekuasaan Daulah Umayah di Damaskus, dimenangkan pasukan Abasiah.
 
-### Tokoh Terkait
+## Tokoh Terkait
 - **Muawiyah bin Abi Sufyan**: pendiri dan khalifah pertama Daulah Umayah, mengubah sistem kepemimpinan menjadi monarki herediter dan menjadikan Damaskus sebagai ibu kota.
 - **Abdul Malik bin Marwan**: khalifah pembaru yang menerapkan arabisasi administrasi dan mencetak mata uang Islam pertama.
 - **Walid bin Abdul Malik**: membangun Masjid Umayyah dan memperluas wilayah kekuasaan Islam hingga Andalusia dan Asia Tengah.

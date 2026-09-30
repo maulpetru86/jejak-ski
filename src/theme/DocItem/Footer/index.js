@@ -11,7 +11,7 @@ export default function DocItemFooterWrapper(props) {
       {kelas && (
         <div className="chapter-disclaimer-box">
           <div className="chapter-disclaimer-header">
-            <span className="chapter-disclaimer-icon">⚖️</span>
+            <span className="chapter-disclaimer-icon" aria-hidden="true">⚖️</span>
             <strong>Pemberitahuan Hak Cipta & Ketentuan Penggunaan</strong>
           </div>
           <p className="chapter-disclaimer-text">

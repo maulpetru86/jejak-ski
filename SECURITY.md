@@ -8,7 +8,7 @@ Security fixes are applied to the current production branch.
 
 Please do not disclose security vulnerabilities publicly in GitHub Issues.
 
-Report suspected vulnerabilities privately to the repository maintainer.
+Report suspected vulnerabilities privately through [GitHub Security Advisories](https://github.com/maulpetru86/jejak-ski/security/advisories/new) or contact MGMP SKI Kab. Nganjuk coordinators privately.
 
 Include:
 - affected URL/file

@@ -1,20 +1,19 @@
-name: Deploy ke Firebase Hosting Otomatis
+name: CI Validasi Pull Request
 
 on:
-  push:
+  pull_request:
     branches:
       - main
 
-# SEC-008: Least privilege — hanya read access ke repository contents
 permissions:
   contents: read
 
 concurrency:
-  group: deploy-main
-  cancel-in-progress: false
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  build_and_deploy:
+  validate_and_build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repositori
@@ -34,11 +33,3 @@ jobs:
 
       - name: Build Situs Statis
         run: npm run build
-
-      - name: Deploy ke Firebase Hosting
-        uses: w9jds/firebase-action@7238bf3e459b061e0a1205b4b14e55348b291fc6 # v13.29.1
-        with:
-          args: deploy --only hosting
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-          PROJECT_ID: jejak-ski

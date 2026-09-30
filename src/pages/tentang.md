@@ -8,11 +8,13 @@ hide_table_of_contents: false
 
 **Jejak SKI** adalah portal referensi terbuka Sejarah Kebudayaan Islam untuk siswa **Madrasah Aliyah** di seluruh Indonesia. Situs ini menyajikan ringkasan dan intisari materi SKI Kelas X, XI, dan XII yang disusun mengikuti struktur buku siswa resmi Kementerian Agama Republik Indonesia.
 
+> ⚠️ **Perhatian:** Jejak SKI adalah portal **tidak resmi** dan **bukan** situs Kementerian Agama Republik Indonesia. Konten ini merupakan rangkuman dan parafrase edukatif mandiri — bukan pengganti buku teks resmi. Selalu rujuk buku siswa resmi Kemenag RI untuk referensi belajar yang utuh.
+
 ---
 
 ## Latar Belakang
 
-Portal ini diinisiasi oleh civitas akademika **MAN 2 Nganjuk** sebagai wujud kontribusi dalam menghadirkan ruang belajar digital terbuka. Tujuan utamanya adalah membantu siswa Madrasah Aliyah dalam:
+Portal ini diinisiasi oleh **MGMP SKI Kab. Nganjuk** (Musyawarah Guru Mata Pelajaran Sejarah Kebudayaan Islam Kabupaten Nganjuk) sebagai wujud kontribusi dalam menghadirkan ruang belajar digital terbuka. Tujuan utamanya adalah membantu siswa Madrasah Aliyah dalam:
 
 - Memahami materi Sejarah Kebudayaan Islam secara terstruktur dan mudah diakses
 - Mempersiapkan diri untuk asesmen harian dan ujian madrasah
@@ -48,12 +50,14 @@ Seluruh buku di atas merupakan buku teks pelajaran resmi yang diterbitkan di baw
 
 ## Hak Cipta & Lisensi
 
-Konten di portal ini merupakan **rangkuman dan parafrase edukatif mandiri** yang disusun oleh tim Jejak SKI. Hak cipta materi asli tetap berada pada Kementerian Agama Republik Indonesia dan penulis buku sumber.
+Konten di portal ini merupakan **rangkuman dan parafrase edukatif mandiri** yang disusun oleh MGMP SKI Kab. Nganjuk. Hak cipta materi asli tetap berada pada Kementerian Agama Republik Indonesia dan penulis buku sumber.
 
 Penggunaan konten di Jejak SKI tunduk pada ketentuan berikut:
 - Konten bebas diakses untuk keperluan belajar dan pendidikan
 - Pengutipan untuk keperluan akademis diperbolehkan dengan menyertakan sumber
 - Penyalinan massal untuk tujuan komersial **tidak diizinkan**
+
+Informasi mengenai perlindungan data dan privasi pengguna dapat dibaca di halaman [Kebijakan Privasi](/privasi).
 
 ---
 
@@ -61,7 +65,8 @@ Penggunaan konten di Jejak SKI tunduk pada ketentuan berikut:
 
 Kami mengutamakan akurasi konten. Jika Anda menemukan kesalahan informasi, ketidaksesuaian dengan buku sumber, atau memiliki saran perbaikan, silakan sampaikan melalui:
 
-- **GitHub Issues:** [Laporkan di sini](https://github.com/maulpetru86/jejak-ski/issues) — cara tercepat untuk melaporkan kesalahan spesifik
+- **Kontak Pengelola:** Hubungi MGMP SKI Kab. Nganjuk melalui koordinator madrasah setempat
+- **GitHub Issues:** [Laporkan di sini](https://github.com/maulpetru86/jejak-ski/issues) — cara tercepat untuk melaporkan kesalahan spesifik bagi pengguna teknis
 - **Pull Request:** Kontributor yang ingin memperbaiki langsung dapat mengajukan pull request di [repositori GitHub](https://github.com/maulpetru86/jejak-ski)
 
 Setiap laporan akan ditinjau dan ditindaklanjuti secepat mungkin.
@@ -72,7 +77,7 @@ Setiap laporan akan ditinjau dan ditindaklanjuti secepat mungkin.
 
 Portal Jejak SKI diinisiasi dan dikelola oleh:
 
-**Civitas Akademika MAN 2 Nganjuk**
+**MGMP SKI Kab. Nganjuk**
 Jawa Timur, Indonesia
 
 ---

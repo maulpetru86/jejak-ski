@@ -14,6 +14,8 @@ const config = {
   organizationName: 'maulpetru86',
   projectName: 'jejak-ski',
 
+  trailingSlash: false,
+
   onBrokenLinks: 'throw',
 
   markdown: {
@@ -47,8 +49,12 @@ const config = {
         },
         gtag: process.env.NODE_ENV === 'production' ? {
           trackingID: 'G-GR5KG10DK7', // Firebase Analytics Measurement ID
-          anonymizeIP: true,           // NFR-05: Anonimkan IP pengunjung tanpa PII
+          // anonymizeIP tidak berpengaruh di GA4 (hanya Universal Analytics)
         } : undefined,
+        sitemap: {
+          ignorePatterns: ['/404', '/search'],
+          changefreq: 'weekly',
+        },
       }),
     ],
   ],
@@ -77,6 +83,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      image: 'img/og-image.png', // og:image & twitter:image untuk preview sosial (1200x630)
       navbar: {
         title: 'Jejak SKI',
         logo: {
@@ -91,17 +98,17 @@ const config = {
             label: 'Materi',
           },
           {
-            to: '/docs/kelas-x/',
+            to: '/docs/kelas-x',
             label: 'Kelas X',
             position: 'left',
           },
           {
-            to: '/docs/kelas-xi/',
+            to: '/docs/kelas-xi',
             label: 'Kelas XI',
             position: 'left',
           },
           {
-            to: '/docs/kelas-xii/',
+            to: '/docs/kelas-xii',
             label: 'Kelas XII',
             position: 'left',
           },
@@ -132,15 +139,16 @@ const config = {
             items: [
               { label: 'Beranda', to: '/' },
               { label: 'Semua Materi', to: '/docs/intro' },
-              { label: 'Kelas X', to: '/docs/kelas-x/' },
-              { label: 'Kelas XI', to: '/docs/kelas-xi/' },
-              { label: 'Kelas XII', to: '/docs/kelas-xii/' },
+              { label: 'Kelas X', to: '/docs/kelas-x' },
+              { label: 'Kelas XI', to: '/docs/kelas-xi' },
+              { label: 'Kelas XII', to: '/docs/kelas-xii' },
             ],
           },
           {
             title: 'Informasi',
             items: [
               { label: 'Tentang Jejak SKI', to: '/tentang' },
+              { label: 'Kebijakan Privasi', to: '/privasi' },
               {
                 label: 'Laporkan Koreksi',
                 href: 'https://github.com/maulpetru86/jejak-ski/issues',
@@ -151,7 +159,7 @@ const config = {
             ],
           },
         ],
-        copyright: `© ${new Date().getFullYear()} Jejak SKI · Diinisiasi oleh MAN 2 Nganjuk · Materi mengacu pada buku SKI Kemenag RI (KMA 1503/2025)`,
+        copyright: `© ${new Date().getFullYear()} Jejak SKI · Diinisiasi oleh MGMP SKI Kab. Nganjuk · Materi mengacu pada buku SKI Kemenag RI (KMA 1503/2025) · Bukan situs resmi Kemenag RI`,
       },
       prism: {
         theme: prismThemes.github,

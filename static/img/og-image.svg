@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0b2116;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#163E2B;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c9a84c;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f4d03f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c9a84c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  
+  <!-- Geometric patterns top-left -->
+  <g opacity="0.12" stroke="#E5B869" stroke-width="1.2" fill="none">
+    <polygon points="0,0 120,0 60,104" /><polygon points="60,104 120,0 180,104" />
+    <polygon points="0,0 60,104 0,208" /><polygon points="120,0 240,0 180,104" />
+    <polygon points="0,208 60,104 120,208" /><polygon points="120,208 180,104 240,208" />
+    <polygon points="0,208 120,208 60,312" /><polygon points="60,312 120,208 180,312" />
+  </g>
+  
+  <!-- Geometric patterns top-right -->
+  <g opacity="0.12" stroke="#E5B869" stroke-width="1.2" fill="none" transform="translate(960,0)">
+    <polygon points="0,0 120,0 60,104" /><polygon points="60,104 120,0 180,104" />
+    <polygon points="0,0 60,104 0,208" /><polygon points="120,0 240,0 180,104" />
+    <polygon points="0,208 60,104 120,208" /><polygon points="120,208 180,104 240,208" />
+  </g>
+
+  <!-- Top gold rule -->
+  <rect x="80" y="80" width="1040" height="2" fill="url(#goldGrad)" opacity="0.8"/>
+
+  <!-- URL badge -->
+  <rect x="80" y="94" width="220" height="32" rx="4" fill="#c9a84c" opacity="0.18"/>
+  <text x="96" y="116" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="14" font-weight="600" fill="#E5B869" letter-spacing="2">jejak-ski.web.app</text>
+
+  <!-- Mosque silhouette in lower section (non-colliding) -->
+  <g fill="#0b2116" opacity="0.6">
+    <!-- Main dome -->
+    <rect x="500" y="540" width="200" height="90"/>
+    <path d="M500,540 Q500,470 600,460 Q700,470 700,540 Z"/>
+    <ellipse cx="600" cy="460" rx="18" ry="9"/>
+    <!-- Minaret Left -->
+    <rect x="420" y="490" width="24" height="140"/><ellipse cx="432" cy="490" rx="12" ry="6"/>
+    <circle cx="432" cy="482" r="4" fill="#c9a84c" opacity="0.7"/>
+    <!-- Minaret Right -->
+    <rect x="756" y="490" width="24" height="140"/><ellipse cx="768" cy="490" rx="12" ry="6"/>
+    <circle cx="768" cy="482" r="4" fill="#c9a84c" opacity="0.7"/>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="240" font-family="'Plus Jakarta Sans', Georgia, serif" font-size="96" font-weight="bold" text-anchor="middle" fill="#f4d03f" letter-spacing="4">Jejak SKI</text>
+
+  <!-- Ornamental Divider -->
+  <text x="600" y="282" font-family="serif" font-size="16" text-anchor="middle" fill="#c9a84c" opacity="0.7" letter-spacing="10">&#8942; &#8942; &#8942;</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="330" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="26" font-weight="600" text-anchor="middle" fill="#FBF9F4" letter-spacing="0.5">Portal Referensi Sejarah Kebudayaan Islam</text>
+
+  <!-- Description -->
+  <text x="600" y="375" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="18" text-anchor="middle" fill="#b0c8be" letter-spacing="0.3">untuk Siswa Madrasah Aliyah &#183; Kelas X, XI, dan XII</text>
+
+  <!-- Bottom gold rule (clean, below mosque) -->
+  <rect x="80" y="555" width="1040" height="2" fill="url(#goldGrad)" opacity="0.7"/>
+
+  <!-- Bottom tag -->
+  <text x="600" y="590" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#E5B869" opacity="0.9" letter-spacing="2">KURIKULUM MERDEKA &#183; MGMP SKI KAB. NGANJUK</text>
+</svg>
