@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import Content from '@theme-original/DocItem/Content';
 import Head from '@docusaurus/Head';
 import {useDoc} from '@docusaurus/plugin-content-docs/client';
+import {TOTAL_BAB} from '../../../data/kurikulum';
 
 export default function DocItemContentWrapper(props) {
   const {frontMatter, metadata} = useDoc();
@@ -21,12 +22,7 @@ export default function DocItemContentWrapper(props) {
     if (typeof window === 'undefined' || !isChapterPage) return;
 
     try {
-      const totalBabMap = {
-        'X': 6,
-        'XI': 5,
-        'XII': 5,
-      };
-      const totalBab = totalBabMap[kelas] || 6;
+      const totalBab = TOTAL_BAB[kelas] || 6;
       const currentBabNum = parseInt(bab_nomor, 10) || 1;
 
       // Kelola riwayat bab yang sudah pernah dibuka/dibaca
@@ -47,15 +43,15 @@ export default function DocItemContentWrapper(props) {
         } catch (err) {}
       }
 
-      // Hitung jumlah bab yang sudah dipelajari di kelas ini (bab sebelum bab saat ini dianggap selesai)
-      const finishedBab = Math.max(0, currentBabNum - 1);
-      const progressPercent = Math.min(100, Math.round((finishedBab / totalBab) * 100));
+      // T5: Hitung bab yang sudah dibuka di kelas ini (dari read history, bukan bab-1)
+      const openedInClass = readHistory.filter(k => k.startsWith(`${kelas}-`)).length;
+      const progressPercent = Math.min(100, Math.round((openedInClass / totalBab) * 100));
 
       // Pemetaan default thumbnail ilustrasi unik untuk tiap Bab
       const CHAPTER_THUMBNAILS = {
         'X-1': '/img/thumbs/x-1-makkah.jpg',
         'X-2': '/img/thumbs/x-2-madinah.jpg',
-        'X-3': '/img/thumbs/x-3-khulafaurasyidin.png',
+        'X-3': '/img/thumbs/x-3-khulafaurasyidin.jpg',
         'X-4': '/img/thumbs/x-4-umayah-damaskus.jpg',
         'X-5': '/img/thumbs/x-5-umayah-andalusia.jpg',
         'X-6': '/img/thumbs/x-6-abasiah.jpg',
@@ -73,9 +69,9 @@ export default function DocItemContentWrapper(props) {
 
       // Tentukan thumbnail sesuai frontmatter, pemetaan bab unik, atau background kelas
       const classBgMap = {
-        'X': '/img/card-kelas-x-bg.png',
-        'XI': '/img/card-kelas-xi-bg.png',
-        'XII': '/img/card-kelas-xii-bg.png',
+        'X': '/img/card-kelas-x-bg.webp',
+        'XI': '/img/card-kelas-xi-bg.webp',
+        'XII': '/img/card-kelas-xii-bg.webp',
       };
       const thumb = frontMatter?.thumbnail || frontMatter?.gambar_sampul || CHAPTER_THUMBNAILS[chapterKey] || classBgMap[kelas] || '/img/thumbs/x-1-makkah.jpg';
 
@@ -90,7 +86,7 @@ export default function DocItemContentWrapper(props) {
         title: cleanTitle,
         desc: ringkasan_singkat || judul || 'Lanjutkan mempelajari rangkuman materi sejarah kebudayaan Islam.',
         to: metadata?.permalink || window.location.pathname,
-        progressText: `${finishedBab} dari ${totalBab} bab selesai`,
+        progressText: `${openedInClass} dari ${totalBab} bab sudah dibuka`,
         progressPercent: progressPercent,
         thumb: thumb,
       };
@@ -126,14 +122,14 @@ export default function DocItemContentWrapper(props) {
             </span>
             {sumber_buku && (
               <span className="chapter-source">
-                📚 {sumber_buku}
+                <span aria-hidden="true">📚</span> {sumber_buku}
               </span>
             )}
           </div>
 
           {ringkasan_singkat && (
             <div className="chapter-summary-card">
-              <span className="chapter-summary-icon">💡</span>
+              <span className="chapter-summary-icon" aria-hidden="true">💡</span>
               <p className="chapter-summary-text">{ringkasan_singkat}</p>
             </div>
           )}
@@ -144,7 +140,7 @@ export default function DocItemContentWrapper(props) {
               <div className="tokoh-chips-wrapper">
                 {tokoh_terkait.map((tokoh, idx) => (
                   <span key={idx} className="tokoh-chip">
-                    <span className="tokoh-chip-icon">👤</span> {tokoh}
+                    <span className="tokoh-chip-icon" aria-hidden="true">👤</span> {tokoh}
                   </span>
                 ))}
               </div>

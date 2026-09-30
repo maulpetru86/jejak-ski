@@ -3,7 +3,15 @@
  * Sesuai PRD §8, NFR-01 (Ukuran min. 16px, responsif 360-768px), dan NFR-06 (Aksesibilitas WCAG AA)
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+/* T11: Self-hosted fonts via @fontsource — tidak ada request ke Google Fonts */
+@import '@fontsource/plus-jakarta-sans/400.css';
+@import '@fontsource/plus-jakarta-sans/400-italic.css';
+@import '@fontsource/plus-jakarta-sans/500.css';
+@import '@fontsource/plus-jakarta-sans/600.css';
+@import '@fontsource/plus-jakarta-sans/700.css';
+@import '@fontsource/amiri/400.css';
+@import '@fontsource/amiri/400-italic.css';
+@import '@fontsource/amiri/700.css';
 
 :root {
   /* Palet Warna Teruji Sesuai Board UI Jejak SKI Klasik */
@@ -241,7 +249,6 @@
     color: #1E2522 !important;
     border-color: #E5B869 !important;
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2) !important;
-    outline: none !important;
   }
 
   .navbar__search-input:focus::placeholder {
@@ -442,7 +449,6 @@
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.22) !important;
     font-size: 0.95rem !important;
     text-indent: 0 !important;
-    outline: none !important;
     box-sizing: border-box !important;
   }
 
@@ -1121,7 +1127,7 @@ article strong {
   right: 0;
   bottom: 0;
   height: 100px;
-  background-image: url('/img/footer-bg.png');
+  background-image: url('/img/footer-bg.webp');
   background-repeat: repeat-x;
   background-position: bottom center;
   background-size: auto 100px;
@@ -2864,3 +2870,45 @@ pre {
     gap: 0.35rem;
   }
 }
+
+/* ============================================================
+   T12: Aksesibilitas — prefers-reduced-motion
+   Nonaktifkan animasi & transisi untuk pengguna yang memintanya
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .board-hero-bg-img,
+  .board-jenjang-card,
+  .board-pillar-item,
+  .board-continue-card,
+  .chapter-catalog-card {
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* T12/N6: Fokus visible — pastikan outline terlihat jelas untuk navigasi keyboard (WCAG 2.4.7) */
+:focus-visible {
+  outline: 3px solid var(--ski-gold, #c9a84c) !important;
+  outline-offset: 2px !important;
+}
+
+.navbar :focus-visible,
+.footer :focus-visible,
+.board-hero :focus-visible {
+  outline-color: var(--ski-gold-accent, #E5B869) !important;
+}
+
+.navbar__search-input:focus-visible {
+  outline: 3px solid var(--ski-gold-accent, #E5B869) !important;
+  outline-offset: 2px !important;
+}
+

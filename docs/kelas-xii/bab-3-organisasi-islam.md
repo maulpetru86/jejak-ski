@@ -27,10 +27,10 @@ terakhir_diperbarui: "2026-09-22"
 
 # Kontribusi Umat Islam Prakemerdekaan melalui Organisasi Berbasis Islam
 
-### Konteks Singkat
+## Konteks Singkat
 Di tengah tekanan kolonial dan Politik Etis awal abad ke-20, umat Islam Indonesia membentuk sembilan organisasi untuk membangkitkan kesadaran nasional sekaligus memperbaiki kondisi umat: organisasi massa nasional (Sarekat Islam, Muhammadiyah, Nahdlatul Ulama), organisasi kedaerahan berbasis pendidikan (Al-Washliyah, Mathla'ul Anwar, PERTI), organisasi pemurnian ajaran (Persatuan Islam, Al-Irsyad Al-Islamiyah), serta organisasi kepemudaan (Jong Islamieten Bond).
 
-### Poin-Poin Kunci
+## Poin-Poin Kunci
 
 **Organisasi Massa Nasional**
 - Sarekat Islam bermula dari Sarekat Dagang Islam (H. Samanhudi, 1905) untuk melawan dominasi ekonomi pedagang Tionghoa, diperluas H.O.S. Tjokroaminoto menjadi organisasi nasional politik-agama.
@@ -49,7 +49,7 @@ Di tengah tekanan kolonial dan Politik Etis awal abad ke-20, umat Islam Indonesi
 **Organisasi Kepemudaan**
 - Jong Islamieten Bond (JIB) didirikan 1 Januari 1925 di Jakarta oleh Raden Syamsurijal (ketua Jong Java), atas dorongan pentingnya pendidikan agama Islam bagi pemuda MULO dan AMS yang saat itu tidak mendapat pelajaran agama; didukung H. Agus Salim.
 
-### Istilah Kunci
+## Istilah Kunci
 - **Sarekat Islam (SI)**: organisasi yang berkembang dari Sarekat Dagang Islam, diperluas H.O.S. Tjokroaminoto menjadi gerakan nasional politik-ekonomi-agama.
 - **Muhammadiyah**: organisasi Islam modernis didirikan K.H. Ahmad Dahlan (1912), fokus pembaruan pendidikan dan kesejahteraan sosial.
 - **Nahdlatul Ulama (NU)**: organisasi didirikan K.H. Hasyim Asy'ari (1926) untuk melestarikan tradisi ahlussunnah wal jamaah.
@@ -60,7 +60,7 @@ Di tengah tekanan kolonial dan Politik Etis awal abad ke-20, umat Islam Indonesi
 - **Al-Irsyad Al-Islamiyah**: organisasi pendidikan Islam murni (1914) di Batavia, didirikan Syekh Ahmad Surkati pasca perselisihan soal kafaah di Jami'at Khair.
 - **Jong Islamieten Bond (JIB)**: organisasi pemuda Islam (1925) di Jakarta untuk pelajar MULO-AMS, didirikan Raden Syamsurijal.
 
-### Tokoh Terkait
+## Tokoh Terkait
 - **H.O.S. Tjokroaminoto**: mengubah Sarekat Dagang Islam menjadi Sarekat Islam berskala nasional.
 - **K.H. Ahmad Dahlan**: pendiri Muhammadiyah, pembaru pendidikan Islam modern Indonesia.
 - **K.H. Hasyim Asy'ari**: pendiri Nahdlatul Ulama, juga berperan dalam Resolusi Jihad.

@@ -12,7 +12,7 @@ Portal ini merangkum poin-poin penting dari buku teks resmi Kementerian Agama Re
 
 ---
 
-### Pilihan Materi Berdasarkan Jenjang Kelas
+## Pilihan Materi Berdasarkan Jenjang Kelas
 
 Pilih jenjang kelas di bawah ini untuk langsung menuju bab pertama:
 
@@ -22,4 +22,4 @@ Pilih jenjang kelas di bawah ini untuk langsung menuju bab pertama:
 
 > **Catatan:** Urutan materi dan judul bab pada portal ini mengikuti secara persis urutan buku teks siswa resmi Kementerian Agama RI.
 
-> **Inisiatif Terbuka:** Portal Jejak SKI diinisiasi oleh civitas akademika MAN 2 Nganjuk sebagai dedikasi dan kontribusi terbuka bagi kemajuan literasi sejarah Islam siswa madrasah di seluruh Indonesia.
+> **Inisiatif Terbuka:** Portal Jejak SKI diinisiasi oleh **MGMP SKI Kab. Nganjuk** sebagai dedikasi dan kontribusi terbuka bagi kemajuan literasi sejarah Islam siswa madrasah di seluruh Indonesia.

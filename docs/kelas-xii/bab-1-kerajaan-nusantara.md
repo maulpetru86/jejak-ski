@@ -24,10 +24,10 @@ terakhir_diperbarui: "2026-09-20"
 
 # Kerajaan Islam Nusantara
 
-### Konteks Singkat
+## Konteks Singkat
 Kesultanan-kesultanan Islam tumbuh di empat wilayah besar Nusantara: Sumatra (Perlak, Samudra Pasai, Malaka, Aceh), Jawa (Demak, Pajang, Mataram, Cirebon, Banten), Kalimantan (Banjar, Kutai Kartanegara), serta Sulawesi-Maluku (Gowa-Tallo, Ternate-Tidore). Menariknya, Kerajaan Perlak yang berdiri 840 M diklaim sebagai kerajaan Islam tertua di Nusantara, mendahului Samudra Pasai yang selama ini lebih populer disebut sebagai yang pertama. Masing-masing kesultanan tumbuh dengan corak pemerintahan, kekuatan ekonomi maritim, dan strategi pertahanan kedaulatan yang berbeda-beda, namun sama-sama berperan besar mengakarkan Islam di bumi Nusantara.
 
-### Poin-Poin Kunci
+## Poin-Poin Kunci
 
 **A. Kerajaan Islam di Sumatra**
 - Kerajaan Perlak berdiri 1 Muharam 225 H/840 M, didirikan Sayid Abdul Aziz — diklaim sebagai kerajaan Islam tertua di Nusantara, dengan sistem pemerintahan mirip Dinasti Abasiyah (dibantu para wazir urusan politik, keamanan, administrasi, keuangan). Perlak akhirnya melebur ke Samudra Pasai pada 1292 M.
@@ -50,7 +50,7 @@ Kesultanan-kesultanan Islam tumbuh di empat wilayah besar Nusantara: Sumatra (Pe
 - Kerajaan Gowa-Tallo mencapai puncak popularitas pada masa Sultan Hasanuddin (1653-1669 M), yang gigih mempertahankan kedaulatan Makassar dari VOC sebelum akhirnya terdesak.
 - Kesultanan Ternate-Tidore berkembang sebagai pusat perdagangan rempah, dengan Sultan Baabullah berhasil mengusir Portugis dari Ternate dan memperluas wilayah kekuasaan hingga Kepulauan Sulu, Filipina.
 
-### Istilah Kunci
+## Istilah Kunci
 - **Kerajaan Perlak**: kerajaan Islam yang diklaim tertua di Nusantara, berdiri 840 M di Aceh, akhirnya melebur ke Samudra Pasai pada 1292 M.
 - **Samudera Pasai**: kerajaan Islam paling populer sebagai rujukan awal islamisasi Nusantara, berdiri di Aceh dengan Sultan Malik As-Saleh sebagai raja pertamanya.
 - **Kesultanan Aceh Darussalam**: kerajaan Islam di ujung utara Sumatra, berdiri 1511 M, mencapai puncak kejayaan sebagai pusat dagang dan keilmuan Islam pada masa Sultan Iskandar Muda.
@@ -59,7 +59,7 @@ Kesultanan-kesultanan Islam tumbuh di empat wilayah besar Nusantara: Sumatra (Pe
 - **Gowa-Tallo**: persekutuan dua kerajaan di Sulawesi Selatan yang bersatu pada 1528 M menjadi Kerajaan Makassar, mencapai puncak popularitas pada masa Sultan Hasanuddin.
 - **Ternate-Tidore**: kesultanan-kesultanan Islam di Maluku yang menguasai jalur perdagangan rempah, mencapai puncak perlawanan terhadap Portugis pada masa Sultan Baabullah.
 
-### Tokoh Terkait
+## Tokoh Terkait
 - **Sultan Malik As-Saleh**: raja pertama Kerajaan Samudera Pasai, wafat 696 H/1297 M.
 - **Raden Patah**: pendiri Kesultanan Demak, putra Raja Brawijaya V dari Majapahit yang diangkat Sunan Ampel.
 - **Sultan Hasanuddin (Gowa)**: penguasa Kerajaan Gowa-Tallo (1653-1669 M) yang gigih melawan dominasi VOC di Sulawesi Selatan.

@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Link from '@docusaurus/Link';
+import { useHistory } from '@docusaurus/router';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
+import { TOTAL_BAB, KELAS_INFO } from '../data/kurikulum';
 
 // SVG Icons untuk 4 Pilar "Mengapa Jejak SKI" (Bebas Emoji)
 function BookIcon() {
@@ -65,6 +67,7 @@ function IslamicOrnamentIcon() {
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
+  const history = useHistory();
 
   // State untuk Lanjutkan Belajar (null saat pertama kali kunjungan, baru muncul setelah ada riwayat baca)
   const [continueState, setContinueState] = useState(null);
@@ -76,8 +79,22 @@ export default function Home() {
         const saved = localStorage.getItem('jejak_ski_continue_learning');
         if (saved) {
           const parsed = JSON.parse(saved);
-          if (parsed && parsed.title && parsed.to) {
-            setContinueState(parsed);
+          // T7: Validasi ketat — tolak data yang tidak sesuai format aman
+          const isValidTo = typeof parsed?.to === 'string' &&
+            /^\/docs\/kelas-(x|xi|xii)\/[a-z0-9-]+\/?$/.test(parsed.to);
+          const isValidThumb = typeof parsed?.thumb === 'string' &&
+            (parsed.thumb.startsWith('/img/') || parsed.thumb === '');
+          const isValidProgress = typeof parsed?.progressPercent === 'number' &&
+            parsed.progressPercent >= 0 && parsed.progressPercent <= 100;
+          const isValidTitle = typeof parsed?.title === 'string' &&
+            parsed.title.length > 0 && parsed.title.length < 200;
+
+          if (parsed && isValidTo && isValidThumb && isValidProgress && isValidTitle) {
+            setContinueState({
+              ...parsed,
+              progressPercent: Math.min(100, Math.max(0, parsed.progressPercent)),
+              thumb: isValidThumb ? parsed.thumb : '',
+            });
           }
         }
       } catch (e) {
@@ -95,18 +112,14 @@ export default function Home() {
     };
   }, []);
 
+  // T9/N11: Tombol cari — fokus ke input navbar bila terlihat, atau navigasi SPA ke /search
   const handleSearchClick = () => {
     const searchInput = document.querySelector('.navbar__search-input');
-    if (searchInput) {
+    if (searchInput && searchInput.offsetParent !== null) {
       searchInput.focus();
       searchInput.click();
     } else {
-      document.dispatchEvent(new KeyboardEvent('keydown', {
-        key: 'k',
-        code: 'KeyK',
-        ctrlKey: true,
-        bubbles: true,
-      }));
+      history.push('/search');
     }
   };
 
@@ -114,38 +127,38 @@ export default function Home() {
     {
       id: 'kelas-x',
       kelas: 'Kelas X',
-      fase: 'Fase E',
-      title: 'Sirah Nabawiyah & Daulah Islam Awal',
-      meta: '6 Bab · 1–2 Semester',
-      desc: 'Mencakup periode dakwah Makkah dan Madinah, kepemimpinan Khulafaurasyidin, Daulah Umayah di Damaskus & Andalusia, hingga masa keemasan Daulah Abasiah.',
-      to: '/docs/kelas-x/',
-      bgImage: '/img/card-kelas-x-bg.png',
-      colorTheme: 'jenjang-theme-green',
-      accentColor: '#163E2B',
+      fase: KELAS_INFO.X.fase,
+      title: KELAS_INFO.X.title,
+      meta: `${TOTAL_BAB.X} Bab · Semester Ganjil dan Genap`,
+      desc: KELAS_INFO.X.desc,
+      to: KELAS_INFO.X.to,
+      bgImage: KELAS_INFO.X.bgImage,
+      colorTheme: KELAS_INFO.X.colorTheme,
+      accentColor: KELAS_INFO.X.accentColor,
     },
     {
       id: 'kelas-xi',
       kelas: 'Kelas XI',
-      fase: 'Fase F',
-      title: 'Tiga Kerajaan Besar & Masuknya Islam ke Nusantara',
-      meta: '5 Bab · 1–2 Semester',
-      desc: 'Mempelajari kejayaan Daulah Usmani di Turki, Daulah Safawi di Persia, Daulah Mughal di India, serta jalur sejarah masuknya Islam dan peran Wali Sanga di Nusantara.',
-      to: '/docs/kelas-xi/',
-      bgImage: '/img/card-kelas-xi-bg.png',
-      colorTheme: 'jenjang-theme-gold',
-      accentColor: '#7A5C00',
+      fase: KELAS_INFO.XI.fase,
+      title: KELAS_INFO.XI.title,
+      meta: `${TOTAL_BAB.XI} Bab · Semester Ganjil dan Genap`,
+      desc: KELAS_INFO.XI.desc,
+      to: KELAS_INFO.XI.to,
+      bgImage: KELAS_INFO.XI.bgImage,
+      colorTheme: KELAS_INFO.XI.colorTheme,
+      accentColor: KELAS_INFO.XI.accentColor,
     },
     {
       id: 'kelas-xii',
       kelas: 'Kelas XII',
-      fase: 'Fase F',
-      title: 'Islam di Nusantara & Perjuangan Kemerdekaan',
-      meta: '5 Bab · 1–2 Semester',
-      desc: 'Mengkaji kerajaan-kerajaan Islam Nusantara, peran ulama awal dan pesantren, organisasi pergerakan Islam, perjuangan kemerdekaan, hingga tokoh pascakemerdekaan.',
-      to: '/docs/kelas-xii/',
-      bgImage: '/img/card-kelas-xii-bg.png',
-      colorTheme: 'jenjang-theme-maroon',
-      accentColor: '#7A1A22',
+      fase: KELAS_INFO.XII.fase,
+      title: KELAS_INFO.XII.title,
+      meta: `${TOTAL_BAB.XII} Bab · Semester Ganjil dan Genap`,
+      desc: KELAS_INFO.XII.desc,
+      to: KELAS_INFO.XII.to,
+      bgImage: KELAS_INFO.XII.bgImage,
+      colorTheme: KELAS_INFO.XII.colorTheme,
+      accentColor: KELAS_INFO.XII.accentColor,
     },
   ];
 
@@ -178,7 +191,7 @@ export default function Home() {
 
   return (
     <Layout
-      title={`${siteConfig.title} | Portal Pembelajaran Sejarah Kebudayaan Islam`}
+      title="Portal Pembelajaran Sejarah Kebudayaan Islam"
       description="Ringkasan materi Sejarah Kebudayaan Islam untuk siswa Madrasah Aliyah, disusun mengikuti struktur pembelajaran Kelas X, XI, dan XII.">
 
       {/* =========================================================
@@ -188,10 +201,13 @@ export default function Home() {
         {/* Mosque image sebagai background atmosferik */}
         <div className="board-hero-bg" aria-hidden="true">
           <img
-            src="/img/hero-mosque.png"
+            src="/img/hero-mosque.webp"
             alt=""
+            width="1600"
+            height="900"
             className="board-hero-bg-img"
             loading="eager"
+            fetchpriority="high"
           />
         </div>
         <div className="board-hero-overlay" aria-hidden="true" />
@@ -205,7 +221,7 @@ export default function Home() {
             </h1>
 
             <div className="board-hero-subheadline">
-              Menelusuri sejarah. Memahami peradaban.{'\n'}Menemukan makna.
+              Menelusuri sejarah. Memahami peradaban. Menemukan makna.
             </div>
 
             <p className="board-hero-description">
@@ -235,9 +251,9 @@ export default function Home() {
           {/* Book Spine Shelf — 3 punggung kitab vertikal */}
           <div className="board-hero-spines" aria-label="Pilih jenjang kelas">
             {[
-              { roman: 'X', label: 'Sirah Nabawiyah & Daulah Islam Awal', bab: '6 Bab', to: '/docs/kelas-x/' },
-              { roman: 'XI', label: 'Tiga Kerajaan Besar & Islam Nusantara', bab: '5 Bab', to: '/docs/kelas-xi/' },
-              { roman: 'XII', label: 'Nusantara & Perjuangan Kemerdekaan', bab: '5 Bab', to: '/docs/kelas-xii/' },
+              { roman: 'X', label: KELAS_INFO.X.title, bab: `${TOTAL_BAB.X} Bab`, to: KELAS_INFO.X.to },
+              { roman: 'XI', label: KELAS_INFO.XI.title, bab: `${TOTAL_BAB.XI} Bab`, to: KELAS_INFO.XI.to },
+              { roman: 'XII', label: KELAS_INFO.XII.title, bab: `${TOTAL_BAB.XII} Bab`, to: KELAS_INFO.XII.to },
             ].map((spine) => (
               <Link key={spine.roman} to={spine.to} className={`hero-spine hero-spine-${spine.roman.toLowerCase()}`}>
                 <div className="hero-spine-inner">
@@ -393,7 +409,7 @@ export default function Home() {
             <div className="board-credit-text">
               <strong>Catatan Kecil dari Jejak SKI</strong>
               <p>
-                diinisiasi oleh civitas akademika <strong>MAN 2 Nganjuk</strong> sebagai wujud kontribusi dalam menghadirkan ruang belajar digital terbuka bagi seluruh siswa Madrasah Aliyah di Indonesia. Seluruh materi merupakan intisari yang mengacu langsung pada buku teks resmi Kementerian Agama Republik Indonesia untuk memudahkan pemahaman, persiapan asesmen harian, dan ujian madrasah.
+                Jejak SKI diinisiasi oleh <strong>MGMP SKI Kab. Nganjuk</strong> sebagai wujud kontribusi dalam menghadirkan ruang belajar digital terbuka bagi seluruh siswa Madrasah Aliyah di Indonesia. Seluruh materi merupakan intisari yang mengacu langsung pada buku teks resmi Kementerian Agama Republik Indonesia untuk memudahkan pemahaman, persiapan asesmen harian, dan ujian madrasah.
               </p>
             </div>
           </div>

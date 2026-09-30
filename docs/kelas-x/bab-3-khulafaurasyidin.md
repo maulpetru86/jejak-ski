@@ -25,10 +25,10 @@ terakhir_diperbarui: "2026-09-20"
 
 # Perkembangan Islam Masa Khulafaurasyidin
 
-### Konteks Singkat
+## Konteks Singkat
 Setelah Rasulullah Saw. wafat pada 12 Rabiulawal 11 H/632 M, kepemimpinan umat Islam dilanjutkan empat khalifah rasyidin secara berturut-turut: Abu Bakar Ash-Shiddiq, Umar bin Khattab, Utsman bin Affan, dan Ali bin Abi Thalib. Masing-masing naik takhta lewat proses suksesi yang berbeda — dari musyawarah terbuka di Saqifah, penunjukan lewat wasiat, dewan syura enam sahabat, hingga baiat di tengah krisis politik — namun semuanya berbasis musyawarah, bukan warisan kekuasaan. Setiap khalifah meninggalkan warisan besar: penumpasan kemurtadan dan awal kodifikasi Al-Qur'an, perluasan wilayah dan pendirian Baitul Mal, standarisasi Mushaf Al-Qur'an, hingga penegakan keadilan di tengah gejolak fitnah.
 
-### Poin-Poin Kunci
+## Poin-Poin Kunci
 
 **Abu Bakar Ash-Shiddiq (11-13 H/632-634 M)**
 - Terpilih lewat dua tahap: Baiat Saqifah (musyawarah alot antara kaum Ansar dan Muhajirin di Saqifah Bani Saidah, hingga Umar bin Khattab membaiat tangan Abu Bakar) dan Baiat al-'Ammah (baiat umum di Masjid Nabawi keesokan harinya).
@@ -54,7 +54,7 @@ Setelah Rasulullah Saw. wafat pada 12 Rabiulawal 11 H/632 M, kepemimpinan umat I
 - Pasca tahkim (arbitrase) dengan Muawiyah, muncul kelompok Khawarij yang kecewa dan menganggap keduanya bersalah.
 - Wafat 19 Ramadan 40 H/661 M, terluka oleh Abdurrahman bin Muljam (anggota Khawarij) saat salat Subuh di Masjid Kufah, wafat dua hari kemudian.
 
-### Garis Waktu
+## Garis Waktu
 - **12 Rabiulawal 11 H/632 M**: Rasulullah Saw. wafat; Abu Bakar dibaiat sebagai khalifah pertama.
 - **11-13 H (632-634 M)**: Masa kekhalifahan Abu Bakar — Perang Ridah, Perang Yamamah, awal kodifikasi Al-Qur'an.
 - **23 H/644 M**: Umar bin Khattab wafat ditikam Abu Lu'lu'ah; Dewan Syura enam sahabat dibentuk.
@@ -63,7 +63,7 @@ Setelah Rasulullah Saw. wafat pada 12 Rabiulawal 11 H/632 M, kepemimpinan umat I
 - **35-40 H (656-661 M)**: Masa kekhalifahan Ali bin Abi Thalib — Perang Jamal, Perang Sifin, tahkim, dan munculnya Khawarij.
 - **19 Ramadan 40 H/661 M**: Ali bin Abi Thalib wafat terluka oleh Abdurrahman bin Muljam, menandai berakhirnya era Khulafaurasyidin.
 
-### Istilah Kunci
+## Istilah Kunci
 - **Khilafah**: sistem kepemimpinan umat Islam pasca wafatnya Rasulullah Saw., dipimpin oleh seorang khalifah sebagai pemimpin umat.
 - **Baitul Mal**: lembaga keuangan negara yang mengelola zakat, jizyah, dan kharaj untuk kesejahteraan rakyat, didirikan pada masa Umar bin Khattab.
 - **Kodifikasi Al-Qur'an**: proses pengumpulan mushaf Al-Qur'an, dimulai masa Abu Bakar (tim Zaid bin Tsabit) setelah banyak penghafal syahid di Perang Yamamah.
@@ -73,7 +73,7 @@ Setelah Rasulullah Saw. wafat pada 12 Rabiulawal 11 H/632 M, kepemimpinan umat I
 - **Mushaf Usmani**: mushaf Al-Qur'an standar hasil kodifikasi masa Utsman bin Affan (tim Zaid bin Tsabit) berdasarkan dialek Quraisy, disalin dan dikirim ke Syam, Kufah, Basrah, dan Bahrain.
 - **Dewan Syura**: dewan musyawarah enam sahabat yang dibentuk Umar bin Khattab sebelum wafat untuk memilih khalifah pengganti, dimediatori Abdurrahman bin Auf.
 
-### Tokoh Terkait
+## Tokoh Terkait
 - **Abu Bakar Ash-Shiddiq**: khalifah pertama, memerangi kemurtadan dan memulai kodifikasi Al-Qur'an; wafat 13 H/634 M.
 - **Umar bin Khattab**: khalifah kedua bergelar "Al-Faruq", memperluas wilayah Islam dan mendirikan Baitul Mal; wafat 23 H/644 M.
 - **Utsman bin Affan**: khalifah ketiga bergelar "Zun-Nurain", menstandarisasi Mushaf Usmani; wafat 35 H/656 M.

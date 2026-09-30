@@ -1,6 +1,6 @@
 # Jejak SKI — Portal Referensi Sejarah Kebudayaan Islam
 
-Portal referensi materi Sejarah Kebudayaan Islam (SKI) terbuka untuk seluruh siswa Madrasah Aliyah di Indonesia, diinisiasi oleh civitas akademika MAN 2 Nganjuk, dibangun dengan Docusaurus dan di-hosting melalui Firebase Hosting.
+Portal referensi materi Sejarah Kebudayaan Islam (SKI) terbuka untuk seluruh siswa Madrasah Aliyah di Indonesia, diinisiasi oleh **MGMP SKI Kab. Nganjuk**, dibangun dengan Docusaurus dan di-hosting melalui Firebase Hosting.
 
 ---
 
@@ -74,11 +74,10 @@ npm run start
 ```
 Buka browser di alamat: `http://localhost:3000`. Jika sudah selesai, tekan `Ctrl + C` di terminal untuk menghentikan.
 
-#### 5. Publikasikan ke Internet (Deploy)
-Jika materi sudah rapi dan siap dibaca siswa:
+#### 5. Publikasikan ke Internet (Deploy Otomatis)
+Setiap perubahan yang di-*push* atau di-*merge* ke branch `main` akan diuji dan di-*deploy* secara otomatis ke Firebase Hosting melalui **GitHub Actions**:
 ```bash
-npm run build
-firebase deploy
+git push origin main
 ```
 Situs langsung terbarui di alamat: [https://jejak-ski.web.app](https://jejak-ski.web.app).
 
@@ -89,12 +88,13 @@ Situs langsung terbarui di alamat: [https://jejak-ski.web.app](https://jejak-ski
 | Perintah | Fungsi |
 |---|---|
 | `npm run start` | Menjalankan server lokal untuk preview langsung (hot-reload) |
+| `npm run check` | Memvalidasi konsistensi frontmatter, jumlah tokoh, dan kartu indeks |
 | `npm run build` | Melakukan kompilasi file statis ke folder `build/` |
+| `npm run build:og` | Membuat ulang `og-image.png` dari `og-image.svg` menggunakan Resvg |
 | `npm run serve` | Menjalankan preview dari hasil build statis di folder `build/` |
-| `firebase deploy` | Mengunggah isi folder `build/` ke Firebase Hosting |
 
 ---
 
 ## 📜 Lisensi & Sumber Referensi
 - **Sumber Materi:** Buku Siswa SKI Kelas X, XI, XII terbitan Kementerian Agama Republik Indonesia.
-- **Inisiator & Pengembang:** Muhamad Maulana Rokhim, S.Pd. (MAN 2 Nganjuk) sebagai media belajar terbuka (OER) siswa Madrasah Aliyah se-Indonesia.
+- **Inisiator & Pengembang:** Muhamad Maulana Rokhim, S.Pd. (MGMP SKI Kab. Nganjuk) sebagai media belajar terbuka (OER) siswa Madrasah Aliyah se-Indonesia.
