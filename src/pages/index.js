@@ -221,7 +221,8 @@ export default function Home() {
             </h1>
 
             <div className="board-hero-subheadline">
-              Menelusuri sejarah. Memahami peradaban. Menemukan makna.
+              Menelusuri sejarah. Memahami peradaban.<br className="hero-subheadline-br" />
+              Menemukan makna.
             </div>
 
             <p className="board-hero-description">
@@ -248,21 +249,30 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Book Spine Shelf — 3 punggung kitab vertikal */}
-          <div className="board-hero-spines" aria-label="Pilih jenjang kelas">
-            {[
-              { roman: 'X', label: KELAS_INFO.X.title, bab: `${TOTAL_BAB.X} Bab`, to: KELAS_INFO.X.to },
-              { roman: 'XI', label: KELAS_INFO.XI.title, bab: `${TOTAL_BAB.XI} Bab`, to: KELAS_INFO.XI.to },
-              { roman: 'XII', label: KELAS_INFO.XII.title, bab: `${TOTAL_BAB.XII} Bab`, to: KELAS_INFO.XII.to },
-            ].map((spine) => (
-              <Link key={spine.roman} to={spine.to} className={`hero-spine hero-spine-${spine.roman.toLowerCase()}`}>
-                <div className="hero-spine-inner">
-                  <span className="hero-spine-roman">{spine.roman}</span>
-                  <span className="hero-spine-label">{spine.label}</span>
-                  <span className="hero-spine-bab">{spine.bab}</span>
-                </div>
-              </Link>
-            ))}
+          {/* Panel Jenjang Pembelajaran — Rak Kitab Digital Presisi */}
+          <div className="board-hero-shelf" aria-label="Pilih jenjang kelas">
+            <div className="hero-shelf-header">
+              <span className="hero-shelf-icon" aria-hidden="true">📖</span>
+              <span className="hero-shelf-title">Pilih Jenjang Pembelajaran</span>
+            </div>
+            <div className="hero-shelf-list">
+              {[
+                { roman: 'X', label: KELAS_INFO.X.title, bab: `${TOTAL_BAB.X} Bab`, to: KELAS_INFO.X.to, sub: 'Fase E' },
+                { roman: 'XI', label: KELAS_INFO.XI.title, bab: `${TOTAL_BAB.XI} Bab`, to: KELAS_INFO.XI.to, sub: 'Fase F' },
+                { roman: 'XII', label: KELAS_INFO.XII.title, bab: `${TOTAL_BAB.XII} Bab`, to: KELAS_INFO.XII.to, sub: 'Fase F' },
+              ].map((spine) => (
+                <Link key={spine.roman} to={spine.to} className={`hero-spine hero-spine-${spine.roman.toLowerCase()}`}>
+                  <div className="hero-spine-inner">
+                    <span className="hero-spine-roman">{spine.roman}</span>
+                    <div className="hero-spine-text">
+                      <span className="hero-spine-label">{spine.label}</span>
+                      <span className="hero-spine-sub">{spine.sub} · {spine.bab}</span>
+                    </div>
+                    <span className="hero-spine-arrow" aria-hidden="true">→</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </section>
