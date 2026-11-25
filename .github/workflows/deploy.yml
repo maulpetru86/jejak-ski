@@ -36,7 +36,7 @@ jobs:
         run: npm run build
 
       - name: Deploy ke Firebase Hosting
-        uses: w9jds/firebase-action@b149fcd86198236adeebd9ba3dcafe5da86eb0cd # v13.29.1
+        uses: w9jds/firebase-action@e01972352bce28ca4658ce13d6abefd26053a4e2 # v15.37.0
         with:
           args: deploy --only hosting
         env:
